@@ -1,0 +1,124 @@
+site_name: CMIP7 Data Docs
+
+# Site URL
+site_url: !ENV [READTHEDOCS_CANONICAL_URL, "https://cmip7-data-docs.readthedocs.io/"]
+# READTHEDOCS_CANONICAL_URL is set automatically within the Read the Docs build
+
+# Git repository (adds a link to the GitHub repository at the top)
+repo_url: https://github.com/ACCESS-NRI/cmip7-data-docs
+repo_name: cmip7-data-docs
+
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: cmip7-light
+      primary: none
+      accent: none
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: cmip7-dark
+      primary: none
+      accent: none
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  font: false
+
+  features:
+    - navigation.top
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.footer
+    - navigation.tracking
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    - content.tabs.link
+    - content.tooltips
+    - search.suggest
+    - search.highlight
+    - search.share
+    - toc.follow
+    - announce.dismiss
+
+  logo: assets/logo.svg
+  favicon: assets/favicon.svg
+  icon:
+    edit: material/pencil
+    view: material/eye
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: date
+      enable_creation_date: false
+  - redirects:
+      redirect_maps: {}
+
+# Extensions
+markdown_extensions:
+  - attr_list
+  - abbr
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.inlinehilite
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.highlight
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.keys
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      title: On this page
+      permalink: true
+      permalink_title: Copy permalink to clipboard
+
+# Navigation
+nav:
+  - Home: index.md
+  - CMIP7 Data Currently Available: data/data-available.md
+  - Find & Access CMIP7 Data: data/find-access-data.md
+  - Understand the Data: data/understand-the-data.md
+  - Use the Data: data/use-the-data.md
+  - Publishing CMIP Data to NCI: data/publishing-data.md
+
+# Footer
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ACCESS-NRI/cmip7-data-docs
+      name: cmip7-data-docs on GitHub
+
+extra_css:
+  - css/custom.css
+
+# Automatically reload the page when running `mkdocs serve`, for any
+# of the following files outside of the 'docs' directory
+watch:
+  - mkdocs.yml

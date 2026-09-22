@@ -1,0 +1,160 @@
+/*
+   CMIP7 Data Docs custom theme.
+
+   Palette is a blend of ACCESS-NRI and NCI's actual brand colors (sampled
+   directly from their logos: docs/assets/access-nri-logo.webp and
+   docs/assets/nci-logo.png), reflecting this being a joint site rather than
+   a single-org one. Structured the same way as other ACCESS-NRI
+   Material-for-MkDocs sites (brand colors as RGB triples, then a
+   light/dark scheme block mapping them onto Material's CSS variables).
+*/
+
+:root {
+  --md-text-font: Arial, Helvetica, sans-serif;
+  --md-code-font: "Courier New", Courier, monospace;
+
+  --cmip-charcoal-color: 58, 58, 58;     /* NCI charcoal (wordmark) */
+  --cmip-navy-color: 0, 91, 148;         /* ACCESS-NRI dark blue */
+  --cmip-blue-color: 0, 175, 239;        /* ACCESS-NRI blue */
+  --cmip-light-blue-color: 145, 216, 247;/* ACCESS-NRI light blue */
+  --cmip-green-color: 168, 207, 69;      /* ACCESS-NRI green */
+  --cmip-orange-color: 255, 167, 68;     /* NCI orange */
+
+  --cmip-charcoal: rgb(var(--cmip-charcoal-color));
+  --cmip-navy: rgb(var(--cmip-navy-color));
+  --cmip-blue: rgb(var(--cmip-blue-color));
+  --cmip-light-blue: rgb(var(--cmip-light-blue-color));
+  --cmip-green: rgb(var(--cmip-green-color));
+  --cmip-orange: rgb(var(--cmip-orange-color));
+
+  --tab-text-color: 245, 245, 245;       /* top tab / banner text */
+  --tab-text: rgb(var(--tab-text-color));
+
+  --md-primary-fg-color: var(--cmip-charcoal);       /* top banner background (neutral, shared) */
+  --md-primary-fg-color--dark: var(--cmip-navy);     /* top tab background (ACCESS-NRI) */
+  --md-primary-bg-color: var(--tab-text);            /* top banner text */
+  --md-primary-bg-color--light: rgba(var(--tab-text-color), 0.7);
+  --md-accent-fg-color--transparent: rgba(var(--cmip-orange-color), 0.08);
+
+  --md-typeset-mark-color: rgba(var(--cmip-orange-color), 0.35); /* <mark> highlight (NCI) */
+}
+
+/* Light mode */
+[data-md-color-scheme="cmip7-light"] {
+  --md-default-fg-color: rgb(30, 30, 32);
+  --md-default-fg-color--light: rgba(30, 30, 32, 0.7);
+  --md-default-fg-color--lighter: rgba(30, 30, 32, 0.4);
+  --md-default-fg-color--lightest: rgba(30, 30, 32, 0.07);
+  --md-typeset-color: var(--md-default-fg-color);
+
+  --md-default-bg-color: rgb(255, 255, 255);
+  --md-default-bg-color--light: rgba(255, 255, 255, 0.7);
+  --md-default-bg-color--lighter: rgba(255, 255, 255, 0.3);
+  --md-default-bg-color--lightest: rgba(255, 255, 255, 0.12);
+
+  --md-typeset-a-color: var(--cmip-navy);      /* link text (ACCESS-NRI) */
+  --md-accent-fg-color: var(--cmip-orange);    /* link hover (NCI) */
+
+  --md-code-fg-color: rgb(33, 33, 33);
+  --md-code-bg-color: rgb(238, 238, 238);
+}
+
+/* Dark mode */
+[data-md-color-scheme="cmip7-dark"] {
+  --md-default-fg-color: rgb(232, 232, 232);
+  --md-default-fg-color--light: rgba(232, 232, 232, 0.7);
+  --md-default-fg-color--lighter: rgba(232, 232, 232, 0.4);
+  --md-default-fg-color--lightest: rgba(232, 232, 232, 0.07);
+  --md-typeset-color: var(--md-default-fg-color);
+
+  --md-default-bg-color: rgb(28, 28, 30);
+  --md-default-bg-color--light: rgba(28, 28, 30, 0.7);
+  --md-default-bg-color--lighter: rgba(28, 28, 30, 0.3);
+  --md-default-bg-color--lightest: rgba(28, 28, 30, 0.12);
+
+  --md-typeset-a-color: var(--cmip-light-blue);  /* link text (ACCESS-NRI) */
+  --md-accent-fg-color: var(--cmip-orange);      /* link hover (NCI) */
+
+  --md-code-fg-color: rgb(226, 226, 226);
+  --md-code-bg-color: rgb(42, 42, 44);
+}
+
+/* Admonition tints, keyed to the brand palette rather than Material's defaults */
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-color: var(--cmip-navy);
+}
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary {
+  background-color: rgba(var(--cmip-navy-color), 0.1);
+}
+.md-typeset .note > .admonition-title::before,
+.md-typeset .note > summary::before {
+  background-color: var(--cmip-navy);
+}
+
+.md-typeset .admonition.tip,
+.md-typeset details.tip,
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-color: var(--cmip-orange);
+}
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary,
+.md-typeset .warning > .admonition-title,
+.md-typeset .warning > summary {
+  background-color: rgba(var(--cmip-orange-color), 0.1);
+}
+.md-typeset .tip > .admonition-title::before,
+.md-typeset .tip > summary::before,
+.md-typeset .warning > .admonition-title::before,
+.md-typeset .warning > summary::before {
+  background-color: var(--cmip-orange);
+}
+
+.md-typeset .admonition.abstract,
+.md-typeset details.abstract {
+  border-color: var(--cmip-green);
+}
+.md-typeset .abstract > .admonition-title,
+.md-typeset .abstract > summary {
+  background-color: rgba(var(--cmip-green-color), 0.1);
+}
+.md-typeset .abstract > .admonition-title::before,
+.md-typeset .abstract > summary::before {
+  background-color: var(--cmip-green);
+}
+
+/* Partner logo strip (see docs/index.md, Funding and partners) */
+.partner-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 1.5rem 0;
+}
+.partner-logos img {
+  height: 64px;
+  width: auto;
+}
+
+/* Full-width homepage cards (one column, stacked) — twice the width of the
+   regular grid cards, for occasional emphasis. Tinted with the brand navy
+   instead of the plain page background so they read as a distinct style. */
+.md-typeset .grid.cards.cmip-full-width {
+  grid-template-columns: 1fr;
+}
+.md-typeset .grid.cards.cmip-full-width > ul > li {
+  background-color: rgba(var(--cmip-navy-color), 0.08);
+  border-color: rgba(var(--cmip-navy-color), 0.35);
+}
+.md-typeset .grid.cards.cmip-full-width > ul > li:hover {
+  background-color: rgba(var(--cmip-navy-color), 0.14);
+}
+[data-md-color-scheme="cmip7-dark"] .md-typeset .grid.cards.cmip-full-width > ul > li {
+  background-color: rgba(var(--cmip-navy-color), 0.22);
+  border-color: rgba(var(--cmip-navy-color), 0.45);
+}
+[data-md-color-scheme="cmip7-dark"] .md-typeset .grid.cards.cmip-full-width > ul > li:hover {
+  background-color: rgba(var(--cmip-navy-color), 0.32);
+}

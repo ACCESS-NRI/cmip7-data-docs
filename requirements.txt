@@ -1,0 +1,7 @@
+mkdocs-material==9.7.7
+mkdocs-git-revision-date-localized-plugin==1.6.0
+# Pinned to 1.2.2, NOT the newer 1.2.3: that release pulls in a package
+# called "properdocs" which hijacks Python's import machinery for `mkdocs.*`
+# and prints a warning urging a switch away from MkDocs. See project README
+# / commit history for details before ever bumping this pin.
+mkdocs-redirects==1.2.2
