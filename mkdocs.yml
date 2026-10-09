@@ -9,15 +9,15 @@
 # - MkDocs configuration guide: https://www.mkdocs.org/user-guide/configuration/
 # ============================================== #
 
-site_name: ... # MODIFY: Set the site name for your documentation
+site_name: CMIP7 Data Docs
 
 # Site URL
 site_url: !ENV [READTHEDOCS_CANONICAL_URL, ""]
 # READTHEDOCS_CANONICAL_URL is set within the ReadTheDocs build
 
 # Git repository (Adds a link to the GitHub repository at the top)
-repo_url: https://github.com/ACCESS-NRI/... # MODIFY: Set the GitHub repository URL for your documentation
-repo_name: ... # MODIFY: Set the GitHub repository name for your documentation
+repo_url: https://github.com/ACCESS-NRI/cmip7-data-docs 
+repo_name: cmip7-data-docs 
 
 edit_uri: edit/main/documentation/docs # MODIFY: If your documentation is in a different branch than `main` or folder (documentation/docs), update this path accordingly
 
@@ -25,15 +25,23 @@ edit_uri: edit/main/documentation/docs # MODIFY: If your documentation is in a d
 # Navigation 
 # MODIFY: Set the navigation structure as needed for your site
 nav:
-  - Example Section:
-    - pages/example-section/index.md
-    - Subsection1: pages/example-section/subsection1.md
-    - Subsection2: 
-      - pages/example-section/subsection2/index.md
-      - Example Page: pages/example-section/subsection2/example-page.md
-  - Example Section 2:
-    - pages/example-section2/index.md
-  # ...
+  - About CMIP7:
+    - pages/about-cmip7/index.md
+    - What is CMIP7?: pages/about-cmip7/what-is-cmip7.md
+    - What has changed since CMIP6?: pages/about-cmip7/changes-since-cmip6.md
+    - Experiments, models and variables: pages/about-cmip7/experiments-models-variables.md
+    - CMOR data standard: pages/about-cmip7/cmor-data-standard.md
+  - Get set up on NCI:
+    - pages/get-set-up-nci/index.md
+    - Why use NCI for CMIP7?: pages/get-set-up-nci/why-nci.md
+    - Set up an NCI account: pages/get-set-up-nci/set-up-account.md
+    - Join CMIP7 projects: pages/get-set-up-nci/join-projects.md
+  - Work with CMIP7 data:
+    - pages/work-with-cmip7-data/index.md
+    - What CMIP7 data is available?: pages/work-with-cmip7-data/data-available.md
+    - Find and access CMIP7 data: pages/work-with-cmip7-data/find-and-access-data.md
+    - Tools to analyze CMIP7 data: pages/work-with-cmip7-data/analysis-tools.md
+    - Citing requirements and errata: pages/work-with-cmip7-data/citing-and-errata.md
 
 
 # Theme configuration
@@ -47,6 +55,7 @@ theme:
     - navigation.tracking # The URL in the address bar is automatically updated with active anchor
     # - navigation.tabs # Top-level sections are rendered below the top header
     - navigation.tabs.sticky # Top-level sections remain visible when scrolling
+    - navigation.expand # Expand all collapsible sections in the left navigation by default (users can still collapse them)
     - navigation.indexes # Files can be attached to main sections, which can function as overview pages (https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/?h=navigation#section-index-pages)
     - navigation.top # Add a back-to-top button
     - navigation.footer # Enables the footer for the site
@@ -78,8 +87,8 @@ theme:
       toggle:
         icon: material/theme-light-dark
         name: Switch to light mode
-  favicon: assets/logos/access_hive_logo.png # Favicon for the site
-  logo: assets/logos/access_hive_logo.png # Main logo for the site
+  favicon: assets/logos/cmip7_logo.svg # Favicon for the site
+  logo: assets/logos/cmip7_logo.svg # Main logo for the site
   icon:
     edit: material/pencil # Icon for editing the page
     view: material/eye # Icon for viewing the page
@@ -157,10 +166,7 @@ plugins:
   - include-markdown # Enables including external markdown files in a document (https://github.com/mondeja/mkdocs-include-markdown-plugin#mkdocs-include-markdown-plugin)
 
 hooks:
-  - hooks/set_copyright_year.py # Automatically sets the copyright year to the current year
   - hooks/hide_pages_url_segment.py # Automatically hides the "/pages" URL segment for pages inside the "pages" directory
-
-copyright: Copyright &copy; {year} ACCESS-NRI
 
 # Footer
 extra:

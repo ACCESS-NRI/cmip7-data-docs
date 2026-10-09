@@ -1,8 +1,8 @@
 :root {
   --nri-green-color: 165, 205, 58; 
-  --nri-orange-color: 249, 166, 28; 
-  --nri-dark-blue-color: 0, 91, 148;
-  --nri-blue-color: 1, 173, 238;
+  --nri-orange-color: 242, 140, 0; 
+  --nri-dark-blue-color: 0, 82, 155;
+  --nri-blue-color: 0, 122, 204;
   --nri-light-blue-color: 142, 215, 248;
   --nri-green: rgb(var(--nri-green-color)); /* rgb(166, 206, 57) */
   --nri-orange: rgb(var(--nri-orange-color)); /* rgb(250, 166, 25) */
@@ -12,9 +12,9 @@
   --tab-text-color: 235, 235, 235; /* Color for text of top tab and back to top button */
   --tab-text: rgb(var(--tab-text-color)); /*  Main text in navigation tab */
   --tab-text-light: rgba(var(--tab-text-color),.7); /* Main text in navigation tab inactive */
-  --md-primary-fg-color: rgb(29, 29, 29); /* top banner background */
+  --md-primary-fg-color: rgb(255, 255, 255); /* top banner background */
   --md-primary-fg-color--dark: var(--nri-dark-blue); /*  top tab background */
-  --primary-bg-color: var(--tab-text-color); /* Color for top banner text */
+  --primary-bg-color: var(--nri-dark-blue-color); /* Color for top banner text */
   --md-primary-bg-color: rgb(var(--primary-bg-color)); /*  top banner text */
   --md-primary-bg-color--light: rgba(var(--primary-bg-color),0.5); /* search bar 'Search' text */
   --md-accent-fg-color--transparent: rgba(var(--nri-blue-color),.05);  /* navigation bar little arrows hover */
@@ -29,19 +29,19 @@
   --md-typeset-del-color: rgba(245,80,61,.15); /* deleted text (<del> tag) */
   --md-typeset-ins-color: rgba(11,213,112,.15); /* inserted text (<ins> tag) */
   --navigation-borders: rgba(var(--nri-orange-color),.2); /* Left border on the toc and navigation*/
-  --card-borders: rgba(var(--nri-green-color),.75); /* Borders of cards */
+  --card-borders: rgba(var(--nri-dark-blue-color),.75); /* Borders of cards */
   --md-typeset-table-color: var(--card-borders); /* table borders (<table> tag) */
-  --md-footer-fg-color: var(--md-primary-bg-color); /* footer link icon (social) */
-  --md-footer-fg-color--light: var(--md-primary-bg-color); /* Footer copyright text and social icons fill */
-  --md-footer-bg-color: var(--md-primary-fg-color); /* footer background color */
+  --md-footer-fg-color: var(--tab-text); /* footer link icon (social) */
+  --md-footer-fg-color--light: var(--tab-text); /* Footer copyright text and social icons fill */
+  --md-footer-bg-color: var(--nri-dark-blue); /* footer background color */
   --md-footer-bg-color--dark: rgba(0,0,0,0); /* footer background color (on top of the --md-footer-bg-color) */
   --md-shadow-z1: 0 0.2rem 0.5rem rgba(0,0,0,.05),0 0 0.05rem rgba(0,0,0,.1);
   --md-shadow-z2: 0 0.2rem 0.5rem rgba(0,0,0,.1),0 0 0.05rem rgba(0,0,0,.25);
   --md-shadow-z3: 0 0.2rem 0.5rem rgba(0,0,0,.2),0 0 0.05rem rgba(0,0,0,.35);
   --card-shadows: #00000075; /* Shadows on cards and other elements */
   --card-shadows-hover: #00000090; /* Shadows hover on cards and other elements */
-  --animated-terminal-background: var(--md-primary-fg-color);
-  --animated-terminal-directory: var(--nri-green);
+  --animated-terminal-background: rgb(29, 29, 29);
+  --animated-terminal-directory: var(--nri-light-blue);
   --animated-terminal-buttons: var(--nri-orange);
   --animated-terminal-buttons-hover: var(--nri-blue);
   --animated-terminal-text: rgb(235, 235, 235);
@@ -77,6 +77,8 @@
 }
 
 [data-md-color-scheme="custom-dark"] {
+  --md-primary-fg-color: rgb(16, 34, 58); /* top banner background */
+  --primary-bg-color: var(--tab-text-color); /* Color for top banner text */
   --default-fg-color: 235, 235, 235;  /* Color for main text in body, navigation, table of content*/
   --md-default-fg-color: rgb(var(--default-fg-color)); /* Main text in body, navigation, table of content*/ 
   --md-default-fg-color--light: rgba(var(--default-fg-color),.7); /* Back to top button text, inactive tab text */
@@ -89,7 +91,7 @@
   --md-default-bg-color--lighter: rgba(var(--default-bg-color),.3);
   --md-default-bg-color--lightest: rgba(var(--default-bg-color),.12);
   --md-typeset-a-color: var(--nri-light-blue); /* link text */
-  --md-accent-fg-color: var(--nri-blue); /* link text hover */
+  --md-accent-fg-color: var(--nri-orange); /* link text hover */
   --md-code-fg-color: var(--md-default-fg-color); /* code element text */
   --md-code-bg-color: rgb(41, 41, 41); /* code element background */
   --md-code-hl-name-color: var(--md-code-fg-color);
@@ -102,7 +104,7 @@
   --md-typeset-kbd-color: rgb(39, 39, 39); /* keyboard key background (<kbd> tag) */
   --md-typeset-kbd-accent-color: rgb(126, 126, 126, .16); /* keyboard key inner border (<kbd> tag) */
   --md-typeset-kbd-border-color: rgb(30, 30, 30); /* text as keyboard outer border (<kbd> tag) */
-  --active-version-tab-color: var(--nri-green-color); /* Color for the Text and underline of active HTML tab */
+  --active-version-tab-color: var(--nri-orange-color); /* Color for the Text and underline of active HTML tab */
   --active-version-tab: rgb(var(--active-version-tab-color)); /* Text and underline of active HTML tab */
   --active-version-tab-background: rgba(var(--active-version-tab-color),0.05); /* Text and underline of active HTML tab */
   --md-admonition-fg-color: var(--md-typeset-color); /* Main text warnings */
@@ -137,7 +139,7 @@
   --md-default-bg-color--lighter: rgba(var(--default-bg-color),.3);
   --md-default-bg-color--lightest: rgba(var(--default-bg-color),.12);
   --md-typeset-a-color: var(--nri-dark-blue); /* link text */
-  --md-accent-fg-color: var(--nri-blue); /* link text hover */
+  --md-accent-fg-color: var(--nri-orange); /* link text hover */
   --md-code-fg-color: rgb(33, 36, 44); /* code element text */
   --md-code-bg-color: #dedede; /* code element background */
   --md-code-hl-name-color: var(--md-code-fg-color);
@@ -311,7 +313,121 @@
   transition-duration: 0.4s;
 }
 
-/* =============================================================== 
+/* ===============================================================
+  Homepage buttons
+*/
+.home-btn-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  margin: 1.5em 0;
+}
+
+/* Three buttons in a row (e.g. section pages with three subpages) */
+.home-btn-container--three {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Stack the buttons on phone-sized screens */
+@media screen and (max-width: 44.9844em) {
+  .home-btn-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Homepage data button spans the full width below the two "New to..." buttons */
+.home-btn-container > .home-btn--blue:not(.home-btn--title-only) {
+  grid-column: 1 / -1;
+}
+
+.md-typeset a.home-btn {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem 1.4rem;
+  border: var(--border-width) solid var(--home-btn-color);
+  border-top-width: 0.4rem;
+  border-radius: 0.6rem;
+  box-shadow: 0.28rem 0.28rem 0.45rem var(--card-shadows);
+  color: var(--md-default-fg-color);
+  transition: all 0.3s;
+}
+
+.md-typeset a.home-btn:hover {
+  background-color: rgba(var(--home-btn-color-rgb), 0.08);
+  box-shadow: 0.35rem 0.35rem 0.45rem 0.07rem var(--card-shadows-hover);
+  transform: translateY(-0.1rem);
+}
+
+.home-btn--orange {
+  --home-btn-color-rgb: var(--nri-orange-color);
+  --home-btn-color: var(--nri-orange);
+}
+
+/* Darker orange for the title text so it stays readable on white */
+[data-md-color-scheme="custom-light"] .home-btn--orange .home-btn__title {
+  color: rgb(196, 98, 0);
+}
+
+.home-btn--blue {
+  --home-btn-color-rgb: var(--nri-blue-color);
+  --home-btn-color: var(--nri-blue);
+}
+
+.home-btn__title {
+  font-size: 1.6em;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--home-btn-color);
+  margin-bottom: 0.6em;
+}
+
+.md-typeset .home-btn__list {
+  font-size: 0.9em;
+  margin: 0 0 0 1.2em;
+}
+
+.md-typeset .home-btn__list li {
+  margin-bottom: 0.3em;
+}
+
+/* Buttons with a title only (e.g. links to subpages on section pages) */
+.md-typeset a.home-btn--title-only {
+  justify-content: center;
+  padding: 0.9rem 1.2rem;
+}
+
+.home-btn--title-only .home-btn__title {
+  font-size: 1.3em;
+  margin-bottom: 0;
+}
+
+/* Smaller secondary buttons below the main homepage buttons */
+.home-btn-container--small {
+  gap: 0.8rem;
+  margin-top: -0.3em;
+}
+
+.md-typeset a.home-btn-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  padding: 0.5rem 1rem;
+  border: var(--border-width) solid var(--nri-dark-blue);
+  border-radius: 0.4rem;
+  color: var(--md-typeset-a-color);
+  font-size: 1em;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.md-typeset a.home-btn-small:hover {
+  border-color: var(--nri-orange);
+  background-color: rgba(var(--nri-orange-color), 0.08);
+  color: var(--md-default-fg-color);
+}
+
+/* ===============================================================
   Main body
 */
 /* Grid */
@@ -743,16 +859,11 @@ details.code {
 
 /* Funding */
 .funding {
-  flex-basis: 20%;
-}
-
-/* Partners */
-.partners {
-  flex-basis: 80%;
+  flex-basis: 100%;
 }
 
 /* Text */
-:is(.funding,.partners) > *:first-child {
+.funding > *:first-child {
   font-size: 1.2em;
   font-weight: 500;
   display: flex;
@@ -763,7 +874,7 @@ details.code {
 }
 
 /* Logos */
-:is(.funding,.partners) > *:last-child {
+.funding > *:last-child {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -772,13 +883,13 @@ details.code {
   height: 80%;
 }
 
-:is(.funding,.partners) > *:last-child a {
+.funding > *:last-child a {
   max-width: calc(3vw + 3rem);
   max-height: 100%;
   padding: 0.5rem;
 }
 
-:is(.funding,.partners) > *:last-child a > img {
+.funding > *:last-child a > img {
   margin: auto;
   height: 2.5rem;
   width: auto;
@@ -808,14 +919,6 @@ details.code {
   margin: 0 0.2rem;
 }
 
-.separation {
-  height: 80%;
-  width: 0.1rem;
-  border-radius: 1rem;
-  background-color: var(--md-footer-fg-color--light);
-  align-self: center;
-}
-
 .md-footer-meta__inner.md-grid {
   text-align: center;
 }
@@ -823,6 +926,21 @@ details.code {
 /* =============================================================== 
   Header 
 */
+/* Orange accent line under the header */
+.md-header {
+  border-bottom: 0.2rem solid var(--nri-orange);
+}
+
+/* Search bar on the header background */
+@media screen and (min-width: 60em) {
+  .md-search__form {
+    background-color: rgba(var(--primary-bg-color), 0.08);
+  }
+  .md-search__form:hover {
+    background-color: rgba(var(--primary-bg-color), 0.14);
+  }
+}
+
 /* Main title */
 .md-header__title {
   margin: 0 0.2em 0 0.3em !important;
@@ -890,89 +1008,6 @@ details.code {
   color: var(--tab-text);
 }
 
-/* ===============================================================
-  Header Buttons CSS - "Hive Forum", "ACCESS-NRI", "Contribute"
-*/
-.header-btn-container {
-  max-width: 20rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  align-items: stretch;
-  gap: 0.8rem;
-  margin: 0 .5rem;
-}
-
-.header-btn {
-  flex-basis: 33.333%;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: 0.2rem;
-  border-radius: 0.3rem;
-  border: 1px solid;
-  padding: 0 0.3rem;
-  height: 1.6rem;
-  color: var(--md-primary-bg-color);
-}
-
-.header-btn:hover {
-  transition-duration: 0.3s;
-  transition-property: all;
-}
-/* Hive Forum btn */
-.header-btn:first-child {
-  border-color: var(--nri-orange);
-}
-.header-btn:first-child:hover {
-  background-color: rgba(var(--nri-orange-color),0.14);
-}
-/* ACCESS-NRI btn */
-.header-btn:nth-child(2) {
-  border-color: var(--nri-blue);
-}
-.header-btn:nth-child(2):hover {
-  background-color: rgba(var(--nri-blue-color),0.14);
-}
-/* Contribute btn */
-.header-btn:last-child {
-  border-color: var(--md-primary-bg-color);
-}
-.header-btn:last-child:hover {
-  background-color: rgba(var(--primary-bg-color),0.14);
-}
-
-/* btn logo wrapper */
-.header-btn >:first-child {
-  flex-basis: 25%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-self: center;
-}
-
-/* btn logo */
-.header-btn >:first-child > * {
-  font-size: 1.5em;
-}
-
-/* btn logo */
-.header-btn:nth-child(-n + 2) >:first-child > * {
-  height: 1em;
-  width: auto;
-}
-
-/* btn text */
-.header-btn >:last-child {
-  flex-basis: 75%;
-  text-align: center;
-  white-space: nowrap;
-}
-
 /* =============================================================== 
   References
 */
@@ -1017,7 +1052,7 @@ pre>nav {
 
 /* Copy icon turning orange when hovering over it*/
 pre > button:is(:hover,:focus).md-clipboard {
-  color: var(--md-primary-fg-color--dark) !important;
+  color: var(--nri-orange) !important;
 }
 
 /* =============================================================== 

@@ -1,0 +1,9 @@
+# Environment files
+cmip7-option1/
+__pycache__/
+
+# Build files
+site/
+
+# OS clutter
+.DS_Store
