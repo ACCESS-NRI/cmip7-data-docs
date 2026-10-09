@@ -45,4 +45,4 @@ The Coupled Model Intercomparison Project Phase 7 (CMIP7) is an international cl
   </a>
 </div>
 
-Australian support for CMIP7 is being delivered by the National Computational Infrastructure (NCI) and Australia’s Climate Simulator (ACCESS-NRI), supported by Australian Government investment in 2025 through the National Collaborative Research Infrastructure Strategy (NCRIS).  Information about data availability, access and user guidance will be updated as this work progresses. 
+Australian support for CMIP7 is being delivered by the National Computational Infrastructure (NCI) and Australia’s Climate Simulator (ACCESS-NRI), supported by Australian Government investment in 2025 through the National Collaborative Research Infrastructure Strategy (NCRIS).  Information on this website about data availability, access and user guidance will be updated as this work progresses. 
