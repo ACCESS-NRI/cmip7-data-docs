@@ -1,5 +1,6 @@
 # Environment files
 cmip7-option1/
+.venv/
 __pycache__/
 
 # Build files
