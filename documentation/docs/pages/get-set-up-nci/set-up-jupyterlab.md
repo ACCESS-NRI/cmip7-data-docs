@@ -4,7 +4,7 @@ One way to analyse CMIP7 data on Gadi is in a JupyterLab session, which you can 
 
 ## ARE settings for CMIP7
 
-??? info "ARE settings for CMIP7"
+??? info "Set up an ARE session for CMIP7 data analysis"
     When launching a JupyterLab session, enter:
 
     | Setting | Value |
@@ -21,8 +21,8 @@ One way to analyse CMIP7 data on Gadi is in a JupyterLab session, which you can 
 
 ## Where to work
 
-??? info "Where to work"
-    - **Read CMIP7 data where it is.** It's already on NCI, so there's no need to copy it. Copying wastes your storage allocation and can leave you with outdated versions.
+??? info "Where to analyse and save your outputs"
+    - **Read CMIP7 data directly on NCI.** It's already on NCI, so there's no need to copy it anywhere. Copying wastes your storage allocation and can leave you with outdated versions.
     - **Save outputs to your own project.** You can't write to the CMIP7 data projects. Use your compute project's `/scratch` area for temporary files (files there are deleted automatically if left unused) and its `/g/data` area for anything you want to keep.
 
     For everything else, including logging in via SSH, running batch jobs and checking your storage and compute usage, see [NCI's user documentation](https://opus.nci.org.au).
