@@ -22,7 +22,7 @@ Most Australian researchers work with CMIP7 data at the National Computational I
             aus["Australian-published<br/>data"]
         end
         gadi["<b>You</b><br/>analysing on Gadi"]
-        esgf -->|copied to NCI| rep
+        esgf -->|selected datasets copied to NCI| rep
         aus -->|shared worldwide| esgf
         rep --> gadi
         aus --> gadi
