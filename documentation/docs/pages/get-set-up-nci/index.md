@@ -4,7 +4,7 @@ Most Australian researchers work with CMIP7 data at the National Computational I
 
 ## Why use NCI for CMIP7?
 
-??? info "NCI's role for the Australian community"
+??? info "NCI's role for CMIP7 data"
 
     CMIP7 data is produced by modelling centres around the world and shared through the Earth System Grid Federation (ESGF), a global network of data nodes. Anyone can search ESGF and download data, but CMIP7 datasets are very large, so downloading enough for most analyses is slow and needs a lot of storage.
 
