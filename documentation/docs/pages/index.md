@@ -16,9 +16,9 @@ The Coupled Model Intercomparison Project Phase 7 (CMIP7) is an international cl
   <a href="get-set-up-nci/" class="home-btn home-btn--orange">
     <div class="home-btn__title">Get set up on NCI</div>
     <ul class="home-btn__list">
-      <li>Get an NCI account and join the right projects</li>
-      <li>How to use and navigate NCI for CMIP7</li>
-      <li>Learn about storage and compute allocations</li>
+      <li>Set up an NCI account</li>
+      <li>Join CMIP7 projects</li>
+      <li>Set up JupyterLab (ARE) for CMIP7</li>
     </ul>
   </a>
   <a href="work-with-cmip7-data/" class="home-btn home-btn--blue">
