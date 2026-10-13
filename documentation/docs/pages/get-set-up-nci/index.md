@@ -1,6 +1,6 @@
 # Get set up on NCI
 
-Most Australian researchers work with CMIP7 data at the National Computational Infrastructure (NCI), Australia's national research computing facility. This section explains why, and how to get set up.
+Most Australian researchers work with CMIP7 data at the National Computational Infrastructure (NCI), Australia's national research computing facility. This section explains why and how to get set up.
 
 ## Why use NCI for CMIP7?
 
