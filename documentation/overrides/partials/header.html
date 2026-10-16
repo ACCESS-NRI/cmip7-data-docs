@@ -81,6 +81,24 @@
         </label>
         {% include "partials/search.html" %}
       {% endif %}
+      <div class="header-btn-container">
+        <a href="https://www.access-nri.org.au" target="_blank" class="header-btn header-btn--nri large-text bold">
+          <div>
+            <img src="{{ 'assets/logos/access_nri_logo.png' | url }}" alt="">
+          </div>
+          <div class="fit-text">
+            ACCESS-NRI
+          </div>
+        </a>
+        <a href="https://nci.org.au" target="_blank" class="header-btn header-btn--nci large-text bold">
+          <div>
+            <img src="{{ 'assets/logos/nci_icon.svg' | url }}" alt="">
+          </div>
+          <div class="fit-text">
+            NCI
+          </div>
+        </a>
+      </div>
       {% if config.repo_url %}
         <div class="md-header__source">
             {% include "partials/source.html" %}
