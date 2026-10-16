@@ -34,7 +34,7 @@ Australia has contributed to every recent phase of CMIP. Taking part means Austr
 
     #### How Australian data is shared
 
-    Australian CMIP7 data is processed to the [CMOR data standard](cmor-data-standard.md), published at NCI and shared worldwide through ESGF. Because NCI also holds copies of key international CMIP7 data, Australian researchers can analyse Australian and international models side by side on Gadi. See [Get set up on NCI](../get-set-up-nci/index.md).
+    Australian CMIP7 data is processed to the [CMIP7 data standards](data-standards.md), published at NCI and shared worldwide through ESGF. Because NCI also holds copies of key international CMIP7 data, Australian researchers can analyse Australian and international models side by side on Gadi. See [Get set up on NCI](../get-set-up-nci/index.md).
 
 ## Progress and getting involved
 

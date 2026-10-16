@@ -57,13 +57,10 @@ CMIP7 is the seventh phase of the project. Its first results will inform the IPC
   <a href="australia-in-cmip7/" class="home-btn home-btn--orange home-btn--title-only">
     <div class="home-btn__title">Australia's role in CMIP7</div>
   </a>
-  <a href="changes-since-cmip6/" class="home-btn home-btn--orange home-btn--title-only">
-    <div class="home-btn__title">What has changed since CMIP6?</div>
-  </a>
   <a href="experiments-models-variables/" class="home-btn home-btn--orange home-btn--title-only">
     <div class="home-btn__title">Experiments, models and variables</div>
   </a>
-  <a href="cmor-data-standard/" class="home-btn home-btn--orange home-btn--title-only">
-    <div class="home-btn__title">CMOR data standard</div>
+  <a href="data-standards/" class="home-btn home-btn--orange home-btn--title-only">
+    <div class="home-btn__title">CMIP7 data standards and structure</div>
   </a>
 </div>

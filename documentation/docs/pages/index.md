@@ -8,9 +8,9 @@ The Coupled Model Intercomparison Project Phase 7 (CMIP7) is an international cl
     <div class="home-btn__title">New to CMIP7?</div>
     <ul class="home-btn__list">
       <li>What is CMIP7?</li>
-      <li>What has changed since CMIP6?</li>
+      <li>Australia's role in CMIP7</li>
       <li>Understand the experiments, models and variables</li>
-      <li>CMOR data standard</li>
+      <li>CMIP7 data standards and structure</li>
     </ul>
   </a>
   <a href="get-set-up-nci/" class="home-btn home-btn--orange">
