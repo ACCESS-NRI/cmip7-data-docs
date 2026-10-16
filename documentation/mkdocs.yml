@@ -27,10 +27,9 @@ edit_uri: edit/main/documentation/docs # MODIFY: If your documentation is in a d
 nav:
   - About CMIP7:
     - pages/about-cmip7/index.md
-    - What is CMIP7?: pages/about-cmip7/what-is-cmip7.md
-    - What has changed since CMIP6?: pages/about-cmip7/changes-since-cmip6.md
+    - Australia's role in CMIP7: pages/about-cmip7/australia-in-cmip7.md
     - Experiments, models and variables: pages/about-cmip7/experiments-models-variables.md
-    - CMOR data standard: pages/about-cmip7/cmor-data-standard.md
+    - CMIP7 data standards and structure: pages/about-cmip7/data-standards.md
   - Get set up on NCI:
     - pages/get-set-up-nci/index.md
     - Set up an NCI account: pages/get-set-up-nci/set-up-account.md
