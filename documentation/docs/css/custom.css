@@ -328,6 +328,11 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+/* Extra space when buttons come straight after a dropdown */
+.md-typeset details + .home-btn-container {
+  margin-top: 2.5em;
+}
+
 /* Stack the buttons on phone-sized screens */
 @media screen and (max-width: 44.9844em) {
   .home-btn-container {

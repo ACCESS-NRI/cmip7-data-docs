@@ -33,9 +33,9 @@ nav:
     - CMOR data standard: pages/about-cmip7/cmor-data-standard.md
   - Get set up on NCI:
     - pages/get-set-up-nci/index.md
-    - Why use NCI for CMIP7?: pages/get-set-up-nci/why-nci.md
     - Set up an NCI account: pages/get-set-up-nci/set-up-account.md
     - Join CMIP7 projects: pages/get-set-up-nci/join-projects.md
+    - Set up JupyterLab (ARE) for CMIP7: pages/get-set-up-nci/set-up-jupyterlab.md
   - Work with CMIP7 data:
     - pages/work-with-cmip7-data/index.md
     - What CMIP7 data is available?: pages/work-with-cmip7-data/data-available.md
@@ -153,9 +153,9 @@ plugins:
           options:
             show_source: false
             show_root_heading: true
-  - git-revision-date-localized: # Adds creation and last update dates at the end of each page
+  - git-revision-date-localized: # Adds the last update date at the end of each page
       type: date
-      enable_creation_date: true
+      enable_creation_date: false
   - bibtex: # Add citation syntax support (https://github.com/shyamd/mkdocs-bibtex#usage)
       bib_file: references.bib
   - redirects: # Adds support for URL redirects using mkdocs-redirects (https://github.com/mkdocs/mkdocs-redirects#mkdocs-redirects)
@@ -171,13 +171,6 @@ hooks:
 # Footer
 extra:
   generator: false
-  social:
-    - icon: fontawesome/brands/bluesky
-      link: https://bsky.app/profile/access-nri.bsky.social
-      name: ACCESS-NRI on Bluesky
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/access-nri
-      name: ACCESS-NRI on Linkedin
   analytics:
     provider: google
     property: G-JVWLTHSQWM
