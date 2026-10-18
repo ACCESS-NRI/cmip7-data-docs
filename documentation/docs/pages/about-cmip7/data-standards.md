@@ -6,7 +6,7 @@ CMIP7 output is stored in NetCDF (`.nc`) files. Its [Data Reference Syntax (DRS)
 
 ## On Gadi
 
-International replicas are held in project `ib12`, while ACCESS Consortium publications are held in project `im55`, under `/g/data/im55/publications`. You need [access to the relevant NCI project](../get-set-up-nci/join-projects.md) to read its files.
+International replicas are held in project `ib12`, while ACCESS Consortium publications are held in project `im55`, under `/g/data/im55/publications`. You need [access to the relevant NCI project](https://docs.access-hive.org.au/getting_started/set_up_nci_account/#join-relevant-nci-projects) to read its files.
 
 These complete paths **illustrate the CMIP7 format** under the two Gadi collection roots, using examples from the WCRP guidance and [ACCESS-MOPPy](https://access-moppy.readthedocs.io/en/latest/howto/cmorise_ilamb_workflow.html). They are not confirmed live file locations; check the collection for the current directory and version.
 
