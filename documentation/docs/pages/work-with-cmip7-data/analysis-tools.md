@@ -2,7 +2,7 @@
 
 The [Find and access CMIP7 data](../find-and-access-data/) page shows how to discover files with the interactive or [Intake catalogue](https://docs.access-hive.org.au/model_evaluation/data/finding/access_nri_intake/) and open them as Xarray datasets in ARE JupyterLab. You can explore those datasets directly in your notebook. For larger evaluations, use the same model, experiment and variable selection in a recipe or configuration; the evaluation tool will reopen the CMORised source files.
 
-**Where to start:** Explore existing CMIP7 evaluations on the [REF dashboard](https://dashboard.climate-ref.org/), or browse [ESMValTool's recipes](https://docs.esmvaltool.org/en/latest/quickstart/running.html) to run a diagnostic yourself. ILAMB focuses on land processes and ACCESS-ENSO recipes on ENSO. ACCESS-MOPPy prepares raw ACCESS output; published CMIP data is already CMORised.
+**Where to start:** Explore existing CMIP7 evaluations on the [REF dashboard](https://dashboard.climate-ref.org/), or browse [ESMValTool's recipes](https://docs.esmvaltool.org/en/latest/quickstart/running.html) to run a diagnostic yourself. ILAMB focuses on land processes and ACCESS-ENSO recipes on ENSO.
 
 ## Hosted REF results
 
@@ -45,11 +45,3 @@ Run ESMValTool recipes and ILAMB evaluations as PBS jobs, rather than inside ARE
     #### ILAMB
 
     [ILAMB](https://www.ilamb.org/) compares modelled land processes with observations and produces scores and plots, including for the carbon and water cycles. Use it for land-model benchmarking. Run it as a PBS job, following the [ACCESS-NRI ILAMB workflow](https://docs.access-hive.org.au/model_evaluation/evaluation_on_gadi/ilamb_workflow/) and [PBS example](https://ilamb-workflow.readthedocs.io/en/latest/source/ILAMB.html#submitting-a-pbs-job).
-
-## Preparing raw model output on Gadi
-
-??? info "ACCESS-MOPPy — prepare raw ACCESS output"
-
-    #### ACCESS-MOPPy
-
-    [ACCESS-MOPPy](https://access-moppy.readthedocs.io/en/latest/howto/esmvaltool_integration.html) prepares CMORised files from raw ACCESS model output. Modellers can use its ESMValTool integration to CMORise the variables needed by a recipe into a local cache on demand. Published CMIP files do not need this preparation. **On Gadi:** MOPPy is [available in `conda/analysis3`](https://access-moppy.readthedocs.io/en/latest/howto/installation.html).
