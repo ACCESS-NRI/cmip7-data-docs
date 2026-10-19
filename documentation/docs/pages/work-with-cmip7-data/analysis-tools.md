@@ -1,6 +1,6 @@
 # Tools to analyze CMIP7 data
 
-The [Find and access CMIP7 data](find-and-access-data.md) page shows how to discover files with the interactive or [Intake catalogue](https://docs.access-hive.org.au/model_evaluation/data/finding/access_nri_intake/) and open them as Xarray datasets in ARE JupyterLab. You can explore those datasets directly in your notebook. For repeatable diagnostics, use the same model, experiment and variable selection with an evaluation tool below; these tools locate and load the source files themselves. On Gadi, you need access to the NCI project holding the data.
+The [Find and access CMIP7 data](../find-and-access-data/) page shows how to discover files with the interactive or [Intake catalogue](https://docs.access-hive.org.au/model_evaluation/data/finding/access_nri_intake/) and open them as Xarray datasets in ARE JupyterLab. You can explore those datasets directly in your notebook. For repeatable diagnostics, use the same model, experiment and variable selection with an evaluation tool below; these tools locate and load the source files themselves. On Gadi, you need access to the NCI project holding the data.
 
 **Where to start:** Explore existing CMIP7 evaluations on the [REF dashboard](https://dashboard.climate-ref.org/), or browse [ESMValTool's recipes](https://docs.esmvaltool.org/en/latest/quickstart/running.html) to run a diagnostic yourself. ILAMB focuses on land processes and ACCESS-ENSO recipes on ENSO. ACCESS-MOPPy prepares raw ACCESS output; published CMIP data is already CMORised.
 
