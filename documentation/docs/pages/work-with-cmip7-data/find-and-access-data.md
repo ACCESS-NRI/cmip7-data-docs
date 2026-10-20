@@ -4,6 +4,9 @@ CMIP7 data are published internationally through the Earth System Grid Federatio
 
 **If you have access to Gadi, use the [Gadi route](#on-nci-gadi) first.** If you are new to NCI, [set up an account and join the relevant data projects](https://docs.access-hive.org.au/getting_started/set_up_nci_account/). The complete ACCESS Consortium CMIP7 submission published through NCI is in project `im55`. Project `ib12` holds selected replicas from other modelling centres, with variables and frequencies chosen around ACCESS community research priorities. It is not a complete copy of ESGF: a dataset you find internationally may not be on Gadi. You can [request an additional replica](data-available.md#request-additional-international-data-on-gadi) or [access it through ESGF](#worldwide-via-esgf).
 
+!!! warning "Check Gadi before downloading from ESGF"
+    If you work on Gadi, check whether the **exact model, experiment, variable, frequency and version** you need are already in `im55` or `ib12` before downloading from ESGF. Broad CMIP7 selections can involve very large transfers and duplicate data that are already available locally. If there is no local copy, download only the files you need or [request a replica](data-available.md#request-additional-international-data-on-gadi).
+
 As a guide to scale, the [Climate Resource availability dashboard](https://www.climate-resource.com/tools/esm-model/cmip7-availability) reported about **724 TB** of CMIP7 data indexed on ESGF on **20 October 2026**. This is the amount published so far, not a forecast of the final archive size; the collection is still growing.
 
 ## On NCI Gadi
@@ -49,4 +52,4 @@ As a guide to scale, the [Climate Resource availability dashboard](https://www.c
     1. Open the [Climate Resource CMIP7 availability dashboard](https://www.climate-resource.com/tools/esm-model/cmip7-availability) for an overview of models, experiments and variables published on ESGF. It does not show which files have been replicated on Gadi.
     2. Search [ESGF MetaGrid](https://metagrid-ceda.east.esgf.io/search) for a specific dataset, version or file. Its filters let you narrow the distributed ESGF catalogue and find download options from the hosting node.
 
-    The [WCRP CMIP7 guidance for data users](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_users/) explains ESGF access routes and tool status. For larger scripted searches and downloads, WCRP lists [`intake-esgf`](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_users/#1-accessing-cmip7-data) among its CMIP7 Python tools. If the data are already on Gadi, use the local catalogue or filesystem to avoid a separate transfer.
+    The [WCRP CMIP7 guidance for data users](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_users/) explains ESGF access routes and tool status. For larger scripted searches and downloads, WCRP lists [`intake-esgf`](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_users/#1-accessing-cmip7-data) among its CMIP7 Python tools. Before starting a transfer, check the Gadi holdings and narrow the selection to the files your analysis needs.
