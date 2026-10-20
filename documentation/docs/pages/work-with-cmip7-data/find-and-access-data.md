@@ -2,20 +2,18 @@
 
 CMIP7 data are published internationally through the Earth System Grid Federation (ESGF). You can explore what has been published worldwide, then check whether the data you need are already available on NCI Gadi.
 
-**If you have access to Gadi, use the [Gadi route](#on-nci-gadi) first.** If you are new to NCI, [set up an account and join the relevant data projects](https://docs.access-hive.org.au/getting_started/set_up_nci_account/). The complete ACCESS Consortium CMIP7 submission published through NCI is in project `im55`. Project `ib12` holds selected replicas from other modelling centres, with variables and frequencies chosen around ACCESS community research priorities. It is not a complete copy of ESGF: a dataset you find internationally may not be on Gadi. You can [request an additional replica](data-available.md#request-additional-international-data-on-gadi) or [access it through ESGF](#worldwide-via-esgf).
+**If you have access to Gadi, start with [data held there](#find-and-use-data-held-on-nci-gadi).** If you are new to NCI, [set up an account and join the relevant data projects](https://docs.access-hive.org.au/getting_started/set_up_nci_account/). The complete ACCESS Consortium CMIP7 submission published through NCI is in project `im55`. Project `ib12` holds selected replicas from other modelling centres, with variables and frequencies chosen around ACCESS community research priorities. It is not a complete copy of ESGF: a dataset you find internationally may not be on Gadi. You can [request an additional replica](data-available.md#request-additional-international-data-on-gadi) or [access it through ESGF](#worldwide-via-esgf).
 
 !!! warning "Check Gadi before downloading from ESGF"
     If you work on Gadi, check whether the **exact model, experiment, variable, frequency and version** you need are already in `im55` or `ib12` before downloading from ESGF. Broad CMIP7 selections can involve very large transfers and duplicate data that are already available locally. If there is no local copy, download only the files you need or [request a replica](data-available.md#request-additional-international-data-on-gadi).
 
-As a guide to scale, the [Climate Resource availability dashboard](https://www.climate-resource.com/tools/esm-model/cmip7-availability) reported about **724 TB** of CMIP7 data indexed on ESGF on **20 October 2026**. This is the amount published so far, not a forecast of the final archive size; the collection is still growing.
+As a guide to scale, the [Climate Resource availability dashboard](https://www.climate-resource.com/tools/esm-model/cmip7-availability) reported about **724 TB** of CMIP7 data indexed on ESGF on **20 October 2026**. That is data published so far. [WCRP forecasts 6–10 PB](https://www.wcrp-cmip.org/cmip7-task-teams/cdnot/) from the initial Assessment Fast Track and **more than 80 PB** over the lifetime of CMIP7. These are projections, not current holdings.
 
-## On NCI Gadi
+## Find and use data held on NCI Gadi
 
-??? info "Find and load data on Gadi"
+Use the catalogues to discover and load local data when the relevant CMIP7 entries are available. The direct filesystem route below is for workflows that need file paths or for data not yet indexed.
 
-    NCI provides collection-level Intake-ESM datastores for some data holdings, including `im55` and `ib12`. The [ACCESS-NRI Intake catalogue](https://access-nri-intake-catalog.readthedocs.io/en/latest/) brings indexed Gadi data products into a Python interface for discovery and loading. Its [quickstart tutorial](https://access-nri-intake-catalog.readthedocs.io/en/latest/usage/quickstart.html) shows how to filter by model, variable and frequency, then open matching files.
-
-    #### Start with the interactive catalogue
+??? info "Explore indexed data in the Interactive Data Catalogue"
 
     The [ACCESS-NRI Interactive Data Catalogue](https://access-nri.github.io/interactive-data-catalogue/#/) provides a browser interface to the ACCESS-NRI catalogue. You can explore indexed products without logging in to Gadi:
 
@@ -24,11 +22,15 @@ As a guide to scale, the [Climate Resource availability dashboard](https://www.c
     3. Narrow the selection to the files you need and copy the generated Python code.
     4. Run the code in an [ARE JupyterLab session](https://docs.access-hive.org.au/getting_started/are/) with access to the data project and the [ACCESS-NRI `analysis3` environment](https://docs.access-hive.org.au/getting_started/environments/).
 
-    The [illustrated Interactive Catalogue guide](https://docs.access-hive.org.au/model_evaluation/data/finding/interactive_catalogue/) shows the interface. **As of October 2026, CMIP7 entries are not yet available in the Interactive Data Catalogue.** Until they are indexed, use the Gadi filesystem to find local CMIP7 files.
+    The [illustrated Interactive Catalogue guide](https://docs.access-hive.org.au/model_evaluation/data/finding/interactive_catalogue/) shows the interface. **As of October 2026, CMIP7 entries are not yet available in the Interactive Data Catalogue.** The steps above apply once they are indexed. For current CMIP7 data, use the NCI collection-level Intake-ESM datastores where available, or the path fallback below when necessary.
 
-    #### Use the Gadi filesystem and CMIP7 DRS
+??? info "Find and load indexed data with Python Intake"
 
-    If you know the CMIP7 **Data Reference Syntax (DRS)**, you can navigate directly to files. DRS is the standard directory and filename structure based on facets such as activity, institution, model, experiment, ensemble member, variable, grid and version. This is useful for scripts that already use paths, or while a dataset is not indexed in a catalogue.
+    NCI provides collection-level Intake-ESM datastores for some data holdings, including `im55` and `ib12`. The [ACCESS-NRI Intake catalogue](https://access-nri-intake-catalog.readthedocs.io/en/latest/) brings indexed Gadi data products into a Python interface for discovery and loading. Its [quickstart tutorial](https://access-nri-intake-catalog.readthedocs.io/en/latest/usage/quickstart.html) shows how to filter by model, variable and frequency, then open matching files. Check that the catalogue entry covers the dataset and version you need before loading it.
+
+??? note "Advanced fallback: use CMIP7 DRS paths directly"
+
+    Use this only when a suitable catalogue entry is unavailable or an existing workflow needs a file path. Catalogue searches and generated loading code are easier to maintain because dataset locations and versions can change. The CMIP7 **Data Reference Syntax (DRS)** is the standard directory and filename structure based on facets such as activity, institution, model, experiment, ensemble member, variable, grid and version.
 
     The local collection roots are:
 
