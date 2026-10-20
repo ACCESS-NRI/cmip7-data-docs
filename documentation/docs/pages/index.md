@@ -15,7 +15,9 @@ The Coupled Model Intercomparison Project Phase 7 (CMIP7) is an international cl
   </a>
   <a href="get-set-up-nci/" class="home-btn home-btn--orange">
     <div class="home-btn__title">Get set up on NCI</div>
+    <div class="home-btn__note">Note: not all access methods require an NCI account.</div>
     <ul class="home-btn__list">
+      <li>Do you need an NCI account?</li>
       <li>Set up an NCI account</li>
       <li>Join CMIP7 projects</li>
       <li>Set up JupyterLab (ARE) for CMIP7</li>
