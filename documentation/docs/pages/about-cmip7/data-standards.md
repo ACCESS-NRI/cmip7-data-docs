@@ -1,21 +1,35 @@
 # CMIP7 data standards and structure
 
-This page is for users who prefer to work with files directly on Gadi. For datasets indexed in the [ACCESS-NRI Intake catalogue](https://access-nri-intake-catalog.readthedocs.io/en/latest/usage/), you can discover and load data in Python without managing file paths yourself.
+CMIP7 data follows shared rules so output from different modelling centres can be found and compared. This page explains those rules; see [Find and access CMIP7 data](../../work-with-cmip7-data/find-and-access-data/) for file locations on Gadi.
 
-CMIP7 output is stored in NetCDF (`.nc`) files. Its [Data Reference Syntax (DRS)](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Global_Attributes/) uses standard metadata to organise directories and filenames by model, experiment, ensemble member, variable, grid and dataset version.
+## Requirements
 
-## On Gadi
+??? info "CMIP7 and CF conventions"
 
-International replicas are held in project `ib12`, while ACCESS Consortium publications are held in project `im55`, under `/g/data/im55/publications`. You need [access to the relevant NCI project](https://docs.access-hive.org.au/getting_started/set_up_nci_account/#join-relevant-nci-projects) to read its files.
+    #### CMIP7 and CF conventions
 
-These complete paths **illustrate the CMIP7 format** under the two Gadi collection roots, using examples from the WCRP guidance and [ACCESS-MOPPy](https://access-moppy.readthedocs.io/en/latest/howto/cmorise_ilamb_workflow.html). They are not confirmed live file locations; check the collection for the current directory and version.
+    The [CMIP7 global-attribute rules](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Global_Attributes/) require consistent metadata for the model, experiment, ensemble member and other dataset properties, using controlled vocabularies. The [CF conventions](https://cfconventions.org/Data/cf-conventions/cf-conventions-1.13/cf-conventions.html) define how NetCDF data describes coordinates, standard names, units and related information.
 
-```text
-/g/data/ib12/MIP-DRS7/CMIP7/CMIP/CCCma/CanESM6-0-MR/historical/r2i1p1f1/glb/mon/tas/tavg-h2m-hxy-u/g121/v20250622/tas_tavg-h2m-hxy-u_mon_glb_g121_CanESM6-0-MR_historical_r2i1p1f1_190001-190912.nc
-```
+??? info "CMIP7 Data Request"
 
-```text
-/g/data/im55/publications/MIP-DRS7/CMIP7/CMIP/ACCESS-Consortium/ACCESS-ESM1-6/historical/r1i1p1f1/glb/mon/tas/tavg-h2m-hxy-u/gn/v20260819/tas_tavg-h2m-hxy-u_mon_glb_gn_ACCESS-ESM1-6_historical_r1i1p1f1_185001-185912.nc
-```
+    #### CMIP7 Data Request
 
-Here, `mon` means monthly output, `r1i1p1f1` identifies an ensemble member, `v20260819` identifies a dataset version, and the final part of each filename gives its time span. The [official CMIP7 guidance](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Global_Attributes/) explains the full structure and changes from CMIP6, including branded variable names and the new region field.
+    The [Data Request](https://www.wcrp-cmip.org/cmip-phases/cmip7/cmip7-data-request/) specifies which variables are requested for CMIP7 experiments and how they should be reported, including frequency and region. Browse the [requested variables](https://cmip-data-request.github.io/cmip7-dreq-webview/latest/variables.html) or see the [CMIP7 branded-variable guide](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Branded_Variables/) for the new variable names.
+
+## Output files
+
+??? info "CMORised NetCDF and file structure"
+
+    #### CMORised NetCDF and file structure
+
+    Published CMIP7 output is written as NetCDF (`.nc`), generally with one variable per file. *CMORised* means it follows the CMIP output conventions; the files need not have been produced by the CMOR software itself. The [Data Reference Syntax (DRS)](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Global_Attributes/) builds filenames and directory paths from metadata such as model, experiment, ensemble member, variable, grid and version.
+
+## ACCESS Consortium processing
+
+??? info "ACCESS-MOPPy"
+
+    #### ACCESS-MOPPy
+
+    The ACCESS Consortium uses [ACCESS-MOPPy](https://access-moppy.readthedocs.io/en/latest/) to turn native ACCESS atmosphere, land, ocean and sea-ice output into CMIP7 NetCDF files, mapping model variables to requested variables and writing the required metadata and DRS layout. MOPPy uses Xarray and Dask rather than the CMOR library.
+
+    It checks units, missing or non-finite values, and broad physical ranges; range excursions prompt review rather than automatically rejecting a file. Publication workflows can also run [CF and CMIP compliance checks and diagnostic plots](https://access-moppy.readthedocs.io/en/latest/howto/qc_validation.html).
