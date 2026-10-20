@@ -1,63 +1,24 @@
 # What CMIP7 data is available?
 
-## Data available on Gadi
+CMIP7 data are published internationally through the Earth System Grid Federation (ESGF). NCI Gadi holds the ACCESS Consortium's published contribution and a selected set of replicas from other modelling centres. **Finding a dataset on ESGF does not mean it has been copied to Gadi.**
 
-<!-- MODIFY: review this description -->
-NCI keeps a large collection of CMIP7 data on Gadi, including Australia's own model contributions and copies of data from modelling centres around the world. Using this data directly on Gadi means you can start your analysis without having to download or store it yourself.
+## Published internationally on ESGF
 
-??? info "Australian CMIP7 contributions"
-    ### Australian CMIP7 contributions
-    - Which Australian models are taking part (e.g. ACCESS models)
-    - Experiments and variables published so far
-    - Where to find this data on Gadi
+ESGF is a distributed archive: modelling and data centres publish datasets on nodes around the world, and ESGF indexes let you search across them. The [Climate Resource CMIP7 availability dashboard](https://www.climate-resource.com/tools/esm-model/cmip7-availability) is a quick way to see which models, experiments and variables have been published. Use [ESGF MetaGrid](https://metagrid-ceda.east.esgf.io/search) to search individual datasets and find access options. See [Find and access CMIP7 data](find-and-access-data.md#discover-published-data-worldwide) for the steps and other tools.
 
-??? info "International CMIP7 data replicated on Gadi"
-    ### International CMIP7 data replicated on Gadi
-    - Which models, experiments and variables have been copied to Gadi
-    - How data is chosen for replication
-    - How to request data that isn't on Gadi yet
+The archive is still growing. On **20 October 2026**, the Climate Resource dashboard reported about **724 TB** of CMIP7 data indexed on ESGF. This is a snapshot of data published so far, not an estimate of the eventual total. Check the live dashboard for the current size.
 
-??? info "How the data is organised on Gadi"
-    ### How the data is organised on Gadi
-    - NCI projects that hold CMIP7 data
-    - Directory structure and the CMIP Data Reference Syntax (DRS)
-    - File naming conventions
+## Available on NCI Gadi
 
-??? info "Data updates and versions"
-    - How often new data is added
-    - Dataset versions, errata and retracted data
-    - How to find out what's new
+| NCI project | What it holds | Coverage |
+| --- | --- | --- |
+| `im55` | ACCESS Consortium CMIP7 publications | The complete ACCESS Consortium submission published through NCI, under `/g/data/im55/publications`. |
+| `ib12` | Replicas of CMIP7 data from other modelling centres | A selected collection, not a complete copy of ESGF. |
 
-## Data available internationally
+The `ib12` selection is guided by ACCESS community research priorities, including the variables and output frequencies most useful to local users. Replicating the entire growing ESGF archive on Gadi is not practical. To check whether the specific model, experiment, variable, frequency and version you need are local, follow the [Gadi discovery steps](find-and-access-data.md#find-data-already-on-gadi).
 
-<!-- MODIFY: review this description -->
-CMIP7 data from all participating modelling centres is published through the Earth System Grid Federation (ESGF), a global network of data nodes. Not all of this data is copied to Gadi, so you may need to look further afield for some models, experiments or variables.
+If an international dataset is on ESGF but absent from `ib12`, you can [request additional data for Gadi](#request-additional-international-data-on-gadi) or use an [international access route](find-and-access-data.md#access-data-from-esgf).
 
-??? info "The Earth System Grid Federation (ESGF)"
-    - What ESGF is and how it works
-    - ESGF data nodes and search portals
-    - What data is published there
+## Request additional international data on Gadi
 
-??? info "Models and experiments from international centres"
-    - Participating modelling groups
-    - Experiments published so far (e.g. the CMIP7 Assessment Fast Track)
-    - Release timeline for new data
-
-??? info "Data that isn't on Gadi"
-    - How to check whether a dataset is on Gadi
-    - Downloading data from ESGF yourself
-    - Storage considerations for downloaded data
-
-??? info "Related datasets"
-    - Forcing datasets (input4MIPs)
-    - Observations for model evaluation (obs4MIPs)
-    - Earlier CMIP phases (e.g. CMIP6)
-
-
-## What ACCESS CMIP7 data will be available soon?
-
-Link to dashboard
-
-## Request new international data on NCI
-
-NCI currently replicates every dataset that is published internationally, so all of it is available locally. When the international collection grows too large to copy in full, NCI will move to a request-based system: researchers will be able to ask for specific datasets to be replicated, and a prioritisation process will decide which requests are fulfilled.
+Contact the [ACCESS-NRI data team](https://docs.access-hive.org.au/model_evaluation/data/sharing/#how-to-request-support) with a link to the ESGF dataset and the model, experiment, variable, frequency, ensemble member and version you need. Explain your research use and expected storage volume if known. Requests help inform which additional replicas are prioritised; submission does not guarantee that a dataset will be copied.
