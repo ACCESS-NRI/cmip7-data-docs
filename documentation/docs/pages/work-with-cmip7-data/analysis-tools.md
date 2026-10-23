@@ -12,8 +12,6 @@ The [Find and access CMIP7 data](../find-and-access-data/) page shows how to dis
 
     The international [CMIP REF effort](https://www.wcrp-cmip.org/cmip-phases/cmip7/rapid-evaluation-framework/) uses [REF software](https://climate-ref.readthedocs.io/) to automate evaluation: it identifies needed diagnostics, runs them through providers such as ESMValTool and ILAMB, and tracks results across models. To analyse existing results, use the [dashboard](https://dashboard.climate-ref.org/) or follow the [API notebook example](https://climate-ref.readthedocs.io/en/latest/how-to-guides/using-pre-computed-results/) and [API reference](https://api.climate-ref.org/docs). These hosted results require neither Gadi access nor a local REF installation.
 
-    **To run REF on Gadi:** REF is not part of ACCESS-NRI's [documented supported evaluation environments](https://docs.access-hive.org.au/model_evaluation/evaluation_on_gadi/). To evaluate local CMORised files yourself, set up REF separately using its [modelling-centre guide](https://climate-ref.readthedocs.io/en/latest/getting-started/modelling-centres/) and [Gadi PBS example](https://climate-ref.readthedocs.io/en/latest/how-to-guides/hpc_executor/).
-
 ## Interactive analysis in ARE JupyterLab
 
 Use `xp65` [`conda/analysis3`](https://docs.access-hive.org.au/getting_started/environments/) and join the NCI project holding your data.
