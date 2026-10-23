@@ -1,6 +1,14 @@
 # Explore and evaluate CMIP7 data
 
-Choose a workflow for what you want to do: explore local data in an Xarray notebook, browse existing evaluation plots in the hosted REF dashboard, or run a diagnostic with ESMValTool or ILAMB. The [Find and access CMIP7 data](../find-and-access-data/) page explains where to find the data on Gadi. On Gadi, the ACCESS-NRI ESMValCore and ESMValTool configuration can find CMIP7 files directly from dataset metadata; neither tool requires an Intake catalogue search first.
+Choose a workflow for what you want to do: browse existing evaluation plots in the hosted REF dashboard, explore local data in an Xarray notebook, or run a diagnostic with ESMValTool or ILAMB. The [Find and access CMIP7 data](../find-and-access-data/) page explains where to find the data on Gadi. On Gadi, the ACCESS-NRI ESMValCore and ESMValTool configuration can find CMIP7 files directly from dataset metadata; neither tool requires an Intake catalogue search first.
+
+## Browse hosted REF results
+
+??? info "Rapid Evaluation Framework (REF) — view existing CMIP7 evaluations"
+
+    The international [CMIP REF effort](https://www.wcrp-cmip.org/cmip-phases/cmip7/rapid-evaluation-framework/) runs diagnostics through providers including ESMValTool and ILAMB. To browse precomputed results, open the [CMIP7 diagnostics catalogue](https://dashboard.climate-ref.org/diagnostics?mip_era=CMIP7&view=cards), choose a diagnostic, and select its **Figures** tab. For a first example, view the [global mean near-surface air temperature figures](https://dashboard.climate-ref.org/diagnostics/esmvaltool/global-mean-timeseries/figures).
+
+    The hosted dashboard lets you inspect plots and other results without Gadi access. To use precomputed REF results in your own Python workflow, follow the [Jupyter notebook example for the REF API](https://climate-ref.readthedocs.io/en/latest/how-to-guides/using-pre-computed-results/). For local dataset exploration, use the Xarray notebook workflow below.
 
 ## Explore data in ARE JupyterLab
 
@@ -76,14 +84,6 @@ Join the NCI project holding your data and `xp65`, then start an [ARE JupyterLab
 ??? info "ACCESS-ENSO recipes — interactive ENSO diagnostics"
 
     The [ACCESS-ENSO recipes](https://github.com/ACCESS-NRI/ACCESS-ENSO-recipes) are notebooks for exploring El Niño–Southern Oscillation (ENSO) metrics with ESMValCore. Use them to inspect or adapt an ENSO diagnostic. The [ACCESS-NRI recipes guide](https://docs.access-hive.org.au/model_evaluation/evaluation_on_gadi/recipes/) explains how to run them in ARE with `conda/analysis3`.
-
-## Browse hosted REF results
-
-??? info "Rapid Evaluation Framework (REF) — view existing CMIP7 evaluations"
-
-    The international [CMIP REF effort](https://www.wcrp-cmip.org/cmip-phases/cmip7/rapid-evaluation-framework/) runs diagnostics through providers including ESMValTool and ILAMB. To browse precomputed results, open the [CMIP7 diagnostics catalogue](https://dashboard.climate-ref.org/diagnostics?mip_era=CMIP7&view=cards), choose a diagnostic, and select its **Figures** tab. For a first example, view the [global mean near-surface air temperature figures](https://dashboard.climate-ref.org/diagnostics/esmvaltool/global-mean-timeseries/figures).
-
-    The hosted dashboard lets you inspect plots and other results without Gadi access. To use precomputed REF results in your own Python workflow, follow the [Jupyter notebook example for the REF API](https://climate-ref.readthedocs.io/en/latest/how-to-guides/using-pre-computed-results/). These hosted results are separate from the Xarray dataset opened above.
 
 ## Run evaluations in Gadi PBS jobs
 
