@@ -36,7 +36,7 @@ Run ESMValTool recipes and ILAMB evaluations as PBS jobs, rather than inside ARE
 
     #### ESMValTool
 
-    [ESMValTool](https://docs.esmvaltool.org/) evaluates climate models with reusable *recipes* that select data, preprocess it and produce diagnostics. Select a recipe and set its dataset details to match the files you found. Run it as a PBS job, following the [ACCESS-NRI Gadi guide](https://docs.access-hive.org.au/model_evaluation/evaluation_on_gadi/esmvaltool_workflow/).
+    [ESMValTool](https://docs.esmvaltool.org/) evaluates climate models with reusable *recipes* that select data, preprocess it and produce diagnostics. Select a recipe and set its dataset details to match the files you found. Run it as a PBS job, following the [ACCESS-NRI guide for Using ESMValTool on Gadi](https://docs.access-hive.org.au/model_evaluation/evaluation_on_gadi/esmvaltool_workflow/).
 
 ??? info "ILAMB — land-process benchmarking"
 
