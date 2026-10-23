@@ -26,7 +26,7 @@ Use `xp65` [`conda/analysis3`](https://docs.access-hive.org.au/getting_started/e
 
     #### ACCESS-ENSO recipes
 
-    The [ACCESS-ENSO recipes](https://github.com/ACCESS-NRI/ACCESS-ENSO-recipes) are notebooks for exploring ENSO metrics with ESMValCore. Use them to inspect or adapt an ENSO diagnostic. The [ACCESS-NRI recipes guide](https://docs.access-hive.org.au/model_evaluation/evaluation_on_gadi/recipes/) explains how to run them in ARE with `conda/analysis3`.
+    The [ACCESS-ENSO recipes](https://github.com/ACCESS-NRI/ACCESS-ENSO-recipes) are notebooks for exploring El-Nino Southern Oscillation (ENSO) metrics with ESMValCore. Use them to inspect or adapt an ENSO diagnostic. The [ACCESS-NRI recipes guide](https://docs.access-hive.org.au/model_evaluation/evaluation_on_gadi/recipes/) explains how to run them in ARE with `conda/analysis3`.
 
 ## Evaluation in Gadi PBS jobs
 
