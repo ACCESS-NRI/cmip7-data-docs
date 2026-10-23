@@ -15,14 +15,14 @@ Use the catalogues to discover and load local data when the relevant CMIP7 entri
 
 ??? info "Explore indexed data in the Interactive Data Catalogue"
 
-    The [ACCESS-NRI Interactive Data Catalogue](https://access-nri.github.io/interactive-data-catalogue/#/) provides a browser interface to the ACCESS-NRI catalogue. You can explore indexed products without logging in to Gadi:
+    The [CMIP7 Australian datastore in the ACCESS-NRI Interactive Data Catalogue](https://access-nri.github.io/interactive-data-catalogue/#/datastore/cmip7_australian) provides a browser interface to indexed Australian CMIP7 products. You can explore its entries without logging in to Gadi:
 
-    1. Filter by model, experiment, variable and frequency.
-    2. Inspect the matching product and required NCI project memberships.
-    3. Narrow the selection to the files you need and copy the generated Python code.
+    1. Select **Xarray Dataset** in **Quick Start**, then filter by model, experiment, variable and frequency.
+    2. Inspect the matching products and required NCI project memberships.
+    3. Narrow the selection to the data you need and copy the generated Python code.
     4. Run the code in an [ARE JupyterLab session](https://docs.access-hive.org.au/getting_started/are/) with access to the data project and the [ACCESS-NRI `analysis3` environment](https://docs.access-hive.org.au/getting_started/environments/).
 
-    The [illustrated Interactive Catalogue guide](https://docs.access-hive.org.au/model_evaluation/data/finding/interactive_catalogue/) shows the interface. **As of October 2026, CMIP7 entries are not yet available in the Interactive Data Catalogue.** The steps above apply once they are indexed. For current CMIP7 data, use the NCI collection-level Intake-ESM datastores where available, or the path fallback below when necessary.
+    The [illustrated Interactive Catalogue guide](https://docs.access-hive.org.au/model_evaluation/data/finding/interactive_catalogue/) shows the interface. Catalogue coverage changes as data are indexed; check the matching entries for the model and version you need. For other CMIP7 data, use an available NCI collection-level Intake-ESM datastore or the path fallback below. ESMValCore and ESMValTool can also find CMIP7 files on Gadi directly from dataset metadata without an Intake search.
 
 ??? info "Find and load indexed data with Python Intake"
 
