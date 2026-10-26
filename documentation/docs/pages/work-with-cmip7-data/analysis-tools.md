@@ -1,6 +1,6 @@
 # Explore and evaluate CMIP7 data
 
-Choose a workflow for what you want to do: browse existing evaluation plots in the hosted REF dashboard, explore local data in an Xarray notebook, or run a diagnostic with ESMValTool or ILAMB. The [Find and access CMIP7 data](../find-and-access-data/) page explains where to find the data on Gadi. On Gadi, the ACCESS-NRI ESMValCore and ESMValTool configuration can find CMIP7 files directly from dataset metadata; neither tool requires an Intake catalogue search first.
+Browse existing plots in the hosted REF dashboard, work with data in a Jupyter notebook, or run a reusable evaluation with ESMValTool or ILAMB. The [Find and access CMIP7 data](../find-and-access-data/) page explains where to find the data on Gadi.
 
 ## Browse hosted REF results
 
@@ -8,17 +8,24 @@ Choose a workflow for what you want to do: browse existing evaluation plots in t
 
     The international [CMIP REF effort](https://www.wcrp-cmip.org/cmip-phases/cmip7/rapid-evaluation-framework/) runs diagnostics through providers including ESMValTool and ILAMB. To browse precomputed results, open the [CMIP7 diagnostics catalogue](https://dashboard.climate-ref.org/diagnostics?mip_era=CMIP7&view=cards), choose a diagnostic, and select its **Figures** tab. For a first example, view the [global mean near-surface air temperature figures](https://dashboard.climate-ref.org/diagnostics/esmvaltool/global-mean-timeseries/figures).
 
-    The hosted dashboard lets you inspect plots and other results without Gadi access. To use precomputed REF results in your own Python workflow, follow the [Jupyter notebook example for the REF API](https://climate-ref.readthedocs.io/en/latest/how-to-guides/using-pre-computed-results/). For local dataset exploration, use the Xarray notebook workflow below.
+    The hosted dashboard lets you inspect plots and other results without Gadi access. To use precomputed REF results in your own Python workflow, follow the [Jupyter notebook example for the REF API](https://climate-ref.readthedocs.io/en/latest/how-to-guides/using-pre-computed-results/).
 
-## Explore data in ARE JupyterLab
+## Explore data in a Jupyter notebook on Gadi
 
-Join the NCI project holding your data and `xp65`, then start an [ARE JupyterLab session](https://docs.access-hive.org.au/getting_started/are/) with [`conda/analysis3`](https://docs.access-hive.org.au/getting_started/environments/). The Australian CMIP7 datastore shown below requires `im55` and `xp65` access.
+Join `xp65` for the software and the NCI project holding your data (`im55` for the example below). When starting an [ARE JupyterLab session](https://docs.access-hive.org.au/getting_started/are/), select the [`conda/analysis3` environment](https://docs.access-hive.org.au/getting_started/environments/) to run either notebook example.
 
-??? info "Xarray — explore a dataset in a notebook"
+A Jupyter notebook is where you run Python code. Intake, Xarray, ESMValCore, and Iris are tools you can use inside it. The [Interactive Data Catalogue](https://access-nri.github.io/interactive-data-catalogue/#/datastore/cmip7_australian) can generate code for either approach:
 
-    Open the [CMIP7 Australian datastore in the Interactive Data Catalogue](https://access-nri.github.io/interactive-data-catalogue/#/datastore/cmip7_australian). In **Quick Start**, select **Xarray Dataset**, add filters, and copy the generated Python code into your ARE notebook. Narrow the search before opening data: an unfiltered catalogue search can include thousands of datasets.
+- **Intake and Xarray:** Intake finds the catalogue entries; Xarray opens the data as a *Dataset* with variables and coordinates.
+- **ESMValCore and Iris:** ESMValCore finds and prepares data; its `load()` method returns an Iris *cube*, another Python object for data and coordinates.
 
-    For example, selecting `ACCESS-ESM1-6`, `historical`, monthly `tas`, and ensemble `r1i1p1f1` generates Intake search code like this:
+Both approaches let you explore data in Jupyter. Choose the Python tools you prefer. If you plan to turn the work into a repeatable [ESMValTool recipe](#run-evaluations-in-gadi-pbs-jobs) for ensembles or multiple models, ESMValCore offers a direct path from selected datasets into a recipe.
+
+Try the [filtered catalogue example](https://access-nri.github.io/interactive-data-catalogue/#/datastore/cmip7_australian?source_id_filter=ACCESS-ESM1-6&variable_id_filter=tas&frequency_filter=mon&experiment_id_filter=historical&variant_label_filter=r1i1p1f1): `ACCESS-ESM1-6`, `historical`, monthly near-surface air temperature (`tas`), and ensemble `r1i1p1f1`. Apply the same filters for either option. Narrow the selection before loading data; this example can still match several datasets.
+
+??? info "Intake and Xarray — explore data in a Jupyter notebook"
+
+    In **Quick Start**, choose **Xarray Dataset**, then select **Copy Code**. The code generated for the example filters follows this pattern:
 
     ```python
     import intake
@@ -33,53 +40,53 @@ Join the NCI project holding your data and `xp65`, then start an [ARE JupyterLab
         frequency="mon",
         variant_label="r1i1p1f1",
     )
-    datastore.keys_info()
+    datasets = datastore.to_dataset_dict()
+    print(list(datasets))
     ```
 
-    The catalogue's **Xarray Dataset** code offers `to_dataset_dict()`. This example can still return several dataset keys, so inspect the table above and select the key for the dataset you want. Replace `<dataset key>` with one of the displayed keys:
+    `datasets` is a dictionary of Xarray Datasets. Inspect the printed keys, then replace `<dataset key>` below with the one you want to explore:
 
     ```python
-    ds = datastore["<dataset key>"].to_dask()
+    ds = datasets["<dataset key>"]
     ds["tas"].isel(time=0).plot()
     ```
 
-    `ds` is an Xarray Dataset. Start with one time step before expanding the analysis. The [Intake-ESM guide to dataset keys](https://intake-esm.readthedocs.io/en/stable/how-to/understand-keys-and-how-to-change-them.html) explains `keys_info()` and `to_dask()`; the [Xarray plotting guide](https://docs.xarray.dev/en/stable/user-guide/plotting.html) shows further plots.
+    This plots one time step. The [Xarray plotting guide](https://docs.xarray.dev/en/stable/user-guide/plotting.html) shows how to make other plots.
 
-??? info "ESMValCore — find and preprocess data in a notebook"
+??? info "ESMValCore and Iris — explore data in a Jupyter notebook"
 
-    [ESMValCore](https://docs.esmvaltool.org/projects/ESMValCore/en/latest/) provides ESMValTool's file selection and preprocessing functions. In `conda/analysis3` on Gadi, search the configured CMIP7 file collections by facets without opening Intake. For example, the [ACCESS-NRI notebook guide](https://docs.access-hive.org.au/model_evaluation/evaluation_on_gadi/esmvaltool_workflow/) uses `Dataset.from_files()`; this CMIP7 selection uses the `tas` metadata shown in the Interactive Data Catalogue:
+    In **Quick Start**, open **Alternative quick start: ESMValCore**, then select **Copy ESMValCore code**. The generated code searches for the example dataset like this:
 
     ```python
+    from itertools import islice
     from esmvalcore.dataset import Dataset
 
-    search = Dataset(
+    query = Dataset(
         project="CMIP7",
+        drs_specs="*",
+        short_name="tas",
+        branding_suffix="*",
         dataset="ACCESS-ESM1-6",
-        institute="ACCESS-Consortium",
         exp="historical",
         ensemble="r1i1p1f1",
-        grid="g115",
-        region="glb",
+        institute="*",
+        activity="*",
+        grid="*",
         frequency="mon",
-        mip="atmos",
-        short_name="tas",
-        branding_suffix="tavg-h2m-hxy-u",
+        realm="*",
+        region="*",
     )
-    matches = list(search.from_files())
-    print(matches)
+    matches = list(islice(query.from_files(), 5))
+    for match in matches:
+        print(match.facets)
+    if len(matches) == 1:
+        cube = matches[0].load()
+        print(cube)
     ```
 
-    Inspect the matches and their versions before using `.load()` to obtain Iris cubes. See the [ESMValCore CMIP7 facet mapping](https://docs.esmvaltool.org/projects/ESMValCore/en/latest/reference/facets.html) for the meaning of these fields.
+    This prints the matches and loads an Iris cube only if the search finds one dataset. The catalogue's full generated code gives clearer messages for zero or multiple matches. If you see several matches, add filters such as grid or branded variable and copy the updated code.
 
-    If your own notebook code needs Iris cubes from an Xarray dataset already opened through Intake, ESMValCore [documents a conversion helper](https://docs.esmvaltool.org/projects/ESMValCore/en/latest/api/esmvalcore.iris_helpers.html):
-
-    ```python
-    from esmvalcore.iris_helpers import dataset_to_iris
-
-    cubes = dataset_to_iris(ds[["tas"]])
-    ```
-
-    This optional conversion is for notebook code that already uses Xarray. It is not a prerequisite for ESMValCore file discovery or for running an ESMValTool recipe.
+    ESMValCore uses some different names for the catalogue's search fields; the [facet mapping](https://docs.esmvaltool.org/projects/ESMValCore/en/latest/reference/facets.html) explains them. When you are ready to build a recipe, the [Composing recipes notebook](https://docs.esmvaltool.org/projects/ESMValCore/en/latest/notebooks/composing-recipes.html) shows how to turn selected ESMValCore datasets into a recipe's dataset section. Its example uses CMIP6 and ESGF; use your CMIP7 selection and Gadi environment here.
 
 ??? info "ACCESS-ENSO recipes — interactive ENSO diagnostics"
 
@@ -87,13 +94,22 @@ Join the NCI project holding your data and `xp65`, then start an [ARE JupyterLab
 
 ## Run evaluations in Gadi PBS jobs
 
-Run ESMValTool recipes and ILAMB evaluations as PBS jobs. Both use `xp65` [`conda/analysis3`](https://docs.access-hive.org.au/getting_started/environments/) and access to the relevant NCI data projects. You can inspect their results in ARE afterward.
+Run ESMValTool recipes and ILAMB evaluations as PBS jobs with access to `xp65` and the relevant NCI data projects. Load `conda/analysis3` in your PBS script:
+
+```bash
+module use /g/data/xp65/public/modules
+module load conda/analysis3
+```
+
+You can inspect the results in ARE afterward. See the [ACCESS-NRI Gadi guide](https://docs.access-hive.org.au/model_evaluation/evaluation_on_gadi/esmvaltool_workflow/) for a complete PBS job example.
 
 ??? info "ESMValTool — reusable diagnostics"
 
-    [ESMValTool](https://docs.esmvaltool.org/) evaluates climate models with reusable *recipes* that select data, preprocess it, and produce diagnostics. The [recipes index](https://docs.esmvaltool.org/en/latest/recipes/index.html) describes available recipes and shows example plots. Recipe definitions are YAML files in [`esmvaltool/recipes/`](https://github.com/ESMValGroup/ESMValTool/tree/main/esmvaltool/recipes); the Python diagnostic scripts they call are in [`esmvaltool/diag_scripts/`](https://github.com/ESMValGroup/ESMValTool/tree/main/esmvaltool/diag_scripts).
+    An [ESMValTool](https://docs.esmvaltool.org/) *recipe* records the input datasets, preprocessing, and diagnostic to run. Starting with ESMValCore in a notebook makes it easier to carry your dataset selection into a recipe. The recipe can then apply the same method across many ensemble members or models in a PBS job. This supports repeatable, standardised analyses that others can inspect and reuse. ESMValTool is maintained by a broad community and is one of the [diagnostic providers used by REF](https://climate-ref.readthedocs.io/en/latest/diagnostics/esmvaltool/).
 
-    A recipe specifies datasets by facets, and ESMValTool finds the corresponding CMIP7 files through the Gadi configuration without Intake. For example, a dataset selection for monthly historical `tas` from ACCESS-ESM1.6 is:
+    The [recipes index](https://docs.esmvaltool.org/en/latest/recipes/index.html) describes available recipes and shows example plots. The recipe definitions are YAML files in [`esmvaltool/recipes/`](https://github.com/ESMValGroup/ESMValTool/tree/main/esmvaltool/recipes); the Python diagnostic scripts they call are in [`esmvaltool/diag_scripts/`](https://github.com/ESMValGroup/ESMValTool/tree/main/esmvaltool/diag_scripts).
+
+    For example, the notebook's monthly historical `tas` selection for ACCESS-ESM1.6 would appear in a recipe like this:
 
     ```yaml
     datasets:
