@@ -88,9 +88,11 @@ Try the [filtered catalogue example](https://access-nri.github.io/interactive-da
 
     ESMValCore uses some different names for the catalogue's search fields; the [facet mapping](https://docs.esmvaltool.org/projects/ESMValCore/en/latest/reference/facets.html) explains them. To build a recipe from notebook work, the [Composing recipes notebook](https://docs.esmvaltool.org/projects/ESMValCore/en/latest/notebooks/composing-recipes.html) shows how to turn selected ESMValCore datasets into a recipe's dataset section. Its example uses CMIP6 and ESGF; use your CMIP7 selection and Gadi environment here. You can also generate a recipe starter directly in the catalogue, as shown below.
 
-    !!! tip "Example: ACCESS-ENSO recipes"
+    !!! tip
 
-        The [ACCESS-ENSO recipes](https://github.com/ACCESS-NRI/ACCESS-ENSO-recipes) show ESMValCore in Jupyter notebooks for exploring El Niño–Southern Oscillation (ENSO) metrics. Browse them for examples of loading data and developing an ENSO diagnostic. The [ACCESS-NRI recipes guide](https://docs.access-hive.org.au/model_evaluation/evaluation_on_gadi/recipes/) explains how to run them in ARE with `conda/analysis3`.
+        **ESMValCore in practice: [ACCESS-ENSO recipes](https://github.com/ACCESS-NRI/ACCESS-ENSO-recipes)**
+
+        These Jupyter notebooks explore El Niño–Southern Oscillation (ENSO) metrics with ESMValCore. Browse them for examples of loading data and developing an ENSO diagnostic. The [ACCESS-NRI recipes guide](https://docs.access-hive.org.au/model_evaluation/evaluation_on_gadi/recipes/) explains how to run them in ARE with `conda/analysis3`.
 
 ## Run evaluations in Gadi PBS jobs
 
