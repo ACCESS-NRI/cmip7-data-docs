@@ -19,7 +19,7 @@ A Jupyter notebook is where you run Python code. Intake, Xarray, ESMValCore, and
 - **Intake and Xarray:** Intake finds the catalogue entries; Xarray opens the data as a *Dataset* with variables and coordinates.
 - **ESMValCore and Iris:** ESMValCore finds and prepares data; its `load()` method returns an Iris *cube*, another Python object for data and coordinates.
 
-Both approaches let you explore data in Jupyter. Choose the Python tools you prefer. If you plan to turn the work into a repeatable [ESMValTool recipe](#run-evaluations-in-gadi-pbs-jobs) for ensembles or multiple models, ESMValCore offers a direct path from selected datasets into a recipe.
+Both approaches let you explore data in Jupyter. Choose the Python tools you prefer. For a repeatable evaluation across ensembles or models, the catalogue can also generate an [ESMValTool recipe starter](#run-evaluations-in-gadi-pbs-jobs) from your filters. A recipe runs from a Gadi shell or PBS job; it does not need a notebook.
 
 Try the [filtered catalogue example](https://access-nri.github.io/interactive-data-catalogue/#/datastore/cmip7_australian?source_id_filter=ACCESS-ESM1-6&variable_id_filter=tas&frequency_filter=mon&experiment_id_filter=historical&variant_label_filter=r1i1p1f1): `ACCESS-ESM1-6`, `historical`, monthly near-surface air temperature (`tas`), and ensemble `r1i1p1f1`. Apply the same filters for either option. Narrow the selection before loading data; this example can still match several datasets.
 
@@ -86,7 +86,7 @@ Try the [filtered catalogue example](https://access-nri.github.io/interactive-da
 
     This prints the matches and loads an Iris cube only if the search finds one dataset. The catalogue's full generated code gives clearer messages for zero or multiple matches. If you see several matches, add filters such as grid or branded variable and copy the updated code.
 
-    ESMValCore uses some different names for the catalogue's search fields; the [facet mapping](https://docs.esmvaltool.org/projects/ESMValCore/en/latest/reference/facets.html) explains them. When you are ready to build a recipe, the [Composing recipes notebook](https://docs.esmvaltool.org/projects/ESMValCore/en/latest/notebooks/composing-recipes.html) shows how to turn selected ESMValCore datasets into a recipe's dataset section. Its example uses CMIP6 and ESGF; use your CMIP7 selection and Gadi environment here.
+    ESMValCore uses some different names for the catalogue's search fields; the [facet mapping](https://docs.esmvaltool.org/projects/ESMValCore/en/latest/reference/facets.html) explains them. To build a recipe from notebook work, the [Composing recipes notebook](https://docs.esmvaltool.org/projects/ESMValCore/en/latest/notebooks/composing-recipes.html) shows how to turn selected ESMValCore datasets into a recipe's dataset section. Its example uses CMIP6 and ESGF; use your CMIP7 selection and Gadi environment here. You can also generate a recipe starter directly in the catalogue, as shown below.
 
 ??? info "ACCESS-ENSO recipes — interactive ENSO diagnostics"
 
@@ -105,33 +105,40 @@ You can inspect the results in ARE afterward. See the [ACCESS-NRI Gadi guide](ht
 
 ??? info "ESMValTool — reusable diagnostics"
 
-    An [ESMValTool](https://docs.esmvaltool.org/) *recipe* records the input datasets, preprocessing, and diagnostic to run. Starting with ESMValCore in a notebook makes it easier to carry your dataset selection into a recipe. The recipe can then apply the same method across many ensemble members or models in a PBS job. This supports repeatable, standardised analyses that others can inspect and reuse. ESMValTool is maintained by a broad community and is one of the [diagnostic providers used by REF](https://climate-ref.readthedocs.io/en/latest/diagnostics/esmvaltool/).
+    An [ESMValTool](https://docs.esmvaltool.org/) *recipe* is a YAML file that records the input datasets, preprocessing, and any diagnostic to run. The catalogue can generate a recipe starter directly from your filters. You can then adapt it to apply the same method across many ensemble members or models in a PBS job. This supports repeatable, standardised analyses that others can inspect and reuse. ESMValTool is maintained by a broad community and is one of the [diagnostic providers used by REF](https://climate-ref.readthedocs.io/en/latest/diagnostics/esmvaltool/).
 
     The [recipes index](https://docs.esmvaltool.org/en/latest/recipes/index.html) describes available recipes and shows example plots. The recipe definitions are YAML files in [`esmvaltool/recipes/`](https://github.com/ESMValGroup/ESMValTool/tree/main/esmvaltool/recipes); the Python diagnostic scripts they call are in [`esmvaltool/diag_scripts/`](https://github.com/ESMValGroup/ESMValTool/tree/main/esmvaltool/diag_scripts).
 
-    For example, the notebook's monthly historical `tas` selection for ACCESS-ESM1.6 would appear in a recipe like this:
+    For example, open this [filtered recipe example](https://access-nri.github.io/interactive-data-catalogue/#/datastore/cmip7_australian?source_id_filter=ACCESS-ESM1-6&variable_id_filter=tas&frequency_filter=mon&experiment_id_filter=historical&variant_label_filter=r1i1p1f1&realm_filter=atmos&branded_variable_filter=tas_tavg-h2m-hxy-u&grid_label_filter=g115). It adds **Realm** `atmos`, **Branded Variable** `tas_tavg-h2m-hxy-u`, and **Grid Label** `g115` to the notebook selection above. In **Quick Start**, open **Alternative quick start: ESMValCore / ESMValTool**, choose **ESMValTool recipe (.yml)**, then select **Copy recipe (.yml)**. The generated starter for these filters is:
 
     ```yaml
+    # Save as recipe_catalogue.yml.
+    # Run: esmvaltool run --remove_preproc_dir=False recipe_catalogue.yml
+    # This starter preprocesses data only; add a diagnostic script for analysis.
+    # Review combinations when more than one value is selected in a filter.
+    # For CMIP7, mip is the selected Realm; branding_suffix comes from Branded Variable.
     datasets:
-      - project: CMIP7
-        dataset: ACCESS-ESM1-6
-        institute: ACCESS-Consortium
-        exp: historical
-        ensemble: r1i1p1f1
-        grid: g115
-        region: glb
+      - project: "CMIP7"
+        dataset: "ACCESS-ESM1-6"
+        exp: "historical"
+        ensemble: "r1i1p1f1"
+        grid: "g115"
+        frequency: "mon"
 
     diagnostics:
-      example:
+      catalogue_selection:
+        description: Preprocess CMIP data selected in the ACCESS catalogue.
         variables:
-          tas:
-            mip: atmos
-            frequency: mon
-            branding_suffix: tavg-h2m-hxy-u
-        # Add the recipe's preprocessor and diagnostic script here.
+          "tas_tavg-h2m-hxy-u":
+            short_name: "tas"
+            mip: "atmos"
+            branding_suffix: "tavg-h2m-hxy-u"
+        scripts: null
     ```
 
-    This is a selection fragment, not a complete recipe. For a CMIP7-specific full recipe, inspect [`ref/recipe_ref_ecs.yml`](https://github.com/ESMValGroup/ESMValTool/blob/main/esmvaltool/recipes/ref/recipe_ref_ecs.yml), which calculates equilibrium climate sensitivity. Replace its `DUMMY-MODEL` dataset entries and check the required experiments and time ranges before running it. In `conda/analysis3`, use `esmvaltool recipes list` to see installed recipes, `esmvaltool recipes show ref/recipe_ref_ecs.yml` to inspect one, and `esmvaltool recipes get ref/recipe_ref_ecs.yml` to copy it for editing. Follow the [ACCESS-NRI guide for using ESMValTool on Gadi](https://docs.access-hive.org.au/model_evaluation/evaluation_on_gadi/esmvaltool_workflow/) to run the adapted recipe as a PBS job.
+    Save this as `recipe_catalogue.yml`. With `scripts: null`, it preprocesses the selected data but does not calculate or plot a diagnostic. Run `esmvaltool run --remove_preproc_dir=False recipe_catalogue.yml` to keep the preprocessed output. Check any values the generator marks for replacement and any filters it says were not included. To create a full evaluation, add a diagnostic script and any needed preprocessing, or adapt an existing recipe.
+
+    For a CMIP7-specific full recipe, inspect [`ref/recipe_ref_ecs.yml`](https://github.com/ESMValGroup/ESMValTool/blob/main/esmvaltool/recipes/ref/recipe_ref_ecs.yml), which calculates equilibrium climate sensitivity. Replace its `DUMMY-MODEL` dataset entries and check the required experiments and time ranges before running it. In `conda/analysis3`, use `esmvaltool recipes list` to see installed recipes, `esmvaltool recipes show ref/recipe_ref_ecs.yml` to inspect one, and `esmvaltool recipes get ref/recipe_ref_ecs.yml` to copy it for editing. Follow the [ACCESS-NRI guide for using ESMValTool on Gadi](https://docs.access-hive.org.au/model_evaluation/evaluation_on_gadi/esmvaltool_workflow/) to run the adapted recipe as a PBS job.
 
 ??? info "ILAMB — land-process benchmarking"
 
