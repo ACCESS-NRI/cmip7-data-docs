@@ -55,7 +55,7 @@ Try the [filtered catalogue example](https://access-nri.github.io/interactive-da
 
 ??? info "ESMValCore and Iris — explore data in a Jupyter notebook"
 
-    In **Quick Start**, open **Alternative quick start: ESMValCore**, then select **Copy ESMValCore code**. The generated code searches for the example dataset like this:
+    In **Quick Start**, open **Alternative quick start: ESMValCore / ESMValTool**, choose **ESMValCore (Python)**, then select **Copy ESMValCore code**. The generated code searches for the example dataset like this:
 
     ```python
     from itertools import islice
@@ -88,9 +88,9 @@ Try the [filtered catalogue example](https://access-nri.github.io/interactive-da
 
     ESMValCore uses some different names for the catalogue's search fields; the [facet mapping](https://docs.esmvaltool.org/projects/ESMValCore/en/latest/reference/facets.html) explains them. To build a recipe from notebook work, the [Composing recipes notebook](https://docs.esmvaltool.org/projects/ESMValCore/en/latest/notebooks/composing-recipes.html) shows how to turn selected ESMValCore datasets into a recipe's dataset section. Its example uses CMIP6 and ESGF; use your CMIP7 selection and Gadi environment here. You can also generate a recipe starter directly in the catalogue, as shown below.
 
-??? info "ACCESS-ENSO recipes — interactive ENSO diagnostics"
+    !!! tip "Example: ACCESS-ENSO recipes"
 
-    The [ACCESS-ENSO recipes](https://github.com/ACCESS-NRI/ACCESS-ENSO-recipes) are notebooks for exploring El Niño–Southern Oscillation (ENSO) metrics with ESMValCore. Use them to inspect or adapt an ENSO diagnostic. The [ACCESS-NRI recipes guide](https://docs.access-hive.org.au/model_evaluation/evaluation_on_gadi/recipes/) explains how to run them in ARE with `conda/analysis3`.
+        The [ACCESS-ENSO recipes](https://github.com/ACCESS-NRI/ACCESS-ENSO-recipes) show ESMValCore in Jupyter notebooks for exploring El Niño–Southern Oscillation (ENSO) metrics. Browse them for examples of loading data and developing an ENSO diagnostic. The [ACCESS-NRI recipes guide](https://docs.access-hive.org.au/model_evaluation/evaluation_on_gadi/recipes/) explains how to run them in ARE with `conda/analysis3`.
 
 ## Run evaluations in Gadi PBS jobs
 
