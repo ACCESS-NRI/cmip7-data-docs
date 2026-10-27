@@ -328,6 +328,11 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+/* One full-width button (e.g. the main call to action on the help page) */
+.home-btn-container--single {
+  grid-template-columns: 1fr;
+}
+
 /* Extra space when buttons come straight after a dropdown */
 .md-typeset details + .home-btn-container {
   margin-top: 2.5em;
@@ -439,6 +444,44 @@
   border-color: var(--nri-orange);
   background-color: rgba(var(--nri-orange-color), 0.08);
   color: var(--md-default-fg-color);
+}
+
+/* ===============================================================
+  Help page buttons
+*/
+/* Main call to action: large, centred card */
+.md-typeset a.help-btn {
+  align-items: center;
+  text-align: center;
+  padding: 1.6rem 1.4rem;
+}
+
+.help-btn .home-btn__title {
+  margin-bottom: 0.4em;
+}
+
+.md-typeset .help-btn__note {
+  font-size: 0.85em;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--md-default-fg-color--light);
+}
+
+/* Secondary button: smaller, centred below the main card */
+.help-btn-secondary-container {
+  display: flex;
+  justify-content: center;
+  margin: -0.3em 0 2em;
+}
+
+.md-typeset a.help-btn-secondary {
+  flex-direction: column;
+  gap: 0.2em;
+  max-width: 28rem;
+  padding: 0.7rem 1.4rem;
+  text-align: center;
+  /* Spread wrapped lines evenly so a single word isn't left on its own line */
+  text-wrap: balance;
 }
 
 /* ===============================================================
