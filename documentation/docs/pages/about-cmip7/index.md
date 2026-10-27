@@ -20,11 +20,8 @@ The current phase of the project is the seventh assessment, CMIP7. It specifies 
   <a href="australia-in-cmip7/" class="home-btn home-btn--orange home-btn--title-only">
     <div class="home-btn__title">Australia's role in CMIP7</div>
   </a>
-  <a href="experiments-models-variables/" class="home-btn home-btn--orange home-btn--title-only">
-    <div class="home-btn__title">Experiments, models and variables</div>
-  </a>
-  <a href="data-standards/" class="home-btn home-btn--orange home-btn--title-only">
-    <div class="home-btn__title">CMIP7 data standards and structure</div>
+  <a href="experiments-data-standards/" class="home-btn home-btn--orange home-btn--title-only">
+    <div class="home-btn__title">CMIP7 experiments and data standards</div>
   </a>
 </div>
 
