@@ -28,8 +28,7 @@ nav:
   - About CMIP7:
     - pages/about-cmip7/index.md
     - Australia's role in CMIP7: pages/about-cmip7/australia-in-cmip7.md
-    - Experiments, models and variables: pages/about-cmip7/experiments-models-variables.md
-    - CMIP7 data standards and structure: pages/about-cmip7/data-standards.md
+    - CMIP7 experiments and data standards: pages/about-cmip7/experiments-data-standards.md
   - Get set up on NCI:
     - pages/get-set-up-nci/index.md
     - Set up an NCI account: pages/get-set-up-nci/set-up-account.md

@@ -9,15 +9,14 @@ The Coupled Model Intercomparison Project Phase 7 (CMIP7) is an international cl
     <ul class="home-btn__list">
       <li>What is CMIP7?</li>
       <li>Australia's role in CMIP7</li>
-      <li>Understand the experiments, models and variables</li>
-      <li>CMIP7 data standards and structure</li>
+      <li>CMIP7 experiments and data standards</li>
     </ul>
   </a>
   <a href="get-set-up-nci/" class="home-btn home-btn--orange">
     <div class="home-btn__title">Get set up on NCI</div>
     <div class="home-btn__note">Note: not all access methods require an NCI account.</div>
     <ul class="home-btn__list">
-      <li>Do you need an NCI account?</li>
+      <li>NCI's role in CMIP7</li>
       <li>Set up an NCI account</li>
       <li>Join CMIP7 projects</li>
       <li>Set up JupyterLab (ARE) for CMIP7</li>
@@ -26,9 +25,9 @@ The Coupled Model Intercomparison Project Phase 7 (CMIP7) is an international cl
   <a href="work-with-cmip7-data/" class="home-btn home-btn--blue">
     <div class="home-btn__title">Work with CMIP7 data</div>
     <ul class="home-btn__list">
-      <li>See what data is currently available on NCI and internationally</li>
-      <li>Find and access the data you need</li>
-      <li>Use tools to analyse the data</li>
+      <li>What CMIP7 data is available?</li>
+      <li>Find and access CMIP7 data</li>
+      <li>Explore and evaluate CMIP7 data</li>
       <li>Citing requirements and errata</li>
     </ul>
   </a>
