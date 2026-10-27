@@ -6,23 +6,17 @@ CMIP7 data is being published by modelling centres around the world, and much of
 
 ??? info "CMIP7 data published around the world"
 
-    The Climate resource dashboard gives an overview of CMIP7 data published internationally, which generally reflects what is available on the Earth System Grid Federation (ESGF).
-
-    [View the Climate resource dashboard](PLACEHOLDER_CLIMATE_RESOURCE_DASHBOARD_URL)
+    The [Climate resource dashboard](https://www.climate-resource.com/tools/esm-model/cmip7-availability) gives an overview of CMIP7 data published internationally, which generally reflects what is available on the Earth System Grid Federation (ESGF).
 
 ??? info "CMIP7 data available on NCI"
 
-    The best way to see what CMIP7 data is available locally on NCI is the ACCESS-NRI Interactive Data Catalogue, which lets you browse and search the datasets held on Gadi.
-
-    [Explore the ACCESS-NRI Interactive Data Catalogue](PLACEHOLDER_ACCESS_NRI_DATA_CATALOGUE_URL)
+    The best way to see what CMIP7 data is available locally on NCI is the [ACCESS-NRI Interactive Data Catalogue](https://access-nri.github.io/interactive-data-catalogue/#/), which lets you browse and search the datasets held on Gadi. You can access CMIP7 data directly with one of the quick links at the top of the webpage.
 
 ## What's coming next?
 
 ??? info "ACCESS model simulations"
 
-    You can follow which ACCESS models are currently being run for CMIP7 and which simulations are planned for later on the CMIP7 dashboard.
-
-    [Check ACCESS model status on the CMIP7 dashboard](PLACEHOLDER_ACCESS_CMIP7_DASHBOARD_URL)
+    You can follow which ACCESS models are currently being run for CMIP7 and which simulations are planned for later on the [ACCESS CMIP7 dashboard](https://access-nri.github.io/cmip7-dashboard/).
 
 ??? info "International data replication"
 
