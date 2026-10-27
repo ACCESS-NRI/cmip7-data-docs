@@ -447,6 +447,44 @@
 }
 
 /* ===============================================================
+  Help page buttons
+*/
+/* Main call to action: large, centred card */
+.md-typeset a.help-btn {
+  align-items: center;
+  text-align: center;
+  padding: 1.6rem 1.4rem;
+}
+
+.help-btn .home-btn__title {
+  margin-bottom: 0.4em;
+}
+
+.md-typeset .help-btn__note {
+  font-size: 0.85em;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--md-default-fg-color--light);
+}
+
+/* Secondary button: smaller, centred below the main card */
+.help-btn-secondary-container {
+  display: flex;
+  justify-content: center;
+  margin: -0.3em 0 2em;
+}
+
+.md-typeset a.help-btn-secondary {
+  flex-direction: column;
+  gap: 0.2em;
+  max-width: 28rem;
+  padding: 0.7rem 1.4rem;
+  text-align: center;
+  /* Spread wrapped lines evenly so a single word isn't left on its own line */
+  text-wrap: balance;
+}
+
+/* ===============================================================
   Main body
 */
 /* Grid */
