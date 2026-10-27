@@ -40,6 +40,7 @@ nav:
     - Find and access CMIP7 data: pages/work-with-cmip7-data/find-and-access-data.md
     - Explore and evaluate CMIP7 data: pages/work-with-cmip7-data/analysis-tools.md
     - Citing requirements and errata: pages/work-with-cmip7-data/citing-and-errata.md
+  - Need help?: pages/help.md
 
 
 # Theme configuration
