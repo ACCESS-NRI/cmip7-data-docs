@@ -1,25 +1,23 @@
 # Australia's role in CMIP7
 
-Australia has contributed to every recent phase of CMIP. Taking part means Australian science informs global climate assessments, Australian models are benchmarked against the world's best, and Australian researchers have direct access to the latest international climate model data.
+## ACCESS: Australia's National Earth System Model
 
-## Australia's contribution to the CMIP7 Assessment Fast Track
+Australia's core national Earth system modelling capability is provided by ACCESS: The Australian Community Climate and Earth System Simulator. It actually consists of several models that simulate the atmosphere, oceans, sea-ice, land, and the carbon-cycle coupled together to model the Earth system. The model has been developed over two decades in a collaboration between Australian institutions and international modelling centres that has focussed on improvements especially relevant to the Australian region, including our unique ecosystem, the carbon-cycle, and the Southern Ocean. ACCESS underpins Australia's ability to assess climate risk, and supports mitigation and adaptation planning.
+
+This project is supported with funding from the Australian Government under the [National Environmental Science Program](https://nesp2climate.com.au/about/the-hub/). **[PLACEHOLDER: text/link for ACCESS Consortium]**
+
+## ACCESS and the CMIP7 Fast Track
 
 ??? info "Australia's model: ACCESS-ESM1.6"
+    ACCESS-ESM1.6 is an Earth system model that has been developed for Australia's contribution to the CMIP7 Fast Track **[PLACEHOLDER: who did the work]**. This version includes several improvements over ACCESS-ESM1.5 used for CMIP6. Simulation of Southern Ocean circulation, sea ice, and heat uptake, which play an important role in shaping Australia's climate, have been improved by a pseudo-iceberg scheme that models how meltwater enters and is transported through the ocean. The new model introduces distinct eucalypt- and acacia-dominated vegetation types, improving simulations of water use, carbon uptake, and ecosystem responses to drought and climate change. It also includes improved land-use change processes, more realistically representing Australia's contribution to the global carbon cycle.
 
-    #### Australia's model: ACCESS-ESM1.6
+    - [Essential Model Documentation (EMD)](https://wcrp-cmip.github.io/Essential-Model-Documentation/docs/Model/?model=access-esm1-6)
+    - [Model Configurations](https://github.com/ACCESS-NRI/access-esm1.6-configs#access-esm16-model-configurations)
 
-    Australia is submitting one model to the CMIP7 Assessment Fast Track: **ACCESS-ESM1.6**, part of the Australian Community Climate and Earth System Simulator (ACCESS) family of models.
-
-    - It is an Earth system model, simulating the atmosphere, ocean, land, sea ice and carbon cycle, including Australian vegetation.
-    - It updates ACCESS-ESM1.5, one of Australia's two CMIP6 models, with improvements to land and ocean processes.
-    - ACCESS-NRI releases and supports the model so researchers can run it themselves. See the [ACCESS-ESM1.6 repository](https://github.com/ACCESS-NRI/ACCESS-ESM1.6).
-
-    Australia is running the DECK and a range of Fast Track experiments with ACCESS-ESM1.6.
+??? info "Why ACCESS-ESM1.6 is well suited to CMIP7"
+    The new model is well positioned to deliver to CMIP7, which has an increased focus on experiments driven by CO~2~ *emissions* rather than prescribed CO~2~ *concentrations*. The inclusion of the carbon-cycle in the land and ocean codes directly models processes that transport atmospheric carbon between these systems, providing a more realistic assessment of future climate for projected policy impacts such as emissions reduction pathways and net-zero targets.
 
 ??? info "Who's involved"
-
-    #### Who's involved
-
     The Australian submission is a collaboration between:
 
     - **CSIRO**: model development
@@ -30,25 +28,13 @@ Australia has contributed to every recent phase of CMIP. Taking part means Austr
 
     ACCESS-NRI and NCI are funded through the Australian Government's [National Collaborative Research Infrastructure Strategy (NCRIS)](https://www.education.gov.au/ncris).
 
-??? info "How Australian data is shared"
-
-    #### How Australian data is shared
-
-    Australian CMIP7 data is processed to the [CMIP7 data standards](data-standards.md), published at NCI and shared worldwide through ESGF. Because NCI also holds copies of key international CMIP7 data, Australian researchers can analyse Australian and international models side by side on Gadi. See [Get set up on NCI](../get-set-up-nci/index.md).
-
 ## Progress and getting involved
 
 ??? info "Progress and next steps"
-
-    #### Progress and next steps
-
     - Follow the status of Australian CMIP7 runs on the [ACCESS-NRI CMIP7 dashboard](https://access-nri.github.io/cmip7-dashboard/).
     - A newer model, **ACCESS-ESM3**, is being developed for later CMIP7 contributions, subject to funding.
 
 ??? info "Get involved"
-
-    #### Get involved
-
     - Join CMIP7 discussions on the [ACCESS-Hive Forum](https://forum.access-hive.org.au/).
     - Connect with others through the [ACCESS community working groups](https://www.access-nri.org.au/working-groups/).
 
