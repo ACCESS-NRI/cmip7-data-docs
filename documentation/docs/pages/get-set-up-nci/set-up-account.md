@@ -1,26 +1,47 @@
 # Set up an NCI account
 
-To work with CMIP7 data on Gadi, you need three things:
+To work with CMIP7 data **locally** on the **National Computational Infrastructure (NCI)**, you will need:
 
 1. **An NCI user account**
-2. **A compute project** with service units (SUs), for logging in, running analysis and storing your outputs
-3. **Membership of the CMIP7 data projects**, which give you read access to the data
+2. **Membership of a compute project**, which provides access to computing resources, storage and service units (SUs)
+3. **Membership of the CMIP7 data projects**, which provides access to CMIP7 datasets
 
-This page covers the first two. For the third, see [Join CMIP7 projects](join-projects.md).
+This page covers setting up an NCI account and joining a compute project. Information on CMIP7 data-project membership is provided on the [Join CMIP7 projects](join-projects.md) page.
 
 ## 1. NCI user account
-??? info "Create your account"
-    ### Create your account
-    If you don't already have an NCI account, see the [Set up your NCI account](https://docs.access-hive.org.au/getting_started/set_up_nci_account/) guide on the ACCESS-Hive Docs. You'll need an email address from an eligible Australian institution.
 
-??? info "Log into Gadi"
-    ### Log into Gadi
-    Once your account is set up, you can [log in to Gadi via SSH](https://opus.nci.org.au). Most CMIP7 users won't need to, though: see [Set up JupyterLab for CMIP7](set-up-jupyterlab.md) for working in your browser instead.
+??? info "Create an NCI user account"
+    If you are an Australian researcher and do not have an [NCI account](https://opus.nci.org.au/display/Help/How+to+create+an+NCI+user+account), [sign up here](https://my.nci.org.au/mancini/signup/0). For detailed instructions and troubleshooting advice, see [Setting up your NCI account](https://opus.nci.org.au/spaces/Help/pages/26282120/Setting+up+your+NCI+Account).
 
-## 2. Compute projects
+## 2. Compute project
+
 ??? info "Get access to an NCI compute project"
-    CMIP7 data on NCI doesn't come with a compute allocation, so you'll need to use your own. Most researchers join an existing project through their supervisor or research group, or via their institution's NCI scheme manager. If you need a larger allocation, see NCI's guidance on [access schemes](https://www.nci.org.au/users/how-access-nci#AccessSchemes), including the National Computational Merit Allocation Scheme (NCMAS) and the Adapter Allocation Scheme.
+    In order to access data locally at NCI's high-performance computer, you must be a member of an NCI compute project that provides access to computing resources, storage, and service units (SUs). Most researchers access these resources by joining an existing project through their supervisor, research group, institution, or NCI Scheme Manager. 
+    
+    If your research requires additional computing resources, you can apply for an allocation through one of NCI's access schemes, including the **National Computational Merit Allocation Scheme (NCMAS)** and the **Adapter Allocation Scheme**. For information on available allocation schemes and application processes, see NCI's [**Access Schemes**](https://www.nci.org.au/users/how-access-nci#AccessSchemes) page.
+
+## Access NCI systems
+
+Once your account is active, you can access NCI resources either through:
+
+- [SSH access to Gadi](https://opus.nci.org.au/spaces/Help/pages/230491359/Connecting+to+Gadi), for command-line use and batch computing.
+- The [Australian Research Environment (ARE)](https://are.nci.org.au), NCI's web-based research platform.
+
+For most CMIP7 users, **ARE's JupyterLab** is the recommended way to get started (see [Set up JupyterLab (ARE) for CMIP7](set-up-jupyterlab.md) and [Work with CMIP7 data](../work-with-cmip7-data/index.md) for more info).
+
+??? info "More about the ARE"
+    ARE provides browser-based access to NCI's computing and data resources through applications such as:
+
+    - **JupyterLab** for interactive analysis
+    - **Virtual Desktop** for graphical workflows
+    - **Terminal** for command-line access
+
+    Through ARE, you can work with CMIP7 data on Gadi without installing specialised software or establishing an SSH connection.
+
+    
+Additional guidance on using NCI systems and services can be found in [NCI's user documentation](https://opus.nci.org.au/spaces/Help/overview).
 
 ## Not eligible for an NCI account?
+
 ??? info "There are other ways to access CMIP7 data"
-    See [Find and access CMIP7 data](../work-with-cmip7-data/find-and-access-data.md) for options that work without one.
+    See [Find and access CMIP7 data](../work-with-cmip7-data/find-and-access-data.md) for options that work without an NCI account.
