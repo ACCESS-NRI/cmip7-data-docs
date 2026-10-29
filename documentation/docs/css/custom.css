@@ -436,7 +436,7 @@
   margin-top: -0.3em;
 }
 
-.md-typeset a.home-btn-small {
+.md-typeset .home-btn-small {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -454,6 +454,13 @@
   border-color: var(--nri-orange);
   background-color: rgba(var(--nri-orange-color), 0.08);
   color: var(--md-default-fg-color);
+}
+
+/* Not-yet-available button (no link), e.g. "coming soon" pages */
+.md-typeset .home-btn-small--disabled {
+  border-style: dashed;
+  color: var(--md-default-fg-color--light);
+  cursor: default;
 }
 
 /* ===============================================================

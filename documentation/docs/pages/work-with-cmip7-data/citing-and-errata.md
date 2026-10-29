@@ -12,7 +12,7 @@
 ## Errata
 
 ??? info "Find and report CMIP7 errata"
-    CMIP errata are now managed via the [ESGF Errata Service](http://errata.esgf.io/). This includes the functionality to:
+    CMIP errata are now managed via the [ESGF Errata Service](https://errata.esgf.io/). This includes the functionality to:
 
     - [search CMIP errata](https://errata.esgf.io/static/index.html) by project, experiment, or variable; and
     - report [suspected issues/errata](https://errata.esgf.io/static/edit.html).

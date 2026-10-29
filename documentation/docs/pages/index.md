@@ -37,11 +37,10 @@ The Coupled Model Intercomparison Project Phase 7 (CMIP7) is an international cl
 </div>
 
 <div class="home-btn-container home-btn-container--small">
-  <!-- MODIFY: replace "#" with the link to the "Publishing CMIP7 data" page -->
-  <a href="#" class="home-btn-small">
+  <div class="home-btn-small home-btn-small--disabled">
     <i class="fa-solid fa-upload"></i>
-    Publishing CMIP7 data (coming soon)
-  </a>
+    For data producers: Publish CMIP7 data to ESGF (coming soon)
+  </div>
   <a href="help/" class="home-btn-small">
     <i class="fa-solid fa-circle-question"></i>
     Need help?
