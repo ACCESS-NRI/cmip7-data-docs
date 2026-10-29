@@ -8,12 +8,11 @@ CMIP7 data for the Australian community can be accessed in two places:
 This page helps you choose the right way to find and access the data you need, and points you to the guides for each option.
 
 !!! info "Most CMIP7 data is currently being replicated to NCI"
-    For now, all published monthly CMIP7 data is being replicated to NCI, so the data you need is likely available on NCI (as well as globally through ESGF). See [What CMIP7 data is available?](data-available.md) for the latest status.
+    For now, all published monthly CMIP7 data is being replicated to NCI, so the data you need is likely available on NCI. See [What CMIP7 data is available?](data-available.md) for the latest status.
 
 ??? tip "If you have access to NCI, start with data held there"
-    - Search available data in the [Interactive Data Catalogue](#access-nri-interactive-data-catalogue). Be sure to include search terms specific to CMIP7.
+    - Search available data in the [Interactive Data Catalogue](#access-nri-interactive-data-catalogue). Use the quick links at the top of the page to search for CMIP7-related datasets.
     - Be sure to [join the relevant projects](../get-set-up-nci/join-projects.md).
-    - Can't find the data you need? See [What CMIP7 data is available?](data-available.md), [search ESGF](#the-global-archive-of-cmip7-data-esgf) or [request that the data be replicated](data-available.md#request-additional-international-data-on-gadi).
 
 ## Which option is right for me?
 
@@ -52,11 +51,11 @@ If you have or are eligible for an NCI account, we recommend using NCI's Gadi to
 
     #### ACCESS-NRI Interactive Data Catalogue
 
+    [<i class="fa-solid fa-magnifying-glass"></i> Open the Interactive Data Catalogue](https://access-nri.github.io/interactive-data-catalogue/){ .home-btn-small .home-btn-small--inline }
+
     The ACCESS-NRI Interactive Data Catalogue is the recommended way to find CMIP7 data on Gadi. This web-based catalogue runs in your browser and lets you filter the data by model, experiment, variable, frequency, and several other options. Once you've found what you need, it gives you ready-to-run Python code to load it: paste the code into an [ARE JupyterLab session](../get-set-up-nci/set-up-jupyterlab.md) (with the correct projects in the storage field) and you're ready to analyse!
 
     Anyone can browse the catalogue, but running the code needs an NCI account and project membership.
-
-    [Open the Interactive Data Catalogue](https://access-nri.github.io/interactive-data-catalogue/){ .md-button .md-button--primary }
 
     !!! note
         The Interactive Data Catalogue is a community resource. If something doesn't work or you have any other feedback, click the green *Give us feedback* button at the top of the page.
@@ -99,7 +98,7 @@ If you have or are eligible for an NCI account, we recommend using NCI's Gadi to
     If a dataset isn't on Gadi, you can download it from ESGF into your own project's storage by running the [ESGF Python tools](#esgf-python-tools) on Gadi. Check your storage quota first.
 
     !!! tip "Check if data is available on NCI before downloading from ESGF!"
-        If you work on Gadi, check whether the exact model, experiment, variable, frequency and version you need are already available on NCI (e.g. via the [Interactive Data Catalogue](#access-nri-interactive-data-catalogue)) before downloading from ESGF. Broad CMIP7 selections can involve very large transfers and duplicate data that are already available locally. If there is no local copy, download only the files you need or [request a replica](data-available.md#request-additional-international-data-on-gadi).
+        If you work on Gadi, check whether the exact model, experiment, variable, frequency and version you need are already available on NCI (e.g. via the [Interactive Data Catalogue](#access-nri-interactive-data-catalogue)) before downloading from ESGF. Broad CMIP7 selections can involve very large transfers and duplicate data that are already available locally. If there is no local copy, request that the data be replicated to NCI (note: this option is not available yet) or download only the files you need.
 
 ## Without an NCI account or to work on platforms other than NCI
 
@@ -111,17 +110,18 @@ The Earth System Grid Federation is the international network of data centres th
 
     #### ESGF MetaGrid
 
-    ESGF's web interface for searching the global archive and downloading files through your browser. Best for browsing and for downloading small amounts of data.
+    [<i class="fa-solid fa-magnifying-glass"></i> Open MetaGrid](https://esgf.nci.org.au/search){ .home-btn-small .home-btn-small--inline }
 
-    <!-- TODO: add the current CMIP7 MetaGrid link as a button, e.g.
-    [Open MetaGrid](URL){ .md-button .md-button--primary }
-    -->
+    ESGF's web interface for searching the global archive and downloading files through your browser. Best for browsing and for downloading small amounts of data. More details about accessing the CMIP7 global data archive on the [CMIP7 Guidance for Data Users](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_users/#1-accessing-cmip7-data).
 
-??? info "ESGF Python tools"
+    
+    
 
-    #### ESGF Python tools
+??? info "Other ways to access CMIP7 data without an NCI account"
 
-    For large or repeatable downloads, Python tools such as [intake-esgf](https://intake-esgf.readthedocs.io/), esgpull<!-- TODO: add esgpull link --> and [ESMValTool](https://docs.esmvaltool.org/) let you script your search and download. See the [WCRP guidance](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_users/) for which versions currently support CMIP7.
+    #### Python tools and other platforms
+
+    A list of other CMIP7 data access methods via ESGF, including some Python tools, can be found on the [CMIP7 Guidance for Data Users](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_users/#1-accessing-cmip7-data).
 
 ### Download ACCESS model CMIP7 data directly from NCI
 
@@ -134,7 +134,7 @@ In addition to downloading straight from ESGF, you can download ACCESS model CMI
     NCI's web data server. You can download individual files, or use OPeNDAP to read just the part of a file you need (for example a region or time period) straight into Python. Best for small amounts of data.
 
     <!-- TODO: add the CMIP7 THREDDS catalogue link as a button, e.g.
-    [Open the CMIP7 THREDDS catalogue](URL){ .md-button .md-button--primary }
+    [<i class="fa-solid fa-magnifying-glass"></i> Open the CMIP7 THREDDS catalogue](URL){ .home-btn-small .home-btn-small--inline }
     -->
 
 ## Next steps

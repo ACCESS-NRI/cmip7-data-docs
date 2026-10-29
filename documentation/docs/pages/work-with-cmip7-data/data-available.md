@@ -6,7 +6,7 @@ CMIP7 data is being published by modelling centres around the world, and much of
 
 ??? info "CMIP7 data published around the world"
 
-    The [Climate resource dashboard](https://www.climate-resource.com/tools/esm-model/cmip7-availability) gives an overview of CMIP7 data published internationally, which generally reflects what is available on the Earth System Grid Federation (ESGF).
+    The [Climate resource dashboard](https://www.climate-resource.com/tools/esm-model/cmip7-availability) gives an overview of CMIP7 data publication progress: it tracks how much of the requested data each modelling centre has published to ESGF so far, by model and experiment. It's a status summary, not a tool for searching or downloading data.
 
 ??? info "CMIP7 data available on NCI"
 

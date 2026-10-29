@@ -1,7 +1,7 @@
 <!-- # MODIFY -->
 # CMIP7 Data in Australia
 
-The Coupled Model Intercomparison Project Phase 7 (CMIP7) is an international climate modelling initiative that brings together simulations from modelling centres around the world to support climate research, projections and assessment. This site is a guide to CMIP7 data in Australia: what is CMIP7, Australia's contribution, and how to find, access and analyse CMIP7 data on NCI's Gadi supercomputer.
+The Coupled Model Intercomparison Project Phase 7 (CMIP7) is an international climate modelling initiative that brings together simulations from modelling centres around the world to support climate research, projections and assessment. This site is a guide to CMIP7 data for the Australian community: what is CMIP7, Australia's contribution, and how to find, access and analyse Australian and international CMIP7 data on NCI's Gadi supercomputer.
 
 <div class="home-btn-container">
   <a href="about-cmip7/" class="home-btn home-btn--orange">
@@ -14,7 +14,10 @@ The Coupled Model Intercomparison Project Phase 7 (CMIP7) is an international cl
   </a>
   <a href="get-set-up-nci/" class="home-btn home-btn--orange">
     <div class="home-btn__title">Get set up on NCI</div>
-    <div class="home-btn__note">Note: not all access methods require an NCI account.</div>
+    <div class="home-btn__note">
+      <div><i class="fa-solid fa-database"></i> A lot of CMIP7 data is available on NCI.</div>
+      <div><i class="fa-solid fa-unlock"></i> You don't need an NCI account for every access method.</div>
+</div>
     <ul class="home-btn__list">
       <li>NCI's role in CMIP7</li>
       <li>Set up an NCI account</li>
@@ -34,11 +37,10 @@ The Coupled Model Intercomparison Project Phase 7 (CMIP7) is an international cl
 </div>
 
 <div class="home-btn-container home-btn-container--small">
-  <!-- MODIFY: replace "#" with the link to the "Publishing CMIP7 data" page -->
-  <a href="#" class="home-btn-small">
+  <div class="home-btn-small home-btn-small--disabled">
     <i class="fa-solid fa-upload"></i>
-    Publishing CMIP7 data (coming soon)
-  </a>
+    For data producers: Publish CMIP7 data to ESGF (coming soon)
+  </div>
   <a href="help/" class="home-btn-small">
     <i class="fa-solid fa-circle-question"></i>
     Need help?

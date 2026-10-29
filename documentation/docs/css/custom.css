@@ -394,10 +394,20 @@
 /* Short note between the title and the list (e.g. who the card is for) */
 .home-btn__note {
   font-size: 0.85em;
-  font-style: italic;
   line-height: 1.4;
-  color: var(--md-default-fg-color--light);
+  color: var(--md-default-fg-color);
+  background-color: rgba(var(--home-btn-color-rgb), 0.1);
+  border-left: 0.2rem solid var(--home-btn-color);
+  border-radius: 0.3rem;
+  padding: 0.5em 0.7em;
   margin: -0.2em 0 0.8em;
+}
+.home-btn__note i {
+  width: 1.2em;
+  color: var(--home-btn-color);
+}
+.home-btn__note div + div {
+  margin-top: 0.25em;
 }
 
 .md-typeset .home-btn__list {
@@ -426,7 +436,7 @@
   margin-top: -0.3em;
 }
 
-.md-typeset a.home-btn-small {
+.md-typeset .home-btn-small {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -444,6 +454,18 @@
   border-color: var(--nri-orange);
   background-color: rgba(var(--nri-orange-color), 0.08);
   color: var(--md-default-fg-color);
+}
+
+/* Small button sized to its text, for use within page content (e.g. "Open ..." links in dropdowns) */
+.md-typeset a.home-btn-small--inline {
+  display: inline-flex;
+}
+
+/* Not-yet-available button (no link), e.g. "coming soon" pages */
+.md-typeset .home-btn-small--disabled {
+  border-style: dashed;
+  color: var(--md-default-fg-color--light);
+  cursor: default;
 }
 
 /* ===============================================================
