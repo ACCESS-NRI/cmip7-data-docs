@@ -51,7 +51,7 @@ If you have or are eligible for an NCI account, we recommend using NCI's Gadi to
 
     #### ACCESS-NRI Interactive Data Catalogue
 
-    [Open the Interactive Data Catalogue](https://access-nri.github.io/interactive-data-catalogue/){ .md-button .md-button--primary }
+    [<i class="fa-solid fa-magnifying-glass"></i> Open the Interactive Data Catalogue](https://access-nri.github.io/interactive-data-catalogue/){ .home-btn-small .home-btn-small--inline }
 
     The ACCESS-NRI Interactive Data Catalogue is the recommended way to find CMIP7 data on Gadi. This web-based catalogue runs in your browser and lets you filter the data by model, experiment, variable, frequency, and several other options. Once you've found what you need, it gives you ready-to-run Python code to load it: paste the code into an [ARE JupyterLab session](../get-set-up-nci/set-up-jupyterlab.md) (with the correct projects in the storage field) and you're ready to analyse!
 
@@ -110,11 +110,12 @@ The Earth System Grid Federation is the international network of data centres th
 
     #### ESGF MetaGrid
 
+    [<i class="fa-solid fa-magnifying-glass"></i> Open MetaGrid](https://esgf.nci.org.au/search){ .home-btn-small .home-btn-small--inline }
+
     ESGF's web interface for searching the global archive and downloading files through your browser. Best for browsing and for downloading small amounts of data. More details about accessing the CMIP7 global data archive on the [CMIP7 Guidance for Data Users](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_users/#1-accessing-cmip7-data).
 
-    <!-- TODO: add the current CMIP7 MetaGrid link as a button, e.g.
-    [Open MetaGrid](URL){ .md-button .md-button--primary }
-    -->
+    
+    
 
 ??? info "Other ways to access CMIP7 data without an NCI account"
 
@@ -133,7 +134,7 @@ In addition to downloading straight from ESGF, you can download ACCESS model CMI
     NCI's web data server. You can download individual files, or use OPeNDAP to read just the part of a file you need (for example a region or time period) straight into Python. Best for small amounts of data.
 
     <!-- TODO: add the CMIP7 THREDDS catalogue link as a button, e.g.
-    [Open the CMIP7 THREDDS catalogue](URL){ .md-button .md-button--primary }
+    [<i class="fa-solid fa-magnifying-glass"></i> Open the CMIP7 THREDDS catalogue](URL){ .home-btn-small .home-btn-small--inline }
     -->
 
 ## Next steps

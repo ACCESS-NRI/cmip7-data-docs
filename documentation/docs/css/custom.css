@@ -456,6 +456,11 @@
   color: var(--md-default-fg-color);
 }
 
+/* Small button sized to its text, for use within page content (e.g. "Open ..." links in dropdowns) */
+.md-typeset a.home-btn-small--inline {
+  display: inline-flex;
+}
+
 /* Not-yet-available button (no link), e.g. "coming soon" pages */
 .md-typeset .home-btn-small--disabled {
   border-style: dashed;
