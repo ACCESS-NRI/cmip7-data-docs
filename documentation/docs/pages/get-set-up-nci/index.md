@@ -5,7 +5,7 @@ Most Australian researchers access and analyse CMIP7 data through the **National
 ??? warning "Do you need an NCI account?"
     There are ways to search and access CMIP7 data with and without an NCI account. If you're eligible, we recommend working with CMIP7 data directly on NCI. If you're not, you can still access CMIP7 data through alternate methods. See the options on the [Find and access CMIP7 data](../work-with-cmip7-data/find-and-access-data.md) for more details.
 
-    **Who is eligible for an NCI account?** NCI accounts are intended for Australian-based researchers and staff at universities, government science agencies and other NCI collaborators. If you’re not sure if you’re eligible, talk with your employer or [send an enquiry to help@nci.org.au](mailto:help@nci.org.au).
+    **Who is eligible for an NCI account?** NCI accounts are intended for Australian-based researchers and staff at universities, government science agencies and other NCI collaborators. If you’re not sure if you’re eligible, talk with your employer or [send an enquiry to help&#64;nci.org.au](mailto:help@nci.org.au).
 
 ## Why work with CMIP7 data on NCI?
 

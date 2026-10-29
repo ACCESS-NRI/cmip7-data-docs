@@ -21,3 +21,8 @@ CMIP7 data is being published by modelling centres around the world, and much of
 ??? info "International data replication"
 
     All monthly CMIP7 data is currently being replicated to NCI. Broader replication priorities are still being decided, and we will consult with the research community before they are finalised. We are not taking requests for specific datasets at this time; more details on this will be shared soon.
+
+<div class="page-nav-btns">
+  <a href="../" class="home-btn-small page-nav-btn--prev"><i class="fa-solid fa-arrow-left"></i> Previous: Work with CMIP7 data</a>
+  <a href="../find-and-access-data/" class="home-btn-small page-nav-btn--next">Next: Find and access CMIP7 data <i class="fa-solid fa-arrow-right"></i></a>
+</div>

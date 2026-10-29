@@ -145,3 +145,8 @@ You can inspect the results in ARE afterward. See the [ACCESS-NRI Gadi guide](ht
 ??? info "ILAMB — land-process benchmarking"
 
     [ILAMB](https://www.ilamb.org/) compares modelled land processes with observations and produces scores and plots, including for the carbon and water cycles. Use it for land-model benchmarking. Run it as a PBS job, following the [ACCESS-NRI ILAMB workflow](https://docs.access-hive.org.au/model_evaluation/evaluation_on_gadi/ilamb_workflow/) and [PBS example](https://ilamb-workflow.readthedocs.io/en/latest/source/ILAMB.html#submitting-a-pbs-job).
+
+<div class="page-nav-btns">
+  <a href="../find-and-access-data/" class="home-btn-small page-nav-btn--prev"><i class="fa-solid fa-arrow-left"></i> Previous: Find and access CMIP7 data</a>
+  <a href="../citing-and-errata/" class="home-btn-small page-nav-btn--next">Next: Citing requirements and errata <i class="fa-solid fa-arrow-right"></i></a>
+</div>

@@ -22,3 +22,7 @@
     Project members will receive email announcements regarding relevant errata when they occur.
 
     Data held by NCI will have errata notifications on the [Errata and Known Issues](https://opus.nci.org.au/spaces/CMIP/pages/288227530/Errata+and+Known+Issues+for+CORDEX-CMIP6+and+Regional+Downscaling) page.
+
+<div class="page-nav-btns">
+  <a href="../analysis-tools/" class="home-btn-small page-nav-btn--prev"><i class="fa-solid fa-arrow-left"></i> Previous: Explore and evaluate CMIP7 data</a>
+</div>

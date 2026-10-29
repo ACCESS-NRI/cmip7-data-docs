@@ -461,6 +461,19 @@
   display: inline-flex;
 }
 
+/* Previous/Next buttons at the bottom of a page */
+.page-nav-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin-top: 3em;
+}
+
+.md-typeset a.page-nav-btn--next {
+  margin-left: auto;
+}
+
 /* Not-yet-available button (no link), e.g. "coming soon" pages */
 .md-typeset .home-btn-small--disabled {
   border-style: dashed;

@@ -19,17 +19,36 @@ This page helps you choose the right way to find and access the data you need, a
 ??? info "Compare the options"
 
     ```mermaid
+    %%{init: {'themeVariables': {'fontSize': '24px'}}}%%
     flowchart TD
-        A[Do you have an NCI account?] -->|Yes| B[Is your data on Gadi?]
-        A -->|No| C[Is your data on Gadi?]
-        B -->|Yes| D[Find: Interactive Data Catalogue - start here]
-        B -->|No| E[ESGF Python tools, run on Gadi]
-        D --> F[Do you work in Python?]
-        F -->|Yes| G[Access: run the generated code in ARE JupyterLab, or use the Intake catalogue]
-        F -->|No: shell scripts or batch jobs| H[Access: Gadi file paths]
-        C -->|Yes, small amounts| I[NCI THREDDS]
-        C -->|No, not sure, or large amounts| J[ESGF MetaGrid or Python tools]
+        A{Do you have an NCI account<br/>and want to work on Gadi?}
+        A -->|Yes| B[["<b>Interactive Data Catalogue</b>"]]
+        A -->|No, or working on another platform| C[["<b>ESGF MetaGrid</b>"]]
+
+        B --> D{Is your data on Gadi?}
+        D -->|Yes| E{How do you work?}
+        E -->|Python| F[Copy the code from the Interactive Catalogue and paste into an ARE JupyterLab,<br/>or use the Intake catalogue]
+        E -->|Shell scripts or batch jobs| G[Use Gadi file paths]
+        D -->|No| H[Download only what you need from ESGF<br/>with Python tools, run on Gadi]
+
+        C --> I{What do you need?}
+        I -->|Browse and small downloads| J[Download directly in MetaGrid]
+        I -->|Large or scripted downloads| K[ESGF Python tools]
+        I -->|Small amounts of ACCESS model data| L[NCI THREDDS]
+
+        classDef start stroke-width:3px,font-weight:bold
+        class B,C start
+
+        click B "https://access-nri.github.io/interactive-data-catalogue/" "Open the Interactive Data Catalogue" _blank
+        click C "https://esgf.nci.org.au/search" "Open ESGF MetaGrid" _blank
+        click F "#access-nri-intake-catalogue" "Intake catalogue section"
+        click G "#advanced-fallback-nci-file-system" "Gadi file paths section"
+        click H "#cant-find-the-cmip7-data-you-want-on-nci" "Downloading missing data from ESGF"
+        click K "#python-tools-and-other-platforms" "ESGF Python tools section"
+        click L "#nci-thredds" "NCI THREDDS section"
     ```
+
+    **Start here:** [Interactive Data Catalogue](https://access-nri.github.io/interactive-data-catalogue/) if you work on NCI · [ESGF MetaGrid](https://esgf.nci.org.au/search) if you don't have an NCI account
 
     | Option | Find or access? | NCI account needed? |
     |---|---|---|
@@ -137,6 +156,7 @@ In addition to downloading straight from ESGF, you can download ACCESS model CMI
     [<i class="fa-solid fa-magnifying-glass"></i> Open the CMIP7 THREDDS catalogue](URL){ .home-btn-small .home-btn-small--inline }
     -->
 
-## Next steps
-
-Once you have the data, see [Tools to analyse CMIP7 data](analysis-tools.md).
+<div class="page-nav-btns">
+  <a href="../data-available/" class="home-btn-small page-nav-btn--prev"><i class="fa-solid fa-arrow-left"></i> Previous: What CMIP7 data is available?</a>
+  <a href="../analysis-tools/" class="home-btn-small page-nav-btn--next">Next: Explore and evaluate CMIP7 data <i class="fa-solid fa-arrow-right"></i></a>
+</div>
