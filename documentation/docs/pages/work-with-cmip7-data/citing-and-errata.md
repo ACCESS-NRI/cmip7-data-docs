@@ -5,7 +5,7 @@
 ??? info "How to cite CMIP7 data"
     Citation and terms of use of CMIP data is very important to enable modelling groups and funders to track and demonstrate impact. You are required to cite and acknowledge all CMIP data. All data published through ESGF will have a DOI created and a preferred citation. For each model whose data is used, please include a citation in the form of:
 
-    > Authors/Data Creators (publication year): Title. Earth System Grid Federation. DOI.
+    > Authors/Data Creators (publication year): Title. Science and Technology Facilities Council. DOI.
 
     Detailed guidance can be found at [CMIP7 Guidance for users](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_users/).
 
