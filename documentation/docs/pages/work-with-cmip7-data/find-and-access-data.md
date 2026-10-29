@@ -1,3 +1,7 @@
+---
+page_nav: true
+---
+
 # Find and access CMIP7 data
 
 CMIP7 data for the Australian community can be accessed in two places:
@@ -155,8 +159,3 @@ In addition to downloading straight from ESGF, you can download ACCESS model CMI
     <!-- TODO: add the CMIP7 THREDDS catalogue link as a button, e.g.
     [<i class="fa-solid fa-magnifying-glass"></i> Open the CMIP7 THREDDS catalogue](URL){ .home-btn-small .home-btn-small--inline }
     -->
-
-<div class="page-nav-btns">
-  <a href="../data-available/" class="home-btn-small page-nav-btn--prev"><i class="fa-solid fa-arrow-left"></i> Previous: What CMIP7 data is available?</a>
-  <a href="../analysis-tools/" class="home-btn-small page-nav-btn--next">Next: Explore and evaluate CMIP7 data <i class="fa-solid fa-arrow-right"></i></a>
-</div>

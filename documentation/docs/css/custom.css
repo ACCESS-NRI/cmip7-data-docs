@@ -464,14 +464,38 @@
 /* Previous/Next buttons at the bottom of a page */
 .page-nav-btns {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: stretch; /* Both buttons take the height of the taller one */
   gap: 0.8rem;
   margin-top: 3em;
 }
 
+/* Long titles wrap inside the button rather than pushing it onto a new line */
+.md-typeset .page-nav-btns .home-btn-small {
+  flex: 0 1 auto;
+  max-width: calc(50% - 0.4rem);
+}
+
+.md-typeset a.page-nav-btn--prev {
+  justify-content: flex-start;
+  text-align: left;
+}
+
 .md-typeset a.page-nav-btn--next {
-  margin-left: auto;
+  margin-left: auto; /* Stays on the right when it's the only button */
+  justify-content: flex-end;
+  text-align: right;
+}
+
+/* Stack the buttons on phone-sized screens */
+@media screen and (max-width: 44.9844em) {
+  .page-nav-btns {
+    flex-direction: column;
+  }
+
+  .md-typeset .page-nav-btns .home-btn-small {
+    max-width: none;
+  }
 }
 
 /* Not-yet-available button (no link), e.g. "coming soon" pages */

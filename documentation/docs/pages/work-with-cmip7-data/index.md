@@ -1,3 +1,7 @@
+---
+page_nav: false
+---
+
 # Work with CMIP7 data
 
 # Work with CMIP7 data
@@ -20,8 +24,4 @@ This section helps you go from knowing what CMIP7 data exists to using it in you
   <a href="citing-and-errata/" class="home-btn home-btn--blue home-btn--title-only">
     <div class="home-btn__title">Citing requirements and errata</div>
   </a>
-</div>
-
-<div class="page-nav-btns">
-  <a href="data-available/" class="home-btn-small page-nav-btn--next">Next: What CMIP7 data is available? <i class="fa-solid fa-arrow-right"></i></a>
 </div>
