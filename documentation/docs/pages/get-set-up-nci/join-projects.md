@@ -1,6 +1,6 @@
 # Join CMIP7 projects
 
-On NCI, access to data and software is managed through projects. You need to join a project before you can read the data or use the software it holds. Each project has a short code, such as `xp65`.
+On NCI, access to data and software is managed through projects. You need to join a project before you can read the data or use the software it holds. Each project has a short code.
 
 !!! tip "Reminder"
     You will need a [project that has compute allocation](set-up-account.md#2-compute-project) in addition to data and software projects.
@@ -18,7 +18,7 @@ On NCI, access to data and software is managed through projects. You need to joi
     | Project | What it gives you |
     |---|---|
     | `ib12` | CMIP7 data from international modelling centres, replicated to NCI ([Earth System Grid Federation (ESGF) Replicated CMIP7 Datasets](https://doi.org/10.25914/rrm3-9q53)) |
-    | `im55` | CMIP7 data published by Australian modelling groups, including ACCESS models ([Earth System Grid Federation (ESGF) Australian CMIP7 Datasets](https://doi.org/10.25914/vftb-n215)) |
+    | `im55` | CMIP7 ACCESS model data ([Earth System Grid Federation (ESGF) Australian CMIP7 Datasets](https://doi.org/10.25914/vftb-n215)) |
     | `xp65` | ACCESS-NRI's analysis software environment, a ready-to-use Python environment with common climate analysis packages (see [conda/analysis3 environment](https://docs.access-hive.org.au/getting_started/environments/)) |
 
 ??? info "CMIP6 projects"
@@ -27,4 +27,4 @@ On NCI, access to data and software is managed through projects. You need to joi
     | Project | What it gives you |
     |---|---|
     | `oi10` | CMIP6 data from international modelling centres, replicated to NCI |
-    | `fs38` | CMIP6 data published by Australian modelling groups |
+    | `fs38` | CMIP6 ACCESS model data |

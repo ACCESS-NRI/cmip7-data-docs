@@ -99,7 +99,7 @@ If you have or are eligible for an NCI account, we recommend using NCI's Gadi to
     If a dataset isn't on Gadi, you can download it from ESGF into your own project's storage by running the [ESGF Python tools](#esgf-python-tools) on Gadi. Check your storage quota first.
 
     !!! tip "Check if data is available on NCI before downloading from ESGF!"
-        If you work on Gadi, check whether the exact model, experiment, variable, frequency and version you need are already available on NCI (e.g. via the [Interactive Data Catalogue](#access-nri-interactive-data-catalogue)) before downloading from ESGF. Broad CMIP7 selections can involve very large transfers and duplicate data that are already available locally. If there is no local copy, download only the files you need or [request a replica](data-available.md#request-additional-international-data-on-gadi).
+        If you work on Gadi, check whether the exact model, experiment, variable, frequency and version you need are already available on NCI (e.g. via the [Interactive Data Catalogue](#access-nri-interactive-data-catalogue)) before downloading from ESGF. Broad CMIP7 selections can involve very large transfers and duplicate data that are already available locally. If there is no local copy, request that the data be replicated to NCI (note: this option is not available yet) or download only the files you need.
 
 ## Without an NCI account or to work on platforms other than NCI
 

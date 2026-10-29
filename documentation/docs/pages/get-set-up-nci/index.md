@@ -3,7 +3,7 @@
 Most Australian researchers access and analyse CMIP7 data through the **National Computational Infrastructure (NCI)**, Australia's national research computing facility. This section walks you through getting set up to work with CMIP7 data on NCI.
 
 ??? warning "Do you need an NCI account?"
-    There are ways to search and access CMIP7 data with and without an NCI account. If you're eligible, we recommend working with CMIP7 data directly on NCI. If you're not, you can still access CMIP7 data through the ESGF. See the options on the [Find and access CMIP7 data](../work-with-cmip7-data/find-and-access-data.md) page to help you decide.
+    There are ways to search and access CMIP7 data with and without an NCI account. If you're eligible, we recommend working with CMIP7 data directly on NCI. If you're not, you can still access CMIP7 data through alternate methods. See the options on the [Find and access CMIP7 data](../work-with-cmip7-data/find-and-access-data.md) for more details.
 
     **Who is eligible for an NCI account?** NCI accounts are intended for Australian-based researchers and staff at universities, government science agencies and other NCI collaborators. If you're not sure if you're eligible, talk with your employer.
 
