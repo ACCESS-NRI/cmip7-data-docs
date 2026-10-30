@@ -1,3 +1,7 @@
+---
+page_nav: true
+---
+
 # Join CMIP7 projects
 
 On NCI, access to data and software is managed through projects. You need to join a project before you can read the data or use the software it holds. Each project has a short code.

@@ -1,3 +1,7 @@
+---
+page_nav: true
+---
+
 # Set up an NCI account
 
 To work with CMIP7 data **locally** on the **National Computational Infrastructure (NCI)**, you will need:

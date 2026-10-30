@@ -1,3 +1,7 @@
+---
+page_nav: true
+---
+
 # Set up JupyterLab (ARE) for CMIP7
 
 One way to analyse CMIP7 data on Gadi is in a JupyterLab session, which you can run in your web browser through NCI's [Australian Research Environment (ARE)](https://are.nci.org.au). The ACCESS-Hive Docs [ARE guide](https://docs.access-hive.org.au/getting_started/are/) explains how to launch a session. This page lists the settings you need to work with CMIP7 data.

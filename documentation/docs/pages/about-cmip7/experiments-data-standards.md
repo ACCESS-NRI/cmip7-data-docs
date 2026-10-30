@@ -1,3 +1,7 @@
+---
+page_nav: true
+---
+
 # CMIP7 experiments and data standards
 
 This page covers two things you'll need to understand CMIP7 data: the experiments that models run, with a focus on Australia's ACCESS-ESM1.6 contribution, and the shared data standards that make output from different modelling centres consistent and comparable. To find where the files are stored on Gadi, see [Find and access CMIP7 data](../../work-with-cmip7-data/find-and-access-data/).
