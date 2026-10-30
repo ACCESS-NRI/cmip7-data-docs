@@ -13,7 +13,7 @@ This page is useful when you:
 - **choose which experiments to use** and want to know what each one simulates. See [Experiments](#experiments).
 - **want to know what a search filter or part of a filename means**. See [Labels used to search and name CMIP7 data](#labels-used-to-search-and-name-cmip7-data).
 - **combine data from several models** and need to check that units and calendars match. See [Checking units, calendars and other details](#checking-units-calendars-and-other-details).
-- **can't find a variable** and want to know whether it was ever requested. See [Checking whether a variable should exist](#checking-whether-a-variable-should-exist).
+- **can't find a variable** and want to know whether it was ever requested. See [Can't find the variable you need?](#cant-find-the-variable-you-need).
 - **use ACCESS data** and want to know how a variable was calculated or checked. See [How ACCESS data was prepared](#how-access-data-was-prepared).
 
 If you're new to CMIP, the WCRP [Guidance for data users: New to CMIP?](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_users/#6-new-to-cmip) section links to tutorials, tools and a community Q&A forum.
@@ -122,7 +122,7 @@ CMIP7 data follows shared rules so output from different modelling centres can b
     | `experiment_id` | The experiment. See [Experiments](#experiments) | `historical` | Search filter, filename, folder path |
     | `variant_label` | The ensemble member (one run of an experiment) | `r1i1p1f1` | Search filter, filename, folder path |
     | `variable_id` | The physical quantity, using the same short names as CMIP6 | `tas` (near-surface air temperature) | Search filter, filename, folder path |
-    | `branding_suffix` | How the variable was averaged and sampled in time and space. Together with `variable_id`, it makes the *branded variable* name. See [Checking whether a variable should exist](#checking-whether-a-variable-should-exist) | `tavg-h2m-hxy-u` (time average, at 2 m height, on a latitude–longitude grid, over all surface types) | Search filter, filename, folder path |
+    | `branding_suffix` | How the variable was averaged and sampled in time and space. Together with `variable_id`, it makes the *branded variable* name. See [How CMIP7 variable names work](#how-cmip7-variable-names-work) | `tavg-h2m-hxy-u` (time average, at 2 m height, on a latitude–longitude grid, over all surface types) | Search filter, filename, folder path |
     | `frequency` | How often values are reported | `mon` (monthly) | Search filter, filename, folder path |
     | `region` | The area the data covers | `glb` (global) | Search filter, filename, folder path |
     | `grid_label` | The grid the data is on | `g115` (a regular 1.875° × 1.25° latitude–longitude grid) | Search filter, filename, folder path |
@@ -216,4 +216,4 @@ CMIP7 data follows shared rules so output from different modelling centres can b
 
     It checks units, missing or non-finite values, and broad physical ranges; range excursions prompt review rather than automatically rejecting a file. The [MOPPy physical range rules](https://access-moppy.readthedocs.io/en/latest/reference/qc_ranges.html) list the expected range for each variable. Publication workflows can also run [CF and CMIP compliance checks and diagnostic plots](https://access-moppy.readthedocs.io/en/latest/howto/qc_validation.html).
 
-    You'll mostly need this if a variable looks unexpected or you need to describe how it was produced. If you think you've found an error, see [Find and report CMIP7 errata](../../work-with-cmip7-data/citing-and-errata/#errata).
+    You'll mostly need this if a variable looks unexpected or you need to describe how it was produced. If you think you've found an error, see [Find and report CMIP7 errata](../work-with-cmip7-data/citing-and-errata.md#errata).
