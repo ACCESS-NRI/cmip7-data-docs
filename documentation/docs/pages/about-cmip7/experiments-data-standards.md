@@ -4,23 +4,23 @@ page_nav: true
 
 # CMIP7 experiments and data standards
 
-This page covers two things you'll need to understand CMIP7 data: the experiments that models run, with a focus on Australia's ACCESS-ESM1.6 contribution, and the shared data standards that make output from different modelling centres consistent and comparable. To find where the files are stored on Gadi, see [Find and access CMIP7 data](../../work-with-cmip7-data/find-and-access-data/).
+This page covers two things you'll need to understand CMIP7 data: the experiments that models run, with a focus on Australia's ACCESS-ESM1.6 contribution, and the shared data standards that make output from different modelling centres consistent and comparable. To find where the files are stored on Gadi, see [Find and access CMIP7 data](../find-cmip7-data/find-and-access-data.md).
 
-When you search for and work with CMIP7 data, you'll come across a common set of labels that describe each dataset, such as model, experiment, ensemble member, variable and frequency. Most CMIP7 search tools use these labels as filters, including the [ACCESS-NRI Interactive Data Catalogue](../../work-with-cmip7-data/find-and-access-data/#access-nri-interactive-data-catalogue), the [ACCESS-NRI Intake catalogue](../../work-with-cmip7-data/find-and-access-data/#access-nri-intake-catalogue) and [ESGF MetaGrid](../../work-with-cmip7-data/find-and-access-data/#esgf-metagrid). The same labels also make up every CMIP7 filename and folder path.
+When you search for and work with CMIP7 data, you'll come across a common set of labels that describe each dataset, such as model, experiment, ensemble member, variable and frequency. Most CMIP7 search tools use these labels as filters, including the [ACCESS-NRI Interactive Data Catalogue](../find-cmip7-data/find-and-access-data.md#access-nri-interactive-data-catalogue), the [ACCESS-NRI Intake catalogue](../find-cmip7-data/find-and-access-data.md#access-nri-intake-catalogue) and [ESGF MetaGrid](../find-cmip7-data/find-and-access-data.md#esgf-metagrid). The same labels also make up every CMIP7 filename and folder path.
 
 This page is useful when you:
 
 - **choose which experiments to use** and want to know what each one simulates. See [Experiments](#experiments).
 - **want to know what a search filter or part of a filename means**. See [Labels used to search and name CMIP7 data](#labels-used-to-search-and-name-cmip7-data).
 - **combine data from several models** and need to check that units and calendars match. See [Checking units, calendars and other details](#checking-units-calendars-and-other-details).
-- **can't find a variable** and want to know whether it was ever requested. See [Checking whether a variable should exist](#checking-whether-a-variable-should-exist).
+- **can't find a variable** and want to know whether it was ever requested. See [Can't find the variable you need?](#cant-find-the-variable-you-need).
 - **use ACCESS data** and want to know how a variable was calculated or checked. See [How ACCESS data was prepared](#how-access-data-was-prepared).
 
 If you're new to CMIP, the WCRP [Guidance for data users: New to CMIP?](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_users/#6-new-to-cmip) section links to tutorials, tools and a community Q&A forum.
 
 ## Experiments
 
-Every CMIP7 model runs experiments from the same standard set, so an experiment's name and setup are the same for every model. For example, `historical` means the same thing for ACCESS-ESM1.6 as for any other model. Each modelling centre chooses which experiments to run, and how many runs of each, so not every experiment is available for every model. To see which experiments a model has run, filter by model in the [ACCESS-NRI Interactive Data Catalogue](../../work-with-cmip7-data/find-and-access-data/#access-nri-interactive-data-catalogue) or [ESGF MetaGrid](../../work-with-cmip7-data/find-and-access-data/#esgf-metagrid).
+Every CMIP7 model runs experiments from the same standard set, so an experiment's name and setup are the same for every model. For example, `historical` means the same thing for ACCESS-ESM1.6 as for any other model. Each modelling centre chooses which experiments to run, and how many runs of each, so not every experiment is available for every model. To see which experiments a model has run, filter by model in the [ACCESS-NRI Interactive Data Catalogue](../find-cmip7-data/find-and-access-data.md#access-nri-interactive-data-catalogue) or [ESGF MetaGrid](../find-cmip7-data/find-and-access-data.md#esgf-metagrid).
 
 ??? info "Reading experiment names and ensembles"
 
@@ -122,7 +122,7 @@ CMIP7 data follows shared rules so output from different modelling centres can b
     | `experiment_id` | The experiment. See [Experiments](#experiments) | `historical` | Search filter, filename, folder path |
     | `variant_label` | The ensemble member (one run of an experiment) | `r1i1p1f1` | Search filter, filename, folder path |
     | `variable_id` | The physical quantity, using the same short names as CMIP6 | `tas` (near-surface air temperature) | Search filter, filename, folder path |
-    | `branding_suffix` | How the variable was averaged and sampled in time and space. Together with `variable_id`, it makes the *branded variable* name. See [Checking whether a variable should exist](#checking-whether-a-variable-should-exist) | `tavg-h2m-hxy-u` (time average, at 2 m height, on a latitude–longitude grid, over all surface types) | Search filter, filename, folder path |
+    | `branding_suffix` | How the variable was averaged and sampled in time and space. Together with `variable_id`, it makes the *branded variable* name. See [How CMIP7 variable names work](#how-cmip7-variable-names-work) | `tavg-h2m-hxy-u` (time average, at 2 m height, on a latitude–longitude grid, over all surface types) | Search filter, filename, folder path |
     | `frequency` | How often values are reported | `mon` (monthly) | Search filter, filename, folder path |
     | `region` | The area the data covers | `glb` (global) | Search filter, filename, folder path |
     | `grid_label` | The grid the data is on | `g115` (a regular 1.875° × 1.25° latitude–longitude grid) | Search filter, filename, folder path |
@@ -150,7 +150,7 @@ CMIP7 data follows shared rules so output from different modelling centres can b
     - [CMIP7 list of labels](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Global_Attributes/#table-1-list-of-cmip7-drs-elements), including sample values from other models and changes since CMIP6 (WCRP CMIP7 guidance)
     - [CMIP7 facets in the WCRP Guidance for data users](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_users/#3-cmip7-facets-and-their-documentation), with links to the full lists of allowed models, experiments, variables, frequencies and grids
     - [The filename pattern](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Global_Attributes/#2-filenames) and [folder path pattern](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Global_Attributes/#3-directory-structure-template) (WCRP CMIP7 guidance)
-    - [Where these folders are on Gadi](../../work-with-cmip7-data/find-and-access-data/#advanced-fallback-nci-file-system)
+    - [Where these folders are on Gadi](../find-cmip7-data/find-and-access-data.md#advanced-fallback-nci-file-system)
 
     Some practical points when working with CMIP7 files:
 
@@ -203,7 +203,7 @@ CMIP7 data follows shared rules so output from different modelling centres can b
 
     Check the [CMIP7 variables table](https://cmip-data-request.github.io/cmip7-dreq-webview/latest/variables.html) first. If a variable isn't in the table, it wasn't requested, so it's unlikely that any model produced it for CMIP7.
 
-    If it is in the table but you still can't find it, the model you want may not have produced it: modelling centres don't produce every requested variable for every experiment. To see what's actually available, search the [ACCESS-NRI Interactive Data Catalogue](../../work-with-cmip7-data/find-and-access-data/#access-nri-interactive-data-catalogue) or [ESGF MetaGrid](../../work-with-cmip7-data/find-and-access-data/#esgf-metagrid).
+    If it is in the table but you still can't find it, the model you want may not have produced it: modelling centres don't produce every requested variable for every experiment. To see what's actually available, search the [ACCESS-NRI Interactive Data Catalogue](../find-cmip7-data/find-and-access-data.md#access-nri-interactive-data-catalogue) or [ESGF MetaGrid](../find-cmip7-data/find-and-access-data.md#esgf-metagrid).
 
 
 ## ACCESS Consortium processing
@@ -216,4 +216,4 @@ CMIP7 data follows shared rules so output from different modelling centres can b
 
     It checks units, missing or non-finite values, and broad physical ranges; range excursions prompt review rather than automatically rejecting a file. The [MOPPy physical range rules](https://access-moppy.readthedocs.io/en/latest/reference/qc_ranges.html) list the expected range for each variable. Publication workflows can also run [CF and CMIP compliance checks and diagnostic plots](https://access-moppy.readthedocs.io/en/latest/howto/qc_validation.html).
 
-    You'll mostly need this if a variable looks unexpected or you need to describe how it was produced. If you think you've found an error, see [Find and report CMIP7 errata](../../work-with-cmip7-data/citing-and-errata/#errata).
+    You'll mostly need this if a variable looks unexpected or you need to describe how it was produced. If you think you've found an error, see [Find and report CMIP7 errata](../work-with-cmip7-data/citing-and-errata.md#errata).

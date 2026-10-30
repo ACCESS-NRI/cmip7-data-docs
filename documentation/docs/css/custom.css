@@ -345,11 +345,6 @@
   }
 }
 
-/* Homepage data button spans the full width below the two "New to..." buttons */
-.home-btn-container > .home-btn--blue:not(.home-btn--title-only) {
-  grid-column: 1 / -1;
-}
-
 .md-typeset a.home-btn {
   display: flex;
   flex-direction: column;
