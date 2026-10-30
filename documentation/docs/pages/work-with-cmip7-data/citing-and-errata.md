@@ -1,3 +1,7 @@
+---
+page_nav: true
+---
+
 # Citing requirements and errata
 
 ## Citing and terms of use

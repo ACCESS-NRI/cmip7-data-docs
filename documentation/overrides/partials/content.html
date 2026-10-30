@@ -1,0 +1,35 @@
+{#-
+  Override of the Material for MkDocs (9.7.7) "partials/content.html" template.
+  Adds "Previous"/"Next" buttons after the page content, linking to the neighbouring
+  pages in the same navigation section. Enable on a page by adding `page_nav: true`
+  to its front matter.
+-#}
+{% include "partials/tags.html" %}
+{% include "partials/actions.html" %}
+{% if "<h1" not in page.content %}
+  <h1>{{ page.title | d(config.site_name, true)}}</h1>
+{% endif %}
+{{ page.content }}
+{% if page.meta and page.meta.page_nav %}
+  {% set prev = page.previous_page %}
+  {% set next = page.next_page %}
+  {% set show_prev = prev and prev.parent == page.parent %}
+  {% set show_next = next and next.parent == page.parent %}
+  {% if show_prev or show_next %}
+    <div class="page-nav-btns">
+      {% if show_prev %}
+        <a href="{{ prev.url | url }}" class="home-btn-small page-nav-btn--prev">
+          <i class="fa-solid fa-arrow-left"></i> <span>Previous: {{ prev.title }}</span>
+        </a>
+      {% endif %}
+      {% if show_next %}
+        <a href="{{ next.url | url }}" class="home-btn-small page-nav-btn--next">
+          <span>Next: {{ next.title }}</span> <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      {% endif %}
+    </div>
+  {% endif %}
+{% endif %}
+{% include "partials/source-file.html" %}
+{% include "partials/feedback.html" %}
+{% include "partials/comments.html" %}

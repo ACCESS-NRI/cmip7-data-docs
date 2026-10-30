@@ -1,3 +1,7 @@
+---
+page_nav: false
+---
+
 # About CMIP7
 
 ## CMIP: The Coupled Model Intercomparison Project

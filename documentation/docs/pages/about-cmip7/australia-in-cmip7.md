@@ -1,3 +1,7 @@
+---
+page_nav: true
+---
+
 # Australia's role in CMIP7
 
 ## ACCESS: Australia's National Earth System Model
