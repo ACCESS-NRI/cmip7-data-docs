@@ -48,4 +48,4 @@ Additional guidance on using NCI systems and services can be found in [NCI's use
 ## Not eligible for an NCI account?
 
 ??? info "There are other ways to access CMIP7 data"
-    See [Find and access CMIP7 data](../work-with-cmip7-data/find-and-access-data.md) for options that work without an NCI account.
+    See [Find and access CMIP7 data](../find-cmip7-data/find-and-access-data.md) for options that work without an NCI account.

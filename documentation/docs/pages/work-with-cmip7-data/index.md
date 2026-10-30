@@ -12,12 +12,6 @@ This section helps you go from knowing what CMIP7 data exists to using it in you
     Most of the tools in this section work best on NCI's Gadi supercomputer, where much of the CMIP7 data is already stored. If you haven't yet, [set up an NCI account](../get-set-up-nci/set-up-account.md) and [join the CMIP7 projects](../get-set-up-nci/join-projects.md).
 
 <div class="home-btn-container">
-  <a href="data-available/" class="home-btn home-btn--blue home-btn--title-only">
-    <div class="home-btn__title">What CMIP7 data is available?</div>
-  </a>
-  <a href="find-and-access-data/" class="home-btn home-btn--blue home-btn--title-only">
-    <div class="home-btn__title">Find and access CMIP7 data</div>
-  </a>
   <a href="analysis-tools/" class="home-btn home-btn--blue home-btn--title-only">
     <div class="home-btn__title">Explore and evaluate CMIP7 data</div>
   </a>

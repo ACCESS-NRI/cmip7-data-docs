@@ -12,6 +12,13 @@ The Coupled Model Intercomparison Project Phase 7 (CMIP7) is an international cl
       <li>CMIP7 experiments and data standards</li>
     </ul>
   </a>
+  <a href="find-cmip7-data/" class="home-btn home-btn--blue">
+    <div class="home-btn__title">Find CMIP7 data</div>
+    <ul class="home-btn__list">
+      <li>What CMIP7 data is available?</li>
+      <li>Find and access CMIP7 data</li>
+    </ul>
+  </a>
   <a href="get-set-up-nci/" class="home-btn home-btn--orange">
     <div class="home-btn__title">Get set up on NCI</div>
     <div class="home-btn__note">
@@ -20,16 +27,12 @@ The Coupled Model Intercomparison Project Phase 7 (CMIP7) is an international cl
 </div>
     <ul class="home-btn__list">
       <li>NCI's role in CMIP7</li>
-      <li>Set up an NCI account</li>
-      <li>Join CMIP7 projects</li>
-      <li>Set up JupyterLab (ARE) for CMIP7</li>
+      <li>Set up an NCI account, join projects, and set up JupyterLab (ARE)</li>
     </ul>
   </a>
   <a href="work-with-cmip7-data/" class="home-btn home-btn--blue">
     <div class="home-btn__title">Work with CMIP7 data</div>
     <ul class="home-btn__list">
-      <li>What CMIP7 data is available?</li>
-      <li>Find and access CMIP7 data</li>
       <li>Explore and evaluate CMIP7 data</li>
       <li>Citing requirements and errata</li>
     </ul>

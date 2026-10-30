@@ -4,7 +4,7 @@ page_nav: true
 
 # Explore and evaluate CMIP7 data
 
-Browse existing plots in the hosted REF dashboard, work with data in a Jupyter notebook, or run a reusable evaluation with ESMValTool or ILAMB. The [Find and access CMIP7 data](../find-and-access-data/) page explains where to find the data on Gadi.
+Browse existing plots in the hosted REF dashboard, work with data in a Jupyter notebook, or run a reusable evaluation with ESMValTool or ILAMB. The [Find and access CMIP7 data](../find-cmip7-data/find-and-access-data.md) page explains where to find the data on Gadi.
 
 ## Browse hosted REF results
 

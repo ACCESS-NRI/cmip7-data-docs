@@ -29,6 +29,10 @@ nav:
     - pages/about-cmip7/index.md
     - Australia's role in CMIP7: pages/about-cmip7/australia-in-cmip7.md
     - CMIP7 experiments and data standards: pages/about-cmip7/experiments-data-standards.md
+  - Find CMIP7 data:
+    - pages/find-cmip7-data/index.md
+    - What CMIP7 data is available?: pages/find-cmip7-data/data-available.md
+    - Find and access CMIP7 data: pages/find-cmip7-data/find-and-access-data.md
   - Get set up on NCI:
     - pages/get-set-up-nci/index.md
     - Set up an NCI account: pages/get-set-up-nci/set-up-account.md
@@ -36,8 +40,6 @@ nav:
     - Set up JupyterLab (ARE) for CMIP7: pages/get-set-up-nci/set-up-jupyterlab.md
   - Work with CMIP7 data:
     - pages/work-with-cmip7-data/index.md
-    - What CMIP7 data is available?: pages/work-with-cmip7-data/data-available.md
-    - Find and access CMIP7 data: pages/work-with-cmip7-data/find-and-access-data.md
     - Explore and evaluate CMIP7 data: pages/work-with-cmip7-data/analysis-tools.md
     - Citing requirements and errata: pages/work-with-cmip7-data/citing-and-errata.md
   - Need help?: pages/help.md
@@ -159,6 +161,9 @@ plugins:
       bib_file: references.bib
   - redirects: # Adds support for URL redirects using mkdocs-redirects (https://github.com/mkdocs/mkdocs-redirects#mkdocs-redirects)
       redirect_maps:
+        # Pages moved from "Work with CMIP7 data" to "Find CMIP7 data"
+        work-with-cmip7-data/data-available.md: pages/find-cmip7-data/data-available.md
+        work-with-cmip7-data/find-and-access-data.md: pages/find-cmip7-data/find-and-access-data.md
   - resolve-absolute-urls: # Resolves absolute URLs (https://github.com/ACCESS-NRI/mkdocs_resolve_absolute_urls_plugin#mkdocs-resolve-absolute-urls-plugin)
       url_versioning_scheme: single_version_without_translations # MODIFY: Set the URL versioning scheme as shown in the ReadTheDocs project settings
   - macros # Enables jinja2 templating (https://mkdocs-macros-plugin.readthedocs.io/en/latest/)
