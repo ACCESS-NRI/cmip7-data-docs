@@ -10,7 +10,7 @@ The Coupled Model Intercomparison Project (CMIP) is a global initiative to deliv
 
 ## CMIP7
 
-The current phase of the project is the seventh assessment, CMIP7. It specifies a core set of baseline experiments that each modelling centre should run, including a pre-industrial control, idealised CO~2~ changes, and historical simulations, plus optional experiments that address a variety of scientific questions. The ACCESS Consortium is currently delivering to the CMIP7 Fast Track, a prioritised set of experiments to inform the IPCC's Seventh Assessment Report.
+The current phase of the project is the seventh assessment, CMIP7. It specifies a core set of baseline experiments that each modelling centre should run, including a pre-industrial control, idealised CO~2~ changes, and historical simulations, plus optional experiments that address a variety of scientific questions. The ACCESS Consortium is currently delivering to the CMIP7 Assessment Fast Track, a prioritised set of experiments to inform the IPCC's Seventh Assessment Report.
 
 ??? info "The four fundamental questions CMIP7 will address"
     [Dunne et al. (2025)](https://gmd.copernicus.org/articles/18/6671/2025/) identify four fundamental questions that CMIP7 will address:

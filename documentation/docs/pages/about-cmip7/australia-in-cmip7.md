@@ -10,10 +10,10 @@ Australia's core national Earth system modelling capability is provided by ACCES
 
 This project is supported with funding from the Australian Government under the [National Environmental Science Program](https://nesp2climate.com.au/about/the-hub/). **[PLACEHOLDER: text/link for ACCESS Consortium]**
 
-## ACCESS and the CMIP7 Fast Track
+## ACCESS and the CMIP7 Assessment Fast Track
 
 ??? info "Australia's model: ACCESS-ESM1.6"
-    ACCESS-ESM1.6 is an Earth system model that has been developed for Australia's contribution to the CMIP7 Fast Track **[PLACEHOLDER: who did the work]**. This version includes several improvements over ACCESS-ESM1.5 used for CMIP6. Simulation of Southern Ocean circulation, sea ice, and heat uptake, which play an important role in shaping Australia's climate, have been improved by a pseudo-iceberg scheme that models how meltwater enters and is transported through the ocean. The new model introduces distinct eucalypt- and acacia-dominated vegetation types, improving simulations of water use, carbon uptake, and ecosystem responses to drought and climate change. It also includes improved land-use change processes, more realistically representing Australia's contribution to the global carbon cycle.
+    ACCESS-ESM1.6 is an Earth system model that has been developed for Australia's contribution to the CMIP7 Assessment Fast Track **[PLACEHOLDER: who did the work]**. This version includes several improvements over ACCESS-ESM1.5 used for CMIP6. Simulation of Southern Ocean circulation, sea ice, and heat uptake, which play an important role in shaping Australia's climate, have been improved by a pseudo-iceberg scheme that models how meltwater enters and is transported through the ocean. The new model introduces distinct eucalypt- and acacia-dominated vegetation types, improving simulations of water use, carbon uptake, and ecosystem responses to drought and climate change. It also includes improved land-use change processes, more realistically representing Australia's contribution to the global carbon cycle.
 
     - [Essential Model Documentation (EMD)](https://wcrp-cmip.github.io/Essential-Model-Documentation/docs/Model/?model=access-esm1-6)
     - [Model Configurations](https://github.com/ACCESS-NRI/access-esm1.6-configs#access-esm16-model-configurations)
@@ -35,7 +35,7 @@ This project is supported with funding from the Australian Government under the 
 ## Progress and getting involved
 
 ??? info "Progress and next steps"
-    - Follow the status of Australian CMIP7 runs on the [ACCESS-NRI CMIP7 dashboard](https://access-nri.github.io/cmip7-dashboard/).
+    - Follow the status of Australian CMIP7 runs on the [ACCESS CMIP7 dashboard](https://access-nri.github.io/cmip7-dashboard/).
     - A newer model, **ACCESS-ESM3**, is being developed for later CMIP7 contributions, subject to funding.
 
 ??? info "Get involved"
