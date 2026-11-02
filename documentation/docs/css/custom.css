@@ -456,6 +456,11 @@
   display: inline-flex;
 }
 
+/* Centre a paragraph, e.g. one holding an inline button (add `{ .text-center }` on the line below it) */
+.md-typeset .text-center {
+  text-align: center;
+}
+
 /* Previous/Next buttons at the bottom of a page */
 .page-nav-btns {
   display: flex;

@@ -8,15 +8,31 @@ This page covers two things you'll need to understand CMIP7 data: the experiment
 
 When you search for and work with CMIP7 data, you'll come across a common set of labels that describe each dataset, such as model, experiment, ensemble member, variable and frequency. Most CMIP7 search tools use these labels as filters, including the [ACCESS-NRI Interactive Data Catalogue](../find-cmip7-data/find-and-access-data.md#access-nri-interactive-data-catalogue), the [ACCESS-NRI Intake catalogue](../find-cmip7-data/find-and-access-data.md#access-nri-intake-catalogue) and [ESGF MetaGrid](../find-cmip7-data/find-and-access-data.md#esgf-metagrid). The same labels also make up every CMIP7 filename and folder path.
 
-This page is useful when you:
+Most of the information on this page comes from, or is linked from, the WCRP CMIP7 Guidance for data users. Visit it for the full official guidance.
 
-- **choose which experiments to use** and want to know what each one simulates. See [Experiments](#experiments).
-- **want to know what a search filter or part of a filename means**. See [Labels used to search and name CMIP7 data](#labels-used-to-search-and-name-cmip7-data).
-- **combine data from several models** and need to check that units and calendars match. See [Checking units, calendars and other details](#checking-units-calendars-and-other-details).
-- **can't find a variable** and want to know whether it was ever requested. See [Can't find the variable you need?](#cant-find-the-variable-you-need).
-- **use ACCESS data** and want to know how a variable was calculated or checked. See [How ACCESS data was prepared](#how-access-data-was-prepared).
+[<i class="fa-solid fa-book-open"></i> WCRP CMIP7 Guidance for data users](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_users/){ .home-btn-small .home-btn-small--inline }
+{ .text-center }
 
-If you're new to CMIP, the WCRP [Guidance for data users: New to CMIP?](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_users/#6-new-to-cmip) section links to tutorials, tools and a community Q&A forum.
+??? info "Used CMIP6 data before? What's changed in CMIP7"
+    A quick summary of the main differences from CMIP6. Follow the links for details.
+
+    - **Variable names are longer.** Each variable now has a *branded variable* name, such as `tas_tavg-h2m-hxy-u`. It combines the familiar CMIP6 short name (`tas`) with a suffix describing how the variable was averaged and sampled. CMIP6 names such as `Amon.tas` no longer appear in filenames or folder paths. See [How CMIP7 variable names work](#how-cmip7-variable-names-work).
+    - **You can look up CMIP7 names from CMIP6 names.** The CMIP7 variables table can be searched by either name. See [Which variables exist in CMIP7?](#which-variables-exist-in-cmip7).
+    - **Filenames and folder paths have changed.** There are new labels, including `branding_suffix`, `region` and `drs_specs` (`MIP-DRS7`), and the labels appear in a different order. See [Labels used to search and name CMIP7 data](#labels-used-to-search-and-name-cmip7-data).
+    - **CMIP6 scripts won't work as-is.** Code that reads information from CMIP6 filenames or folder paths needs updating. See the practical points in [Labels used to search and name CMIP7 data](#labels-used-to-search-and-name-cmip7-data).
+    - **Future scenarios have new names and dates.** CMIP7 has seven scenarios, named by emissions level (such as `scen7-h` and `scen7-vl`) rather than the CMIP6 SSP names (such as `ssp585`). The historical period runs to 2021, and scenarios start in 2022. See [Future scenarios](#future-scenarios-scenariomip).
+    - **The DECK includes more experiments.** It now has eight baseline experiments, including the `piClim` experiments for measuring how strongly human influences warm or cool the climate. See [Baseline experiments (the DECK)](#baseline-experiments-the-deck).
+    - **Priority experiments are grouped in the CMIP7 Assessment Fast Track.** This set of experiments is chosen to support the IPCC's Seventh Assessment Report. See [CMIP7 Assessment Fast Track](#assessment-fast-track).
+
+??? tip "When is this page useful?"
+    This page is useful when you:
+
+    - **choose which experiments to use** and want to know what each one simulates. See [Experiments](#experiments).
+    - **want to know what a search filter or part of a filename means**. See [Labels used to search and name CMIP7 data](#labels-used-to-search-and-name-cmip7-data).
+    - **combine data from several models** and need to check that units and calendars match. See [Checking units, calendars and other details](#checking-units-calendars-and-other-details).
+    - **can't find a variable** and want to know whether it was ever requested. See [Can't find the variable you need?](#cant-find-the-variable-you-need).
+    - **use ACCESS data** and want to know how a variable was calculated or checked. See [How ACCESS data was prepared](#how-access-data-was-prepared).
+
 
 ## Experiments
 
@@ -37,7 +53,7 @@ Every CMIP7 model runs experiments from the same standard set, so an experiment'
 
 The core set of CMIP baseline experiments is called the DECK: Diagnostic, Evaluation and Characterisation of Klima (Climate). These experiments *diagnose* how a model behaves, *evaluate* it against observations, and *characterise* model properties such as sensitivity to changes in atmospheric CO~2~.
 
-Every model is encouraged to run all eight DECK experiments. Two of them can be run in either of two forms, with CO~2~ levels prescribed or calculated from emissions: `piControl` or `esm-piControl`, and `historical` or `esm-hist`.
+Every model is encouraged to run all eight DECK experiments. You'll note that the table below has 10 rows, because two of the experiments can be run in either of two forms, with CO~2~ levels prescribed or calculated from emissions: `piControl` or `esm-piControl`, and `historical` or `esm-hist`, respectively.
 
 ??? info "DECK experiments"
 
@@ -60,9 +76,9 @@ Every model is encouraged to run all eight DECK experiments. Two of them can be 
 
     — : not currently available or in production for ACCESS-ESM1.6.
 
-### Assessment Fast Track
+### CMIP7 Assessment Fast Track
 
-Beyond the DECK, modelling centres are encouraged to run the *Assessment Fast Track* (AFT): a set of priority experiments chosen to support the IPCC's Seventh Assessment Report and other climate assessments. It includes the future scenarios below, experiments that separate out individual influences on past climate (for example, `hist-aer`, `hist-GHG` and `hist-nat`, which include only aerosol, greenhouse gas or natural changes), and a range of other experiments. See the [full list of Assessment Fast Track experiments](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_modellers/#2-experiment-design) in the WCRP CMIP7 guidance.
+Beyond the DECK, modelling centres are encouraged to run the *CMIP7 Assessment Fast Track*: a set of priority experiments chosen to support the IPCC's Seventh Assessment Report and other climate assessments. It includes the future scenarios below, experiments that separate out individual influences on past climate (for example, `hist-aer`, `hist-GHG` and `hist-nat`, which include only aerosol, greenhouse gas or natural changes), and a range of other experiments. See the [full list of CMIP7 Assessment Fast Track experiments](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_modellers/#2-experiment-design) in the WCRP CMIP7 guidance.
 
 #### Future scenarios (`ScenarioMIP`)
 
@@ -133,7 +149,7 @@ CMIP7 data follows shared rules so output from different modelling centres can b
     | `mip_era` | The CMIP phase | `CMIP7` | Folder path |
     | `drs_specs` | The version of the naming rules | `MIP-DRS7` | Folder path |
 
-    For a more complete version of this table, including a column showing what has chenged since CMIP6, see [this documentation on the Data Reference Syntax](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Global_Attributes/#table-1-list-of-cmip7-drs-elements).
+    For a more complete version of this table, including a column showing what has changed since CMIP6, see [this documentation on the Data Reference Syntax](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Global_Attributes/#table-1-list-of-cmip7-drs-elements).
     
     Search tools sometimes show these labels with more readable names. For example, the Interactive Data Catalogue shows **Grid Label** for `grid_label`, while the Python code it generates uses the label names directly (such as `source_id="ACCESS-ESM1-6"`). The catalogue also has a **Realm** filter (such as `atmos` or `ocean`), which groups variables by part of the climate system but isn't part of filenames or folder paths.
 
