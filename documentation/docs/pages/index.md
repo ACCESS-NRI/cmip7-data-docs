@@ -3,13 +3,15 @@
 
 The Coupled Model Intercomparison Project Phase 7 (CMIP7) is an international climate modelling initiative that brings together simulations from modelling centres around the world to support climate research, projections and assessment. This site is a guide to CMIP7 data for the Australian community: what is CMIP7, Australia's contribution, and how to find, access and analyse Australian and international CMIP7 data on NCI's Gadi supercomputer.
 
-??? tip "For CMIP6 users: what's different for CMIP7"
-    If you've worked with CMIP6 data before, here are the main changes to how you find, access and use the data for CMIP7.
+??? tip "Used CMIP6 data on NCI before? Your quick route through this site"
+    These pages cover the main differences for CMIP7:
 
-    - **New NCI projects.** CMIP7 data is in `ib12` (international replicas) and `im55` (Australian ACCESS data). See [Join CMIP7 projects](get-set-up-nci/join-projects.md).
-    - **New search tool.** The [ACCESS-NRI Interactive Data Catalogue](find-cmip7-data/find-and-access-data.md#access-nri-interactive-data-catalogue) lets you search the data held on NCI in your browser and gives you ready-to-run code to load it.
-    - **New variable names, file paths and experiments.** CMIP6 scripts won't work as-is. See [What's changed in CMIP7](about-cmip7/experiments-data-standards.md#whats-changed-in-cmip7) for a summary.
-    - **Data is arriving gradually.** CMIP7 data is still being published and replicated to NCI. See [What CMIP7 data is available?](find-cmip7-data/data-available.md).
+    1. **[Join CMIP7 projects](get-set-up-nci/join-projects.md#cmip7-projects)**: 
+        - [`ib12`](https://my.nci.org.au/mancini/project/ib12/join): CMIP7 international replicas on NCI
+        - [`im55`](https://my.nci.org.au/mancini/project/im55/join): CMIP7 ACCESS model data
+    2. **[What's changed in CMIP7](about-cmip7/experiments-data-standards.md#whats-changed-in-cmip7)**: a quick summary of the new variable names, file paths and experiments.
+    3. **[What CMIP7 data is available?](find-cmip7-data/data-available.md)**: CMIP7 data is still being published, so check what's there so far.
+    4. **[ACCESS-NRI Interactive Data Catalogue](find-cmip7-data/find-and-access-data.md#access-nri-interactive-data-catalogue)**: try this new tool to search the data on NCI and get code to load it.
 
 <div class="home-btn-container">
   <a href="about-cmip7/" class="home-btn home-btn--orange">

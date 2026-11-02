@@ -13,8 +13,11 @@ Most of the information on this page comes from, or is linked from, the WCRP CMI
 [<i class="fa-solid fa-book-open"></i> WCRP CMIP7 Guidance for data users](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_users/){ .home-btn-small .home-btn-small--inline }
 { .text-center }
 
-??? info "Used CMIP6 data before? What's changed in CMIP7"
-    A quick summary of the main differences from CMIP6. Follow the links for details.
+??? info "Changes to experiments, variables and file naming since CMIP6"
+
+    #### What's changed in CMIP7
+
+    If you know CMIP6 data, these are the main changes to experiments, variable names and file naming that you'll notice in CMIP7. Each point links to the section of this page with the details.
 
     - **Variable names are longer.** Each variable now has a *branded variable* name, such as `tas_tavg-h2m-hxy-u`. It combines the familiar CMIP6 short name (`tas`) with a suffix describing how the variable was averaged and sampled. CMIP6 names such as `Amon.tas` no longer appear in filenames or folder paths. See [How CMIP7 variable names work](#how-cmip7-variable-names-work).
     - **You can look up CMIP7 names from CMIP6 names.** The CMIP7 variables table can be searched by either name. See [Which variables exist in CMIP7?](#which-variables-exist-in-cmip7).
@@ -22,7 +25,7 @@ Most of the information on this page comes from, or is linked from, the WCRP CMI
     - **CMIP6 scripts won't work as-is.** Code that reads information from CMIP6 filenames or folder paths needs updating. See the practical points in [Labels used to search and name CMIP7 data](#labels-used-to-search-and-name-cmip7-data).
     - **Future scenarios have new names and dates.** CMIP7 has seven scenarios, named by emissions level (such as `scen7-h` and `scen7-vl`) rather than the CMIP6 SSP names (such as `ssp585`). The historical period runs to 2021, and scenarios start in 2022. See [Future scenarios](#future-scenarios-scenariomip).
     - **The DECK includes more experiments.** It now has eight baseline experiments, including the `piClim` experiments for measuring how strongly human influences warm or cool the climate. See [Baseline experiments (the DECK)](#baseline-experiments-the-deck).
-    - **Priority experiments are grouped in the CMIP7 Assessment Fast Track.** This set of experiments is chosen to support the IPCC's Seventh Assessment Report. See [CMIP7 Assessment Fast Track](#assessment-fast-track).
+    - **Priority experiments are grouped in the CMIP7 Assessment Fast Track.** This set of experiments is chosen to support the IPCC's Seventh Assessment Report. See [CMIP7 Assessment Fast Track](#cmip7-assessment-fast-track).
 
 ??? tip "When is this page useful?"
     This page is useful when you:
