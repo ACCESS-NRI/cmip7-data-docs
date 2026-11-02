@@ -38,3 +38,13 @@ On NCI, access to data and software is managed through projects. You need to joi
     |---|---|
     | [`oi10`](https://my.nci.org.au/mancini/project/oi10/join) | CMIP6 data from international modelling centres, replicated to NCI |
     | [`fs38`](https://my.nci.org.au/mancini/project/fs38/join) | CMIP6 ACCESS model data |
+
+??? info "Observational datasets project"
+
+    #### Observational datasets project
+
+    If you want to compare CMIP7 model output with observations, you can also join the project with curated datasets that are in a format ready to compare with CMIP models via ESMValTool.
+
+    | Project | What it gives you |
+    |---|---|
+    | [`ct11`](https://my.nci.org.au/mancini/project/ct11/join) | Observational datasets formatted for use with ESMValTool (see the [observational datasets in the Interactive Data Catalogue](https://access-nri.github.io/interactive-data-catalogue/#/datastore/esmvaltool-obs-ct11)) |

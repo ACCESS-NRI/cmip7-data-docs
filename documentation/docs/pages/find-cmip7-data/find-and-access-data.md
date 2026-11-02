@@ -20,7 +20,7 @@ This page helps you choose the right way to find and access the data you need, a
 
 ## Which option is right for me?
 
-??? info "Compare the options"
+!!! info "Compare the options"
 
     ```mermaid
     %%{init: {'themeVariables': {'fontSize': '24px'}}}%%
@@ -65,10 +65,7 @@ This page helps you choose the right way to find and access the data you need, a
 
 ## Find and access data to work on NCI
 
-If you have or are eligible for an NCI account, we recommend using NCI's Gadi to work with CMIP7 data. A lot of CMIP7 data is already there, so you can analyse it in place without downloading anything.
-
-!!! tip "Before you start"
-    Make sure you've [joined the CMIP7 projects](../get-set-up-nci/join-projects.md) (`ib12`, the CMIP7 replica project; `im55`, the Australian CMIP7 project; and `xp65`) and know how to [start a JupyterLab session with the CMIP7 settings](../get-set-up-nci/set-up-jupyterlab.md#are-settings-for-cmip7). Project approval can take 1–2 business days.
+If you have or are [eligible for an NCI account](../get-set-up-nci/index.md#do-you-need-an-nci-account), we recommend using NCI's Gadi to work with CMIP7 data. A lot of CMIP7 data is already there, so you can analyse it in place without downloading anything.
 
 ??? info "ACCESS-NRI Interactive Data Catalogue"
 
