@@ -50,4 +50,14 @@ The Coupled Model Intercomparison Project Phase 7 (CMIP7) is an international cl
   </a>
 </div>
 
+??? question "Feeling a bit lost?"
+    **If anything is unclear, just reach out.** We're happy to clarify anything related to CMIP (or point you in the right direction)!
+
+    [<i class="fa-solid fa-circle-question"></i> Get help](help.md){ .home-btn-small .home-btn-small--inline }
+    { .text-center }
+    
+    CMIP7 is a **huge international collaboration** with lots of moving parts. It can be a lot to take in, especially when you're just starting out.
+
+    
+
 Australian support for CMIP7 is being delivered by the National Computational Infrastructure (NCI) and Australia’s Climate Simulator (ACCESS-NRI), supported by Australian Government investment in 2025 through the National Collaborative Research Infrastructure Strategy (NCRIS).  Information on this website about data availability, access and user guidance will be updated as this work progresses. 
