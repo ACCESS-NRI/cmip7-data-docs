@@ -1609,3 +1609,11 @@ img.intro-img {
   font-size: 1.5rem;
   width: 1.5rem;
 }
+/* Embedded SVG flowcharts (e.g. "Compare the options" on the Find and access page) */
+.md-typeset object.flow-diagram {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  aspect-ratio: 960 / 666;
+  margin: 0 auto 1em;
+}

@@ -22,35 +22,7 @@ This page helps you choose the right way to find and access the data you need, a
 
 !!! info "Compare the options"
 
-    ```mermaid
-    %%{init: {'themeVariables': {'fontSize': '24px'}}}%%
-    flowchart TD
-        A{Do you have an NCI account<br/>and want to work on Gadi?}
-        A -->|Yes| B[["<b>Interactive Data Catalogue</b>"]]
-        A -->|No, or working on another platform| C[["<b>ESGF MetaGrid</b>"]]
-
-        B --> D{Is your data on Gadi?}
-        D -->|Yes| E{How do you work?}
-        E -->|Python| F[Copy the code from the Interactive Catalogue and paste into an ARE JupyterLab,<br/>or use the Intake catalogue]
-        E -->|Shell scripts or batch jobs| G[Use Gadi file paths]
-        D -->|No| H[Download only what you need from ESGF<br/>with Python tools, run on Gadi]
-
-        C --> I{What do you need?}
-        I -->|Browse and small downloads| J[Download directly in MetaGrid]
-        I -->|Large or scripted downloads| K[ESGF Python tools]
-        I -->|Small amounts of ACCESS model data| L[NCI THREDDS]
-
-        classDef start stroke-width:3px,font-weight:bold
-        class B,C start
-
-        click B "https://access-nri.github.io/interactive-data-catalogue/" "Open the Interactive Data Catalogue" _blank
-        click C "https://esgf.nci.org.au/search" "Open ESGF MetaGrid" _blank
-        click F "#access-nri-intake-catalogue" "Intake catalogue section"
-        click G "#advanced-fallback-nci-file-system" "Gadi file paths section"
-        click H "#cant-find-the-cmip7-data-you-want-on-nci" "Downloading missing data from ESGF"
-        click K "#python-tools-and-other-platforms" "ESGF Python tools section"
-        click L "#nci-thredds" "NCI THREDDS section"
-    ```
+    <object class="flow-diagram" data="../../assets/images/cmip7-access-flow.svg" type="image/svg+xml" aria-label="Flowchart: which way to find and access CMIP7 data. If you have an NCI account and work on Gadi, start with the Interactive Data Catalogue; otherwise start with ESGF MetaGrid."></object>
 
     **Start here:** [Interactive Data Catalogue](https://access-nri.github.io/interactive-data-catalogue/) if you work on NCI · [ESGF MetaGrid](https://esgf.nci.org.au/search) if you don't have an NCI account
 
