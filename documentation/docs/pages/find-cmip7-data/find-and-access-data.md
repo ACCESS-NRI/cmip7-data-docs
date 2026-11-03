@@ -58,6 +58,7 @@ This page helps you choose the right way to find and access the data you need, a
     |---|---|---|
     | [ACCESS-NRI Interactive Data Catalogue](#access-nri-interactive-data-catalogue) **(start here)** | Find, with code to access | No to browse; yes to open the data |
     | [ACCESS-NRI Intake catalogue](#access-nri-intake-catalogue) | Find and access | Yes |
+    | [NCI Data Catalogue](#nci-data-catalogue) | Find (collection-level information only) | No |
     | [Gadi file system](#advanced-fallback-nci-file-system) | Access | Yes |
     | [NCI THREDDS](#nci-thredds) | Access | No |
     | [ESGF MetaGrid](#esgf-metagrid) | Find and access | No |
@@ -87,6 +88,17 @@ If you have or are [eligible for an NCI account](../get-set-up-nci/index.md#do-y
     If you'd rather search for data in Python, you can use the ACCESS-NRI Intake catalogue. It's the tool the Interactive Data Catalogue's code is built on: you search by attributes and load the results into Xarray without needing to know where the files are. Its [quickstart tutorial](https://access-nri-intake-catalog.readthedocs.io/en/latest/usage/quickstart.html) shows how to filter by model, variable and frequency, then open matching files.
 
     See the [ACCESS-NRI Intake catalogue documentation](https://access-nri-intake-catalog.readthedocs.io/en/latest/) to get started.
+
+??? info "NCI Data Catalogue"
+
+    #### NCI Data Catalogue
+
+    NCI's own data catalogue describes the data collections held at NCI. Browse the [CMIP7 collections in the NCI Data Catalogue](https://geonetwork.nci.org.au/geonetwork/srv/eng/catalog.search#/search?resultType=details&sortBy=relevance&any=cmip7&fast=index&_content_type=json&from=1&to=50).
+
+    It lists CMIP7 data as large collections, not individual datasets, so it's most useful for getting an overview rather than finding specific data.
+
+    - **Good for:** collection-level information, such as which NCI project you need to join, the file path on Gadi, links to access the data through NCI THREDDS, and licence information.
+    - **Not good for:** finding specific data. You can't search or filter by experiment, model, variable or frequency. Use the [Interactive Data Catalogue](#access-nri-interactive-data-catalogue) for that.
 
 ??? info "Advanced fallback: NCI file system"
 
@@ -151,8 +163,7 @@ In addition to downloading straight from ESGF, you can download ACCESS model CMI
 
     #### NCI THREDDS
 
-    NCI's web data server. You can download individual files, or use OPeNDAP to read just the part of a file you need (for example a region or time period) straight into Python. Best for small amounts of data.
+    NCI's web data server. You can download individual files, or use OPeNDAP to read just the part of a file you need (for example a region or time period) straight into Python. Best for small amounts of data. Refer to the [Experiments and Data Standards page](../about-cmip7/experiments-data-standards.md#labels-used-to-search-and-name-cmip7-data) to understand the file paths and naming to navigate the THREDDS website.
 
-    <!-- TODO: add the CMIP7 THREDDS catalogue link as a button, e.g.
-    [<i class="fa-solid fa-magnifying-glass"></i> Open the CMIP7 THREDDS catalogue](URL){ .home-btn-small .home-btn-small--inline }
-    -->
+    [<i class="fa-solid fa-magnifying-glass"></i> Open the CMIP7 THREDDS server](https://thredds.nci.org.au/thredds/catalog/catalogs/im55/catalog.html){ .home-btn-small .home-btn-small--inline }
+    

@@ -23,6 +23,4 @@ page_nav: true
 
     Issues should be reported to ESGF, which will notify the modelling group. The modelling group will review the issue and determine the appropriate resolution. NCI will be notified if the issue is confirmed and action is required. If NCI-published CMIP data is retracted and replaced, the new version will be published.
 
-    Project members will receive email announcements regarding relevant errata when they occur.
-
-    Data held by NCI will have errata notifications on the [Errata and Known Issues](https://opus.nci.org.au/spaces/CMIP/pages/288227530/Errata+and+Known+Issues+for+CORDEX-CMIP6+and+Regional+Downscaling) page.
+    A link to the NCI errata page for CMIP7 will be shared here when available.
