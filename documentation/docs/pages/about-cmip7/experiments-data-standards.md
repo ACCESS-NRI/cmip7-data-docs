@@ -169,7 +169,7 @@ CMIP7 data follows shared rules so output from different modelling centres can b
     - [CMIP7 list of labels](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Global_Attributes/#table-1-list-of-cmip7-drs-elements), including sample values from other models and changes since CMIP6 (WCRP CMIP7 guidance)
     - [CMIP7 facets in the WCRP Guidance for data users](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_users/#3-cmip7-facets-and-their-documentation), with links to the full lists of allowed models, experiments, variables, frequencies and grids
     - [The filename pattern](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Global_Attributes/#2-filenames) and [folder path pattern](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Global_Attributes/#3-directory-structure-template) (WCRP CMIP7 guidance)
-    - [Where these folders are on Gadi](../find-cmip7-data/find-and-access-data.md#advanced-fallback-nci-file-system)
+    - [Where these folders are on Gadi](../find-cmip7-data/find-and-access-data.md#nci-file-paths)
 
     Some practical points when working with CMIP7 files:
 

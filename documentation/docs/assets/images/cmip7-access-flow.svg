@@ -68,7 +68,7 @@
 <text class="main" x="118" y="457" font-size="16" font-weight="700">Run ESMValCore or ESMValTool</text>
 <text class="sub" x="118" y="478" font-size="13">generated for the datasets you selected</text>
 </a>
-<a href="../../find-cmip7-data/find-and-access-data/#advanced-fallback-nci-file-system" target="_top"><title>Use the paths however you work: read more</title>
+<a href="../../find-cmip7-data/find-and-access-data/#nci-file-paths" target="_top"><title>Use the paths however you work: read more</title>
 <rect class="card" x="96" y="506" width="340" height="86" rx="10"/>
 <path d="M106,506 H101 Q96,506 96,511 V587 Q96,592 101,592 H106 V506 Z" fill="#007ACC"/>
 <rect x="96" y="506" width="5" height="86" fill="#007ACC"/>
@@ -100,7 +100,7 @@
 <text class="main" x="598" y="359" font-size="16" font-weight="700">Download in MetaGrid</text>
 <text class="sub" x="598" y="380" font-size="13">straight from your browser</text>
 </a>
-<a href="../../find-cmip7-data/find-and-access-data/#python-tools-and-other-platforms" target="_top"><title>ESGF Python tools: read more</title>
+<a href="../../find-cmip7-data/find-and-access-data/#esgf-python-tools-and-other-ways-to-access-data-via-esgf" target="_top"><title>ESGF Python tools: read more</title>
 <rect class="card" x="576" y="408" width="340" height="86" rx="10"/>
 <path d="M586,408 H581 Q576,408 576,413 V489 Q576,494 581,494 H586 V408 Z" fill="#F28C00"/>
 <rect x="576" y="408" width="5" height="86" fill="#F28C00"/>

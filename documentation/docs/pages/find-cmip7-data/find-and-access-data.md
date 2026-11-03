@@ -29,11 +29,11 @@ The table below is another way to view the information in the diagram above. *No
 | [ACCESS-NRI Interactive Data Catalogue](#access-nri-interactive-data-catalogue) | Find, with code automatically generated to access | No to browse; yes to access the data |
 | [ACCESS-NRI Intake catalogue](#access-nri-intake-catalogue) | Find and access | Yes |
 | [NCI Data Catalogue](#nci-data-catalogue) | Find (collection-level information only) | No |
-| [Gadi file system](#advanced-fallback-nci-file-system) | Access | Yes |
+| [Gadi file system](#nci-file-paths) | Access | Yes |
 | [NCI THREDDS](#nci-thredds) | Access | No |
 | [NCI Globus](#nci-globus) | Access | No\* |
 | [ESGF MetaGrid](#esgf-metagrid) | Find and access | No |
-| [ESGF Python tools](#python-tools-and-other-platforms) | Find and access | No |
+| [ESGF Python tools](#esgf-python-tools-and-other-ways-to-access-data-via-esgf) | Find and access | No |
 
 \* A (free) Globus account is required.
 
@@ -57,7 +57,7 @@ If you have or are [eligible for an NCI account](../get-set-up-nci/index.md#do-y
 
     - **Python code (Xarray):** paste the code into a notebook in an [ARE JupyterLab session](../get-set-up-nci/set-up-jupyterlab.md) to load the data and analyse it in a Jupyter notebook on Gadi. 
     - **ESMValCore/ESMValTool code:** run the generated code to evaluate the selected datasets with ESMValCore or ESMValTool. See [Explore and evaluate CMIP7 data](../work-with-cmip7-data/analysis-tools.md) for how to set these up.
-    - **File paths:** use the paths in batch jobs, shell scripts or any tool that reads files, or open them with Xarray in ARE. See [Use file paths on Gadi](#advanced-fallback-nci-file-system) for how the directories are organised.
+    - **File paths:** use the paths in batch jobs, shell scripts or any tool that reads files, or open them with Xarray in ARE. See [Use file paths on Gadi](#nci-file-paths) for how the directories are organised.
 
     Anyone can browse the catalogue, but to access the data you need an NCI account and membership of the [relevant projects](../get-set-up-nci/join-projects.md).
 
@@ -83,37 +83,51 @@ If you have or are [eligible for an NCI account](../get-set-up-nci/index.md#do-y
     - **Good for:** collection-level information, such as which NCI project you need to join, the file path on Gadi, links to access the data through NCI THREDDS, and licence information.
     - **Not good for:** finding specific data. You can't search or filter by experiment, model, variable or frequency. Use the [Interactive Data Catalogue](#access-nri-interactive-data-catalogue) for that.
 
-??? info "Advanced fallback: NCI file system"
+??? info "NCI file paths"
 
-    #### Advanced fallback: NCI file system
+    #### NCI file paths
 
-    If you work with shell scripts, batch jobs or tools that need file paths, you can read the CMIP7 files directly from NCI's storage via a terminal. This method is best for accessing data that you already know exists, rather than searching for what data is available on NCI.
+    If you know a dataset's file path, you can read it with whichever tool suits your work: open it in Python with Xarray, pass it to a command-line tool such as CDO or NCO, or use it in shell scripts and PBS batch jobs.
 
-    The local collection root paths are:
+    One way to get file paths is from the [Interactive Data Catalogue](#access-nri-interactive-data-catalogue): filter for the data you want, and it lists the file paths for your results. If you already know which dataset you need, you can also build the path yourself using the folder structure below.
 
-    ```text
-    /g/data/im55/publications/MIP-DRS7/CMIP7/   # ACCESS model CMIP7 publications
-    /g/data/ib12/MIP-DRS7/CMIP7/                # selected international replicas
-    ```
+    **Where the files are**
 
-    Under either root, a directory follows this pattern:
+    The NCI collection root paths are:
 
-    ```text
-    <activity_id>/<institution_id>/<source_id>/<experiment_id>/<variant_label>/<region>/<frequency>/<variable_id>/<branding_suffix>/<grid_label>/<version>/
-    ```
+    | Project | Root path | Contents |
+    |---------|-----------|----------|
+    | `im55`  | `/g/data/im55/publications/MIP-DRS7/CMIP7/` | ACCESS model CMIP7 publications |
+    | `ib12`  | `/g/data/ib12/MIP-DRS7/CMIP7/` | Selected international replicas |
 
-    For example, `mon` means monthly output, `r1i1p1f1` identifies an ensemble member and a `vYYYYMMDD` component identifies a dataset version. The [CMIP7 DRS (Data Reference Syntax) specification](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Global_Attributes/) defines the full structure. Check the filesystem for actual filenames and the current version before using a path in a script.
+    **How the folders are organised**
 
-    For logging in to Gadi and running batch jobs, see [NCI's user documentation](https://opus.nci.org.au/).
+    Below each root, folders are named using the same labels you filter by in the catalogues, in this order:
+
+        <activity_id>/<institution_id>/<source_id>/<experiment_id>/<variant_label>/<region>/<frequency>/<variable_id>/<branding_suffix>/<grid_label>/<version>/
+
+    For what each label means, see [Labels used to search and name CMIP7 data](../about-cmip7/experiments-data-standards.md#labels-used-to-search-and-name-cmip7-data).
+
+    For example, monthly near-surface air temperature from the first `historical` run of ACCESS-ESM1.6 is stored in:
+
+        /g/data/im55/publications/MIP-DRS7/CMIP7/CMIP/ACCESS-Consortium/ACCESS-ESM1-6/historical/r1i1p1f1/glb/mon/tas/tavg-h2m-hxy-u/g115/vYYYYMMDD/
+
+    ??? tip "Tips for working with file paths"
+
+        - **Check the version before you script a path.** List the folder above `vYYYYMMDD` (e.g. `ls .../g115/`) and use the most recent version unless you need to match an earlier analysis.
+        - **Use wildcards to collect ensemble members**, e.g. `ls -d .../historical/r*i1p1f1/glb/mon/tas/tavg-h2m-hxy-u/g115/v*/`.
+        - **Expect several files per dataset.** Long runs are split by time period, so open them together (e.g. Xarray's `open_mfdataset`), pointing at a single version folder.
+        - **Update CMIP6 scripts.** CMIP7 paths have new labels (such as `region` and `branding_suffix`) in a different order, and no longer include CMIP6 table names such as `Amon`.
+        - **Get paths from the catalogue rather than searching the file system.** Running `find` or `ls -R` over a whole collection root is slow and puts load on Gadi's shared file system.
 
 ??? info "Can't find the CMIP7 data you want on NCI?"
 
     #### Can't find the CMIP7 data you want on NCI?
 
-    If a dataset isn't on Gadi, you can download it from ESGF into your own project's storage by running the [ESGF Python tools](#python-tools-and-other-platforms) on Gadi. Check your storage quota first.
+    If a dataset isn't on Gadi, you can download it from ESGF into your own project's storage by running the [ESGF Python tools](#esgf-python-tools-and-other-ways-to-access-data-via-esgf) on Gadi. Check your storage quota first.
 
     !!! tip "Check if data is available on NCI before downloading from ESGF!"
-        If you work on Gadi, check whether the exact model, experiment, variable, frequency and version you need are already available on NCI (e.g. via the [Interactive Data Catalogue](#access-nri-interactive-data-catalogue)) before downloading from ESGF. Broad CMIP7 selections can involve very large transfers and duplicate data that are already available locally. If there is no local copy, request that the data be replicated to NCI (note: this option is not available yet) or download only the files you need.
+        If you work on Gadi, check whether the exact model, experiment, variable, frequency and version you need are already available on NCI (e.g. via the [Interactive Data Catalogue](#access-nri-interactive-data-catalogue)) before downloading from ESGF. Broad CMIP7 selections can involve very large transfers and duplicate data that are already available locally. If there is no local copy, request that the data be replicated to NCI (see [International data replication](data-available.md#international-data-replication) for the current status of replication requests) or download only the files you need.
 
 ## Without an NCI account or to work on platforms other than NCI
 
@@ -132,11 +146,11 @@ The Earth System Grid Federation is the international network of data centres th
     
     
 
-??? info "Other ways to access CMIP7 data without an NCI account"
+??? info "ESGF Python tools and other ways to access data via ESGF"
 
-    #### Python tools and other platforms
+    #### ESGF Python tools and other ways to access data via ESGF
 
-    A list of other CMIP7 data access methods via ESGF, including some Python tools, can be found on the [CMIP7 Guidance for Data Users](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_users/#1-accessing-cmip7-data).
+    A list of other CMIP7 data access methods via ESGF, including ESGF Python tools, can be found on the [CMIP7 Guidance for Data Users](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_users/#1-accessing-cmip7-data).
 
 ### Download ACCESS model CMIP7 data directly from NCI
 
