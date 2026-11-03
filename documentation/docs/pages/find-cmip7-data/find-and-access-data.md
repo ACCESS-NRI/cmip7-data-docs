@@ -28,6 +28,7 @@ The table below is another way to view the information in the diagram above. *No
 |---|---|---|
 | [ACCESS-NRI Interactive Data Catalogue](#access-nri-interactive-data-catalogue) | Find, with code automatically generated to access | No to browse; yes to access the data |
 | [ACCESS-NRI Intake catalogue](#access-nri-intake-catalogue) | Find and access | Yes |
+| [ESMValCore](#access-the-data-you-find) | Access | Yes, to use it on NCI |
 | [NCI Data Catalogue](#nci-data-catalogue) | Find (collection-level information only) | No |
 | [Gadi file system](#nci-file-paths) | Access | Yes |
 | [NCI THREDDS](#nci-thredds) | Access | No |
