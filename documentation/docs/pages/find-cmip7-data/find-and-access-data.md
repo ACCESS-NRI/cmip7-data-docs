@@ -61,8 +61,11 @@ This page helps you choose the right way to find and access the data you need, a
     | [NCI Data Catalogue](#nci-data-catalogue) | Find (collection-level information only) | No |
     | [Gadi file system](#advanced-fallback-nci-file-system) | Access | Yes |
     | [NCI THREDDS](#nci-thredds) | Access | No |
+    | [NCI Globus](#nci-globus) | Access | No\* |
     | [ESGF MetaGrid](#esgf-metagrid) | Find and access | No |
     | [ESGF Python tools](#python-tools-and-other-platforms) | Find and access | No |
+
+    \* A (free) Globus account is required.
 
 ## Find and access data to work on NCI
 
@@ -167,3 +170,9 @@ In addition to downloading straight from ESGF, you can download ACCESS model CMI
 
     [<i class="fa-solid fa-magnifying-glass"></i> Open the CMIP7 THREDDS server](https://thredds.nci.org.au/thredds/catalog/catalogs/im55/catalog.html){ .home-btn-small .home-btn-small--inline }
     
+
+??? info "NCI Globus"
+
+    #### NCI Globus
+
+    A high-performance data transfer service. You can browse and download individual files, or transfer entire directories directly to another Globus endpoint, such as your institutional HPC system or personal computer. Best for moving large amounts of data reliably and quickly. Search for the data in [ESGF MetaGrid](#esgf-metagrid), then sign in to [Globus](https://app.globus.org/) to access it.
