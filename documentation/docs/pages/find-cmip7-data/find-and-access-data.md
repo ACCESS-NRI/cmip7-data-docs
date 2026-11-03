@@ -22,8 +22,6 @@ This page helps you choose the right way to find and access the data you need, a
 
 <object class="flow-diagram" data="../../assets/images/cmip7-access-flow.svg" type="image/svg+xml" aria-label="Flowchart: which way to find and access CMIP7 data. If you have an NCI account and work on Gadi, start with the Interactive Data Catalogue; otherwise start with ESGF MetaGrid."></object>
 
-**Start here:** [Interactive Data Catalogue](https://access-nri.github.io/interactive-data-catalogue/) if you work on NCI · [ESGF MetaGrid](https://esgf.nci.org.au/search) if you don't have an NCI account
-
 | Option | Find or access? | NCI account needed? |
 |---|---|---|
 | [ACCESS-NRI Interactive Data Catalogue](#access-nri-interactive-data-catalogue) **(start here)** | Find, with code to access | No to browse; yes to open the data |
