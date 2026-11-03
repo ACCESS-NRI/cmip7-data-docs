@@ -20,7 +20,7 @@ Join `xp65` for the software and the NCI project holding your data (`im55` for t
 
 A Jupyter notebook is where you run Python code. Intake, Xarray, ESMValCore, and Iris are tools you can use inside it. The [Interactive Data Catalogue](https://access-nri.github.io/interactive-data-catalogue/#/datastore/cmip7_australian) can generate code for either approach:
 
-- **Intake and Xarray:** Intake finds the catalogue entries; Xarray opens the data as a *Dataset* with variables and coordinates.
+- **Intake and Xarray:** Intake finds the catalogue entries; Xarray opens the data as a *Dataset* with variables and coordinates. If you use the Interactive Data Catalogue, you can load an Xarray Dataset without knowing any Intake by just copy and pasting the code that is generated!
 - **ESMValCore and Iris:** ESMValCore finds and prepares data; its `load()` method returns an Iris *cube*, another Python object for data and coordinates.
 
 Both approaches let you explore data in Jupyter. Choose the Python tools you prefer. For a repeatable evaluation across ensembles or models, the catalogue can also generate an [ESMValTool recipe starter](#run-evaluations-in-gadi-pbs-jobs) from your filters. A recipe runs from a Gadi shell or PBS job; it does not need a notebook.
