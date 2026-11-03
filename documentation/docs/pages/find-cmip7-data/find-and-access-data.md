@@ -22,9 +22,11 @@ This page helps you choose the right way to find and access the data you need, a
 
 <object class="flow-diagram" data="../../assets/images/cmip7-access-flow.svg" type="image/svg+xml" aria-label="Flowchart: which way to find and access CMIP7 data. If you have an NCI account and work on Gadi, start with the Interactive Data Catalogue; otherwise start with ESGF MetaGrid."></object>
 
+The table below is another way to view the information in the diagram above. *Note: the NCI catalogue is only for high-level information, and so is not included in the above diagram.*
+
 | Option | Find or access? | NCI account needed? |
 |---|---|---|
-| [ACCESS-NRI Interactive Data Catalogue](#access-nri-interactive-data-catalogue) **(start here)** | Find, with code to access | No to browse; yes to open the data |
+| [ACCESS-NRI Interactive Data Catalogue](#access-nri-interactive-data-catalogue) | Find, with code automatically generated to access | No to browse; yes to access the data |
 | [ACCESS-NRI Intake catalogue](#access-nri-intake-catalogue) | Find and access | Yes |
 | [NCI Data Catalogue](#nci-data-catalogue) | Find (collection-level information only) | No |
 | [Gadi file system](#advanced-fallback-nci-file-system) | Access | Yes |
