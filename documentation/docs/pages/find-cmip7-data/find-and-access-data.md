@@ -20,24 +20,22 @@ This page helps you choose the right way to find and access the data you need, a
 
 ## Which option is right for me?
 
-!!! info "Compare the options"
+<object class="flow-diagram" data="../../assets/images/cmip7-access-flow.svg" type="image/svg+xml" aria-label="Flowchart: which way to find and access CMIP7 data. If you have an NCI account and work on Gadi, start with the Interactive Data Catalogue; otherwise start with ESGF MetaGrid."></object>
 
-    <object class="flow-diagram" data="../../assets/images/cmip7-access-flow.svg" type="image/svg+xml" aria-label="Flowchart: which way to find and access CMIP7 data. If you have an NCI account and work on Gadi, start with the Interactive Data Catalogue; otherwise start with ESGF MetaGrid."></object>
+**Start here:** [Interactive Data Catalogue](https://access-nri.github.io/interactive-data-catalogue/) if you work on NCI · [ESGF MetaGrid](https://esgf.nci.org.au/search) if you don't have an NCI account
 
-    **Start here:** [Interactive Data Catalogue](https://access-nri.github.io/interactive-data-catalogue/) if you work on NCI · [ESGF MetaGrid](https://esgf.nci.org.au/search) if you don't have an NCI account
+| Option | Find or access? | NCI account needed? |
+|---|---|---|
+| [ACCESS-NRI Interactive Data Catalogue](#access-nri-interactive-data-catalogue) **(start here)** | Find, with code to access | No to browse; yes to open the data |
+| [ACCESS-NRI Intake catalogue](#access-nri-intake-catalogue) | Find and access | Yes |
+| [NCI Data Catalogue](#nci-data-catalogue) | Find (collection-level information only) | No |
+| [Gadi file system](#advanced-fallback-nci-file-system) | Access | Yes |
+| [NCI THREDDS](#nci-thredds) | Access | No |
+| [NCI Globus](#nci-globus) | Access | No\* |
+| [ESGF MetaGrid](#esgf-metagrid) | Find and access | No |
+| [ESGF Python tools](#python-tools-and-other-platforms) | Find and access | No |
 
-    | Option | Find or access? | NCI account needed? |
-    |---|---|---|
-    | [ACCESS-NRI Interactive Data Catalogue](#access-nri-interactive-data-catalogue) **(start here)** | Find, with code to access | No to browse; yes to open the data |
-    | [ACCESS-NRI Intake catalogue](#access-nri-intake-catalogue) | Find and access | Yes |
-    | [NCI Data Catalogue](#nci-data-catalogue) | Find (collection-level information only) | No |
-    | [Gadi file system](#advanced-fallback-nci-file-system) | Access | Yes |
-    | [NCI THREDDS](#nci-thredds) | Access | No |
-    | [NCI Globus](#nci-globus) | Access | No\* |
-    | [ESGF MetaGrid](#esgf-metagrid) | Find and access | No |
-    | [ESGF Python tools](#python-tools-and-other-platforms) | Find and access | No |
-
-    \* A (free) Globus account is required.
+\* A (free) Globus account is required.
 
 ## Find and access data to work on NCI
 
@@ -48,13 +46,23 @@ If you have or are [eligible for an NCI account](../get-set-up-nci/index.md#do-y
     #### ACCESS-NRI Interactive Data Catalogue
 
     [<i class="fa-solid fa-magnifying-glass"></i> Open the Interactive Data Catalogue](https://access-nri.github.io/interactive-data-catalogue/){ .home-btn-small .home-btn-small--inline }
+    [<i class="fa-solid fa-database"></i> CMIP7 replicated data on NCI](https://access-nri.github.io/interactive-data-catalogue/#/datastore/cmip7_replicated){ .home-btn-small .home-btn-small--inline }
+    [<i class="fa-solid fa-database"></i> ACCESS CMIP7 data on NCI](https://access-nri.github.io/interactive-data-catalogue/#/datastore/cmip7_australian){ .home-btn-small .home-btn-small--inline }
 
-    The ACCESS-NRI Interactive Data Catalogue is the recommended way to find CMIP7 data on Gadi. This web-based catalogue runs in your browser and lets you filter the data by model, experiment, variable, frequency, and several other options. Once you've found what you need, it gives you ready-to-run Python code to load it: paste the code into an [ARE JupyterLab session](../get-set-up-nci/set-up-jupyterlab.md) (with the correct projects in the storage field) and you're ready to analyse!
+    The ACCESS-NRI Interactive Data Catalogue is the recommended way to find CMIP7 data on NCI. This web-based catalogue runs in your browser and lets you filter the data by model, experiment, variable, frequency, and several other options.
 
-    Anyone can browse the catalogue, but running the code needs an NCI account and project membership.
+    ##### Access the data you find
+
+    Once you've found the datasets you need, the catalogue gives you three ways to access them. Choose the one that matches how you work:
+
+    - **Python code (Xarray):** paste the code into a notebook in an [ARE JupyterLab session](../get-set-up-nci/set-up-jupyterlab.md) to load the data and analyse it in a Jupyter notebook on Gadi. 
+    - **ESMValCore/ESMValTool code:** run the generated code to evaluate the selected datasets with ESMValCore or ESMValTool. See [Explore and evaluate CMIP7 data](../work-with-cmip7-data/analysis-tools.md) for how to set these up.
+    - **File paths:** use the paths in batch jobs, shell scripts or any tool that reads files, or open them with Xarray in ARE. See [Use file paths on Gadi](#advanced-fallback-nci-file-system) for how the directories are organised.
+
+    Anyone can browse the catalogue, but to access the data you need an NCI account and membership of the [relevant projects](../get-set-up-nci/join-projects.md).
 
     !!! note
-        The Interactive Data Catalogue is a community resource. If something doesn't work or you have any other feedback, click the green *Give us feedback* button at the top of the page.
+        The Interactive Data Catalogue is a community resource. If something doesn't work or you have any other feedback, click the green *Give us feedback* button at the top of the catalogue's homepage.
 
 ??? info "ACCESS-NRI Intake catalogue"
 

@@ -454,6 +454,12 @@
 /* Small button sized to its text, for use within page content (e.g. "Open ..." links in dropdowns) */
 .md-typeset a.home-btn-small--inline {
   display: inline-flex;
+  margin-bottom: 0.4em; /* Space between rows when a group of buttons wraps */
+}
+
+/* Gap between inline buttons placed next to each other */
+.md-typeset a.home-btn-small--inline + a.home-btn-small--inline {
+  margin-left: 0.5em;
 }
 
 /* Centre a paragraph, e.g. one holding an inline button (add `{ .text-center }` on the line below it) */
