@@ -14,11 +14,11 @@ Browse existing plots in the hosted REF dashboard, work with data in a Jupyter n
 
     The hosted dashboard lets you inspect plots and other results without Gadi access. To use precomputed REF results in your own Python workflow, follow the [Jupyter notebook example for the REF API](https://climate-ref.readthedocs.io/en/latest/how-to-guides/using-pre-computed-results/).
 
-## Explore data in a Jupyter notebook on Gadi
+## Explore data in a Jupyter notebook on NCI
 
 Join `xp65` for the software and the [NCI project holding your data](../get-set-up-nci/join-projects.md#cmip7-projects) (`im55` for the example below). When starting an [ARE JupyterLab session](../get-set-up-nci/set-up-jupyterlab.md), select the [`conda/analysis3` environment](../get-set-up-nci/set-up-jupyterlab.md#are-settings-for-cmip7) to run either notebook example.
 
-A Jupyter notebook is where you run Python code. Xarray, ESMValCore, and Iris are tools you can use inside it. The [Interactive Data Catalogue](https://access-nri.github.io/interactive-data-catalogue/#/datastore/cmip7_australian) gives you what you need to load the data for either approach:
+A Jupyter notebook is where you can run Python code. Xarray, ESMValCore, and Iris are tools you can use inside it. The [Interactive Data Catalogue](https://access-nri.github.io/interactive-data-catalogue/#/datastore/cmip7_australian) gives you what you need to load the data for either approach:
 
 - **Xarray:** Load datasets by copying the Python code that the Interactive Data Catalogue generates, or by opening the file paths that the Interactive Data Catalogue lists based on your search filters. 
 - **ESMValCore and Iris:** ESMValCore finds and prepares data; its `load()` method returns an Iris *cube*, another Python object for data and coordinates.
@@ -29,7 +29,7 @@ Try the [filtered catalogue example](https://access-nri.github.io/interactive-da
 
 ??? info "Xarray — explore data in a Jupyter notebook"
 
-    There are two ways to load the data you find in the catalogue into Xarray. Both give you an Xarray Dataset to explore.
+    There are two ways to load the data you find in the Interactive Data Catalogue into Xarray. Both give you an Xarray Dataset to explore.
 
     **Option 1: copy the generated code**
 
