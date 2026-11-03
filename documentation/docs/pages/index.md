@@ -70,4 +70,12 @@ The Coupled Model Intercomparison Project Phase 7 (CMIP7) is an international cl
 
     
 
-Australian support for CMIP7 is being delivered by the National Computational Infrastructure (NCI) and Australia’s Climate Simulator (ACCESS-NRI), supported by Australian Government investment in 2025 through the National Collaborative Research Infrastructure Strategy (NCRIS).  Information on this website about data availability, access and user guidance will be updated as this work progresses. 
+## Who's behind this site
+
+Australian support for CMIP7 is a collaboration between national research infrastructure and the climate modelling community:
+
+- **[NCI](https://nci.org.au/)** (National Computational Infrastructure): Australia's ESGF data node. NCI stores, publishes and replicates CMIP7 data, and provides the computing to analyse it.
+- **[ACCESS-NRI](https://www.access-nri.org.au/)** (Australia's Climate Simulator): develops and supports the ACCESS models, and provides tools, documentation and user support for working with CMIP7 data.
+- **The ACCESS Consortium**: led by CSIRO, with the Bureau of Meteorology, ACCESS-NRI, NCI and several Australian universities. It produces Australia's CMIP7 contribution, ACCESS-ESM1.6. See [Australia's role in CMIP7](about-cmip7/australia-in-cmip7.md).
+
+This work is supported by Australian Government investment in 2025 through the [National Collaborative Research Infrastructure Strategy (NCRIS)](https://www.education.gov.au/ncris). Information on this website about data availability, access and user guidance will be updated as the work progresses.
