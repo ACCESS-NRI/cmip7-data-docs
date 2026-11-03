@@ -16,20 +16,24 @@ Browse existing plots in the hosted REF dashboard, work with data in a Jupyter n
 
 ## Explore data in a Jupyter notebook on Gadi
 
-Join `xp65` for the software and the NCI project holding your data (`im55` for the example below). When starting an [ARE JupyterLab session](https://docs.access-hive.org.au/getting_started/are/), select the [`conda/analysis3` environment](https://docs.access-hive.org.au/getting_started/environments/) to run either notebook example.
+Join `xp65` for the software and the [NCI project holding your data](../get-set-up-nci/join-projects.md#cmip7-projects) (`im55` for the example below). When starting an [ARE JupyterLab session](../get-set-up-nci/set-up-jupyterlab.md), select the [`conda/analysis3` environment](../get-set-up-nci/set-up-jupyterlab.md#are-settings-for-cmip7) to run either notebook example.
 
-A Jupyter notebook is where you run Python code. Intake, Xarray, ESMValCore, and Iris are tools you can use inside it. The [Interactive Data Catalogue](https://access-nri.github.io/interactive-data-catalogue/#/datastore/cmip7_australian) can generate code for either approach:
+A Jupyter notebook is where you run Python code. Xarray, ESMValCore, and Iris are tools you can use inside it. The [Interactive Data Catalogue](https://access-nri.github.io/interactive-data-catalogue/#/datastore/cmip7_australian) gives you what you need to load the data for either approach:
 
-- **Intake and Xarray:** Intake finds the catalogue entries; Xarray opens the data as a *Dataset* with variables and coordinates. If you use the Interactive Data Catalogue, you can load an Xarray Dataset without knowing any Intake by just copy and pasting the code that is generated!
+- **Xarray:** Load datasets by copying the Python code that the Interactive Data Catalogue generates, or by opening the file paths that the Interactive Data Catalogue lists based on your search filters. 
 - **ESMValCore and Iris:** ESMValCore finds and prepares data; its `load()` method returns an Iris *cube*, another Python object for data and coordinates.
 
 Both approaches let you explore data in Jupyter. Choose the Python tools you prefer. For a repeatable evaluation across ensembles or models, the catalogue can also generate an [ESMValTool recipe starter](#run-evaluations-in-gadi-pbs-jobs) from your filters. A recipe runs from a Gadi shell or PBS job; it does not need a notebook.
 
 Try the [filtered catalogue example](https://access-nri.github.io/interactive-data-catalogue/#/datastore/cmip7_australian?source_id_filter=ACCESS-ESM1-6&variable_id_filter=tas&frequency_filter=mon&experiment_id_filter=historical&variant_label_filter=r1i1p1f1): `ACCESS-ESM1-6`, `historical`, monthly near-surface air temperature (`tas`), and ensemble `r1i1p1f1`. Apply the same filters for either option. Narrow the selection before loading data; this example can still match several datasets.
 
-??? info "Intake and Xarray — explore data in a Jupyter notebook"
+??? info "Xarray — explore data in a Jupyter notebook"
 
-    In **Quick Start**, choose **Xarray Dataset**, then select **Copy Code**. The code generated for the example filters follows this pattern:
+    There are two ways to load the data you find in the catalogue into Xarray. Both give you an Xarray Dataset to explore.
+
+    **Option 1: copy the generated code**
+
+    In **Quick Start**, choose **Xarray Dataset**, then select **Copy Code**. The code uses the [ACCESS-NRI Intake catalogue](../find-cmip7-data/find-and-access-data.md#access-nri-intake-catalogue) behind the scenes, but you don't need to know Intake to run it. The code generated for the example filters follows this pattern:
 
     ```python
     import intake
@@ -52,6 +56,26 @@ Try the [filtered catalogue example](https://access-nri.github.io/interactive-da
 
     ```python
     ds = datasets["<dataset key>"]
+    ```
+
+    **Option 2: copy the NCI file paths**
+
+    Copy the file path for your dataset from the catalogue's results and open all the files in that folder with Xarray. For the example filters, the path looks like this (replace `vYYYYMMDD` with the version shown in the catalogue):
+
+    ```python
+    import xarray as xr
+
+    path = "/g/data/im55/publications/MIP-DRS7/CMIP7/CMIP/ACCESS-Consortium/ACCESS-ESM1-6/historical/r1i1p1f1/glb/mon/tas/tavg-h2m-hxy-u/g115/vYYYYMMDD/"
+    ds = xr.open_mfdataset(path + "*.nc")
+    ```
+
+    Long runs are split into several files by time period; `open_mfdataset` combines them into one Dataset. See [NCI file paths](../find-cmip7-data/find-and-access-data.md#nci-file-paths) for how the folders are organised.
+
+    **Plot the data**
+
+    With either option, you can now explore `ds`. For example:
+
+    ```python
     ds["tas"].isel(time=0).plot()
     ```
 
