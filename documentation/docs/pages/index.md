@@ -72,10 +72,21 @@ The Coupled Model Intercomparison Project Phase 7 (CMIP7) is an international cl
 
 ## Who's behind this site
 
-Australian support for CMIP7 is a collaboration between national research infrastructure and the climate modelling community:
+This site is a collaboration between NCI and ACCESS-NRI:
 
-- **[NCI](https://nci.org.au/)** (National Computational Infrastructure): Australia's ESGF data node. NCI stores, publishes and replicates CMIP7 data, and provides the computing to analyse it.
+- **[NCI](https://nci.org.au/)** (National Computational Infrastructure): Australia's ESGF data node. NCI stores, publishes and replicates CMIP7 data, and provides the computing to analyse it, as well as documentation and user support for working with CMIP7 data.
 - **[ACCESS-NRI](https://www.access-nri.org.au/)** (Australia's Climate Simulator): develops and supports the ACCESS models, and provides tools, documentation and user support for working with CMIP7 data.
-- **The ACCESS Consortium**: led by CSIRO, with the Bureau of Meteorology, ACCESS-NRI, NCI and several Australian universities. It produces Australia's CMIP7 contribution, ACCESS-ESM1.6. See [Australia's role in CMIP7](about-cmip7/australia-in-cmip7.md).
 
-This work is supported by Australian Government investment in 2025 through the [National Collaborative Research Infrastructure Strategy (NCRIS)](https://www.education.gov.au/ncris). Information on this website about data availability, access and user guidance will be updated as the work progresses.
+## Funding and partners
+
+As part of the 2025 [National Collaborative Research Infrastructure Strategy (NCRIS)](https://www.education.gov.au/ncris) funding round, ACCESS-NRI and NCI have secured new Australian Government support for CMIP7 data publication and access in Australia. The funding also supports the upgrade of [NCI's ESGF node](https://esgf.nci.org.au/search), which shares climate model data with the international research community.
+
+This work forms part of the broader Australia's Next-Generation Earth System Model activity, led by ACCESS-NRI in partnership with NCI, the [Terrestrial Ecosystem Research Network (TERN)](https://www.tern.org.au/), [CSIRO](https://www.csiro.au/en/) and the [University of New South Wales (UNSW)](https://www.unsw.edu.au/). It supports the development of Australia's next generation of climate and Earth system modelling capability.
+
+## Australia's model contribution
+
+Australia is submitting one model, ACCESS-ESM1.6, to the CMIP7 Assessment Fast Track, in a submission led by CSIRO with ACCESS-NRI, NCI, the Bureau of Meteorology and several Australian universities. 
+
+See [Australia's role in CMIP7](about-cmip7/australia-in-cmip7.md) for more about ACCESS, ACCESS-ESM1.6, who's involved and how to get involved.
+
+*Note: Information on this website about data availability, access and user guidance will be updated as the work progresses.*
