@@ -57,7 +57,7 @@ If you have or are [eligible for an NCI account](../get-set-up-nci/index.md#do-y
     Once you've found the datasets you need, the catalogue gives you three ways to access them. Choose the one that matches how you work:
 
     - **Python code (Xarray):** paste the code into a notebook in an [ARE JupyterLab session](../get-set-up-nci/set-up-jupyterlab.md) to load the data and analyse it in a Jupyter notebook on Gadi. 
-    - **ESMValCore/ESMValTool code:** run the generated code to evaluate the selected datasets with ESMValCore or ESMValTool. See [Explore and evaluate CMIP7 data](../work-with-cmip7-data/analysis-tools.md) for how to set these up.
+    - **ESMValCore/ESMValTool code:** run the generated code to evaluate the selected datasets with ESMValCore or ESMValTool. See [Explore and evaluate CMIP7 data](../work-with-cmip7-data/explore-evaluate.md) for how to set these up.
     - **File paths:** use the paths in batch jobs, shell scripts or any tool that reads files, or open them with Xarray in ARE. See [Use file paths on Gadi](#nci-file-paths) for how the directories are organised.
 
     Anyone can browse the catalogue, but to access the data you need an NCI account and membership of the [relevant projects](../get-set-up-nci/join-projects.md).

@@ -60,7 +60,7 @@
 <text class="main" x="118" y="359" font-size="16" font-weight="700">Xarray in ARE JupyterLab</text>
 <text class="sub" x="118" y="380" font-size="13">uses the ACCESS-NRI Intake catalogue</text>
 </a>
-<a href="../../work-with-cmip7-data/analysis-tools/" target="_top"><title>Run ESMValCore or ESMValTool: read more</title>
+<a href="../../work-with-cmip7-data/explore-evaluate/" target="_top"><title>Run ESMValCore or ESMValTool: read more</title>
 <rect class="card" x="96" y="408" width="340" height="86" rx="10"/>
 <path d="M106,408 H101 Q96,408 96,413 V489 Q96,494 101,494 H106 V408 Z" fill="#007ACC"/>
 <rect x="96" y="408" width="5" height="86" fill="#007ACC"/>

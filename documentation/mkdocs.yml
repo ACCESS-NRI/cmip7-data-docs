@@ -39,7 +39,7 @@ nav:
     - Set up JupyterLab (ARE) for CMIP7: pages/get-set-up-nci/set-up-jupyterlab.md
   - Work with CMIP7 data:
     - pages/work-with-cmip7-data/index.md
-    - Explore and evaluate CMIP7 data: pages/work-with-cmip7-data/analysis-tools.md
+    - Explore and evaluate CMIP7 data: pages/work-with-cmip7-data/explore-evaluate.md
     - Citing requirements and errata: pages/work-with-cmip7-data/citing-and-errata.md
   - Need help?: pages/help.md
   - Useful links: pages/useful-links.md

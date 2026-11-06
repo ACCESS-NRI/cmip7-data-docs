@@ -13,7 +13,7 @@ Once you have the CMIP7 data you need, this section helps you use it in your res
     Most of the tools in this section work best on NCI's Gadi supercomputer, where much of the CMIP7 data is already stored. If you haven't yet, [set up an NCI account](../get-set-up-nci/set-up-account.md) and [join the CMIP7 projects](../get-set-up-nci/join-projects.md).
 
 <div class="home-btn-container">
-  <a href="analysis-tools/" class="home-btn home-btn--blue home-btn--title-only">
+  <a href="explore-evaluate/" class="home-btn home-btn--blue home-btn--title-only">
     <div class="home-btn__title">Explore and evaluate CMIP7 data</div>
   </a>
   <a href="citing-and-errata/" class="home-btn home-btn--blue home-btn--title-only">
