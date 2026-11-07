@@ -3,7 +3,7 @@
 
 The Coupled Model Intercomparison Project Phase 7 (CMIP7) is an international climate modelling initiative that brings together simulations from modelling centres around the world to support climate research, projections and assessment. This site is a guide to CMIP7 data for the Australian community: what is CMIP7, Australia's contribution, and how to find, access and analyse Australian and international CMIP7 data on NCI's Gadi supercomputer.
 
-??? tip "Used CMIP6 data on NCI before? Your quick route through this site"
+??? tip "Already worked with CMIP data on NCI? Your quick route through this site"
     These pages cover the main differences for CMIP7:
 
     1. **[Join CMIP7 projects](get-set-up-nci/join-projects.md#cmip7-projects)**: 
@@ -15,10 +15,11 @@ The Coupled Model Intercomparison Project Phase 7 (CMIP7) is an international cl
 
 <div class="home-btn-container">
   <a href="about-cmip7/" class="home-btn home-btn--orange">
-    <div class="home-btn__title">New to CMIP7?</div>
+    <div class="home-btn__title">New to CMIP7</div>
     <ul class="home-btn__list">
       <li>What is CMIP7?</li>
       <li>Australia's role in CMIP7</li>
+      <li>Funding support</li>
       <li>CMIP7 experiments and data standards</li>
     </ul>
   </a>
@@ -52,7 +53,7 @@ The Coupled Model Intercomparison Project Phase 7 (CMIP7) is an international cl
 <div class="home-btn-container home-btn-container--small">
   <div class="home-btn-small home-btn-small--disabled">
     <i class="fa-solid fa-upload"></i>
-    For data producers: Publish CMIP7 data to ESGF (coming soon)
+    For data producers: Publish CMIP7 data to ESGF (in development)
   </div>
   <a href="help/" class="home-btn-small">
     <i class="fa-solid fa-circle-question"></i>
@@ -70,4 +71,4 @@ The Coupled Model Intercomparison Project Phase 7 (CMIP7) is an international cl
 
     
 
-Australian support for CMIP7 is being delivered by the National Computational Infrastructure (NCI) and Australia’s Climate Simulator (ACCESS-NRI), supported by Australian Government investment in 2025 through the National Collaborative Research Infrastructure Strategy (NCRIS).  Information on this website about data availability, access and user guidance will be updated as this work progresses. 
+*Note: Information on this website about data availability, access and user guidance will be updated as the work progresses.*
