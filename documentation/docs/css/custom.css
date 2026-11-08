@@ -1484,9 +1484,18 @@ img.terminal-switch:hover ~ .terminal-switch-tooltip {
 }
 
 
-/* =============================================================== 
+/* ===============================================================
   Miscellaneous
 */
+/* Site name above the left-hand navigation links to the homepage (see overrides/partials/nav.html) */
+.md-nav__title .md-nav__title-link {
+  color: inherit;
+}
+
+.md-nav__title .md-nav__title-link:hover {
+  color: var(--md-accent-fg-color);
+}
+
 .keep-blanks {
   white-space: pre;
 }
