@@ -1,7 +1,7 @@
 <!-- # MODIFY -->
 # CMIP7 Data in Australia
 
-The Coupled Model Intercomparison Project Phase 7 (CMIP7) is an international climate modelling initiative that brings together simulations from modelling centres around the world to support climate research, projections and assessment. This site is a guide to CMIP7 data for the Australian community: what is CMIP7, Australia's contribution, and how to find, access and analyse Australian and international CMIP7 data on NCI's Gadi supercomputer.
+The Coupled Model Intercomparison Project Phase 7 (CMIP7) is an international climate modelling initiative that brings together simulations from modelling centres around the world to support climate research, projections and assessment. This site is a guide to CMIP7 data for the Australian community: what is CMIP7, Australia's contribution, and how to find, access and analyse Australian and international CMIP7 data on NCI's Gadi supercomputer. This site is a [joint initiative of ACCESS-NRI and NCI](about-cmip7/funding-support.md#whos-behind-this-site), supported by the Australian Government through the National Collaborative Research Infrastructure Strategy (NCRIS).
 
 ??? tip "Already worked with CMIP data on NCI? Your quick route through this site"
     These pages cover the main differences for CMIP7:

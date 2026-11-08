@@ -8,8 +8,8 @@ page_nav: true
 
 This site is a collaboration between NCI and ACCESS-NRI:
 
-- **[NCI](https://nci.org.au/)** (National Computational Infrastructure) hosts Australia’s Earth System Grid Federation (ESGF) node, where it publishes and replicates CMIP7 data. NCI provides the high-performance computing and data infrastructure that researchers use to access and analyse CMIP7 data, along with guidance and support for using its platform.
-- **[ACCESS-NRI](https://www.access-nri.org.au/)** (Australia’s Climate Simulator) works with the research community to develop and support the ACCESS models and standardise model outputs for sharing and reuse. ACCESS-NRI also provides tools, documentation and support to help researchers work with CMIP7 data.
+- **[NCI](https://nci.org.au/about-us/who-we-are)** (National Computational Infrastructure) hosts Australia’s Earth System Grid Federation (ESGF) node, where it publishes and replicates CMIP7 data. NCI provides the high-performance computing and data infrastructure that researchers use to access and analyse CMIP7 data, along with guidance and support for using its platform.
+- **[ACCESS-NRI](https://www.access-nri.org.au/about/)** (Australia’s Climate Simulator) works with the research community to develop and support the ACCESS models and standardise model outputs for sharing and reuse. ACCESS-NRI also provides tools, documentation and support to help researchers work with CMIP7 data.
 
 ## CMIP7 data delivery
 
