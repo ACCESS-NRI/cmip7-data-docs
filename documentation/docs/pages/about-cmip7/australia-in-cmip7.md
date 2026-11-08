@@ -8,6 +8,11 @@ page_nav: true
 
 An Earth System Model (ESM) simulates the carbon and other bio-chemical cycles alongside climate. The ACCESS Earth System Model (ACCESS-ESM) is a fully-coupled global climate model that includes atmosphere, land, ocean, sea ice, ocean biogeochemistry and land biogeochemistry components, linked together by a coupler.
 
+<figure class="video-figure">
+  <iframe class="video-embed" title="Wind and temperature simulated by ACCESS-ESM" src="https://player.vimeo.com/video/1197609556?h=2215425035" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
+  <figcaption>Wind and temperature simulated by ACCESS-ESM</figcaption>
+</figure>
+
 Read more about ACCESS-ESM on the [ACCESS-NRI website](https://www.access-nri.org.au/models/earth-system-model-esm/).
 
 ## ACCESS Consortium

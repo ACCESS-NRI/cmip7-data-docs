@@ -6,6 +6,11 @@ page_nav: false
 
 ## CMIP: The Coupled Model Intercomparison Project
 
+<a class="cmip-logo" href="https://wcrp-cmip.org/" target="_blank" rel="noopener">
+  <img class="cmip-logo--light" src="../assets/logos/cmip_logo_blue.svg" alt="CMIP (Coupled Model Intercomparison Project) logo">
+  <img class="cmip-logo--dark" src="../assets/logos/cmip_logo_white.svg" alt="CMIP (Coupled Model Intercomparison Project) logo">
+</a>
+
 The Coupled Model Intercomparison Project (CMIP) is a global initiative to deliver climate assessments to the Intergovernmental Panel on Climate Change (IPCC). Coordinated by the World Climate Research Programme (WCRP), international modelling centres run a standardised set of experiments using their own models with standard input data and protocols for such things as greenhouse gas concentrations, aerosols and land use. They then publish their results in a standard format through the Earth System Grid Federation (ESGF), including the NCI. The results of these experiments can then be compared directly to assess how well they reproduce the observed climate and to quantify uncertainty in future projections.
 
 ## CMIP7
