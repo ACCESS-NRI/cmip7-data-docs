@@ -25,9 +25,9 @@ repo_name: cmip7-data-docs
 nav:
   - About CMIP7:
     - pages/about-cmip7/index.md
+    - CMIP7 experiments and data standards: pages/about-cmip7/experiments-data-standards.md
     - Australia's role in CMIP7: pages/about-cmip7/australia-in-cmip7.md
     - Funding support: pages/about-cmip7/funding-support.md
-    - CMIP7 experiments and data standards: pages/about-cmip7/experiments-data-standards.md
   - Find CMIP7 data:
     - pages/find-cmip7-data/index.md
     - What CMIP7 data is available?: pages/find-cmip7-data/data-available.md

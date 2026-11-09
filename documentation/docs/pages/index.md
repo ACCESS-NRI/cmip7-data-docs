@@ -18,9 +18,9 @@ The Coupled Model Intercomparison Project Phase 7 (CMIP7) is an international cl
     <div class="home-btn__title">New to CMIP7</div>
     <ul class="home-btn__list">
       <li>What is CMIP7?</li>
+      <li>CMIP7 experiments and data standards</li>
       <li>Australia's role in CMIP7</li>
       <li>Funding support</li>
-      <li>CMIP7 experiments and data standards</li>
     </ul>
   </a>
   <a href="find-cmip7-data/" class="home-btn home-btn--blue">
