@@ -19,8 +19,6 @@ site_url: !ENV [READTHEDOCS_CANONICAL_URL, ""]
 repo_url: https://github.com/ACCESS-NRI/cmip7-data-docs 
 repo_name: cmip7-data-docs 
 
-edit_uri: edit/main/documentation/docs # MODIFY: If your documentation is in a different branch than `main` or folder (documentation/docs), update this path accordingly
-
 
 # Navigation 
 # MODIFY: Set the navigation structure as needed for your site
@@ -65,7 +63,6 @@ theme:
     - toc.follow # Automatically scroll the sidebar to the active anchor
     - content.code.copy # Display a copy icon at top right of code blocks
     - content.code.annotate # Enable annotations within code blocks (https://squidfunk.github.io/mkdocs-material/reference/code-blocks/?h=content+code+copy#code-annotations)
-    - content.action.edit # Add an edit icon to the page
     - content.tabs.link # Content tabs are linked and switch to the same label simultaneously
     - content.tooltips # Replace the default browser tooltips with better ones
     - content.footnote.tooltips # Enable tooltips for footnotes
@@ -92,9 +89,8 @@ theme:
         name: Switch to light mode
   favicon: assets/logos/cmip7_logo.svg # Favicon for the site
   logo: assets/logos/cmip7_logo.svg # Main logo for the site
-  icon:
-    edit: material/pencil # Icon for editing the page
-    view: material/eye # Icon for viewing the page
+  # icon:
+    # view: material/eye # Icon for viewing the page
 
 # MODIFY: Add, delete or customize the markdown extensions as needed
 markdown_extensions:
