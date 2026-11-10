@@ -1577,6 +1577,35 @@ img.intro-img {
   display: block;
 }
 
+/* Image with a caption beside the opening text of a page (e.g. the globe on Analyse and evaluate) */
+.md-typeset .float-figure {
+  float: right;
+  width: 12rem;
+  margin: 0 0 1rem 1.5rem;
+}
+
+/* Clip to a circle to hide the square background around the globe */
+.md-typeset .float-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.md-typeset .float-figure figcaption {
+  max-width: none;
+  margin-top: 0.5em;
+  font-size: 0.7rem;
+}
+
+/* No room to float on phones: centre it above the text instead */
+@media screen and (max-width: 44.9844em) {
+  .md-typeset .float-figure {
+    float: none;
+    margin: 0 auto 1rem;
+  }
+}
+
 /* Embedded videos (e.g. Vimeo iframes), scaled to the page width */
 .md-typeset .video-figure {
   max-width: 480px;

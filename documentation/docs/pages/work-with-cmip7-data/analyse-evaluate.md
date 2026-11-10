@@ -4,6 +4,11 @@ page_nav: true
 
 # Analyse and evaluate CMIP7 data
 
+<figure class="float-figure">
+  <img src="../../assets/images/access-esm1-6-wind-tracers.jpg" alt="Globe centred on Australia, covered in swirling lines that trace winds simulated by ACCESS-ESM1.6">
+  <figcaption>A visualisation of wind tracers in ACCESS-ESM1.6</figcaption>
+</figure>
+
 Once you've found your data with the [ACCESS-NRI Interactive Data Catalogue](../find-cmip7-data/find-and-access-data.md#access-nri-interactive-data-catalogue), you can work with it using whichever tools you prefer. This page assumes that you used this catalogue to find your data and get the code or file paths to load it on NCI's Gadi, but you don't have to: if you already have the file paths, or know how to load datasets with these tools, that works just as well! This page introduces a few tools that are already installed on Gadi and ready to use with CMIP7 data. It explains what each one is for and when you might choose it, then points you to their own documentation to learn more.
 
 To understand the names and labels used to describe CMIP7 datasets, such as experiments, branded variables and grid labels, see [CMIP7 experiments and data standards](../about-cmip7/experiments-data-standards.md).
