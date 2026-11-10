@@ -22,7 +22,7 @@ This page covers setting up an NCI account and joining a compute project. Inform
 ??? info "Get access to an NCI compute project"
     In order to access data locally at NCI's high-performance computer, you must be a member of an NCI compute project that provides access to computing resources, storage, and service units (SUs). Most researchers access these resources by joining an existing project through their supervisor, research group, institution, or NCI Scheme Manager. 
     
-    If your research requires additional computing resources, you can apply for an allocation through one of NCI's access schemes, including the **National Computational Merit Allocation Scheme (NCMAS)** and the **Adapter Allocation Scheme**. For information on available allocation schemes and application processes, see NCI's [**Access Schemes**](https://www.nci.org.au/users/how-access-nci#AccessSchemes) page.
+    If your research requires additional computing resources, you can apply for an allocation through one of NCI's access schemes, including the **National Computational Merit Allocation Scheme (NCMAS)** and the **Adapter Allocation Scheme**. For information on available allocation schemes and application processes, see NCI's [**Accessing NCI resources**](https://nci.org.au/users/accessing-nci-resources) page.
 
 ## Access NCI systems
 

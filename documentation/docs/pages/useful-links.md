@@ -21,6 +21,7 @@ This page brings together external websites that are useful when working with CM
 ## NCI
 
 - **[NCI user documentation](https://opus.nci.org.au/)**: NCI's help pages, covering accounts, logging in to Gadi and running jobs.
+- **[Accessing NCI resources](https://nci.org.au/users/accessing-nci-resources)**: how to get access to NCI, including compute projects and allocation schemes.
 - **[MyNCI](https://my.nci.org.au/)**: manage your NCI account and request to join projects.
 - **[Australian Research Environment (ARE)](https://are.nci.org.au)**: NCI's web-based platform for running JupyterLab and other interactive sessions on Gadi.
 
