@@ -20,13 +20,13 @@ This page helps you choose the right way to find and access the data you need, a
 
 ## Which option is right for me?
 
-<object class="flow-diagram" data="../../assets/images/cmip7-access-flow.svg" type="image/svg+xml" aria-label="Flowchart: which way to find and access CMIP7 data. If you have an NCI account and work on Gadi, start with the Interactive Data Catalogue; otherwise start with ESGF MetaGrid."></object>
+<object class="flow-diagram flow-diagram--access" data="../../assets/images/cmip7-access-flow.svg" type="image/svg+xml" aria-label="Flowchart: which way to find and access CMIP7 data. If you have an NCI account and work on Gadi, find data with the Interactive Data Catalogue, then use Intake + Xarray, ESMValCore or ESMValTool, or file paths. Otherwise, find data with the Interactive Data Catalogue or ESGF MetaGrid, then download it from ESGF, or for ACCESS model data, from NCI THREDDS or Globus."></object>
 
 The table below is another way to view the information in the diagram above. *Note: the NCI catalogue is only for high-level information, and so is not included in the above diagram.*
 
 | Option | Find or access? | NCI account needed? |
 |---|---|---|
-| [ACCESS-NRI Interactive Data Catalogue](#access-nri-interactive-data-catalogue) | Find, with code automatically generated to access | No to browse; yes to access the data |
+| [ACCESS-NRI Interactive Data Catalogue](#access-nri-interactive-data-catalogue) | Find, with code automatically generated to access | No to browse; yes to access the data on NCI |
 | [ACCESS-NRI Intake catalogue](#access-nri-intake-catalogue) | Find and access | Yes |
 | [ESMValCore](#access-the-data-you-find) | Access | Yes, to use it on NCI |
 | [NCI Data Catalogue](#nci-data-catalogue) | Find (collection-level information only) | No |
@@ -46,21 +46,19 @@ If you have or are [eligible for an NCI account](../get-set-up-nci/index.md#do-y
 
     #### ACCESS-NRI Interactive Data Catalogue
 
-    [<i class="fa-solid fa-magnifying-glass"></i> Open the Interactive Data Catalogue](https://access-nri.github.io/interactive-data-catalogue/){ .home-btn-small .home-btn-small--inline }
-    [<i class="fa-solid fa-database"></i> CMIP7 replicated data on NCI](https://access-nri.github.io/interactive-data-catalogue/#/datastore/cmip7_replicated){ .home-btn-small .home-btn-small--inline }
-    [<i class="fa-solid fa-database"></i> ACCESS CMIP7 data on NCI](https://access-nri.github.io/interactive-data-catalogue/#/datastore/cmip7_australian){ .home-btn-small .home-btn-small--inline }
+    [<i class="fa-solid fa-magnifying-glass"></i> Search CMIP7 data via the Interactive Data Catalogue](https://access-nri.github.io/interactive-data-catalogue/#/cmip){ .home-btn-small .home-btn-small--inline }
 
     The ACCESS-NRI Interactive Data Catalogue is the recommended way to find CMIP7 data on NCI. This web-based catalogue runs in your browser and lets you filter the data by model, experiment, variable, frequency, and several other options.
 
     ##### Access the data you find
 
-    Once you've found the datasets you need, the catalogue gives you three ways to access them. Choose the one that matches how you work:
+    Once you've found the datasets you need, open **Code examples for accessing data on NCI** in the catalogue. Its tabs give you different ways to access the data. Choose the one that matches how you work:
 
-    - **Python code (Xarray):** paste the code into a notebook in an [ARE JupyterLab session](../get-set-up-nci/set-up-jupyterlab.md) to load the data and analyse it in a Jupyter notebook on Gadi. 
-    - **ESMValCore/ESMValTool code:** run the generated code to evaluate the selected datasets with ESMValCore or ESMValTool. See [Explore and evaluate CMIP7 data](../work-with-cmip7-data/analysis-tools.md) for how to set these up.
-    - **File paths:** use the paths in batch jobs, shell scripts or any tool that reads files, or open them with Xarray in ARE. See [Use file paths on Gadi](#nci-file-paths) for how the directories are organised.
+    - **Intake + Xarray:** paste the code into a notebook in an [ARE JupyterLab session](../get-set-up-nci/set-up-jupyterlab.md) to load the data and analyse it in a Jupyter notebook on Gadi.
+    - **ESMValCore and ESMValTool:** copy the ESMValCore code, or the ESMValTool recipe, configuration and run command, to evaluate the selected datasets. See [Analyse and evaluate CMIP7 data](../work-with-cmip7-data/analyse-evaluate.md) for how to set these up.
+    - **File paths:** download all matching paths as a text file from the **File paths** tab, copy a dataset's folder from its row in the **NCI · Datasets on Gadi** results, or select **View files** on a row to see its individual file paths. Use them in batch jobs, shell scripts or any tool that reads files, or open them with Xarray in ARE. See [Use file paths on Gadi](#nci-file-paths) for how the directories are organised.
 
-    Anyone can browse the catalogue, but to access the data you need an NCI account and membership of the [relevant projects](../get-set-up-nci/join-projects.md).
+    Anyone can browse the catalogue, but to access the data on NCI you need an NCI account and membership of the [relevant projects](../get-set-up-nci/join-projects.md).
 
     !!! note
         The Interactive Data Catalogue is a community resource. If something doesn't work or you have any other feedback, click the green *Give us feedback* button at the top of the catalogue's homepage.

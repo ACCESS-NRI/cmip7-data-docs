@@ -44,7 +44,7 @@ The Coupled Model Intercomparison Project Phase 7 (CMIP7) is an international cl
   <a href="work-with-cmip7-data/" class="home-btn home-btn--blue">
     <div class="home-btn__title">Work with CMIP7 data</div>
     <ul class="home-btn__list">
-      <li>Explore and evaluate CMIP7 data</li>
+      <li>Analyse and evaluate CMIP7 data</li>
       <li>Citing requirements and errata</li>
     </ul>
   </a>

@@ -1,34 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 764" width="960" height="764" role="img" aria-labelledby="t d" font-family="Roboto, 'Helvetica Neue', Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYToyM2E1OGNiNi03MWI5LTQwNzktYTNjOC0yZWVlYjljYTU0Y2UAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaASvKhYPSvJStlxGXqfI6DgAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo1ZTJiZGVkZS1hNDVmLTRjN2QtODk0NS0yOTAxZDhhNDQxMzlscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoY0qc1BK4sxxbH6kvLw+TaAAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggwngjLgYvtfBBh546phN9AZVpfFvKBnAD9xOSWhzkXfWkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaGL1kyBTahl0WCCg8kYGtjsAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCAzjJuE0szltCpLtg18jzIa0sOXwuQB612fK56t5sm0E2RuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBjxZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjIzYTU4Y2I2LTcxYjktNDA3OS1hM2M4LTJlZWViOWNhNTRjZS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmI4YzI4YzcxLTRjMTgtNDI3NC04ZWY1LTc3YzNhMWRhYmJjNXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDCeCMuBi+18EGHnjqmE30BlWl8W8oGcAP3E5JaHORd9aJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggHEhCDNnP0RUKISIEqybCkVoQBZmyM/HX6PtX6GBlBeqiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggvXb8BMMln9GEtpBUqHNgL+N8nF4hqRsxfYESCJvSxBh0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQJA9nd40xHeUrRKYJUR24eDc+fXkt6CbIi5VutPbxAbv5CnQwwdDOo4HkWTrQkf/eHJgbo0woi6SBSEOS/DBvTY=</c2pa:manifest></metadata>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 660" width="960" height="660" role="img" aria-labelledby="t d" font-family="Roboto, 'Helvetica Neue', Arial, sans-serif">
 <title id="t">Which way to find and access CMIP7 data</title>
-<desc id="d">First find the data, then access it. If you have an NCI account and work on Gadi, find data with the ACCESS-NRI Interactive Data Catalogue, then copy the Python code it generates, which loads the data into Xarray via the ACCESS-NRI Intake catalogue, to run in ARE JupyterLab, copy its ESMValCore code to run ESMValCore or ESMValTool, or copy the file paths for batch jobs, scripts or Xarray in ARE. Otherwise find data with ESGF MetaGrid, then access it: download in MetaGrid for browsing and small downloads, use the ESGF Python tools for large or scripted downloads, use NCI THREDDS for small amounts of ACCESS model data, or use NCI Globus for larger transfers of ACCESS model data.</desc>
+<desc id="d">Do you have an NCI account and want to work on Gadi? If yes, find data with the ACCESS-NRI Interactive Data Catalogue, which searches NCI and ESGF holdings, then copy code or file paths from it: for exploring and analysing data, copy its Intake + Xarray code and run it in ARE JupyterLab on Gadi; for model evaluation and diagnostics, copy its ESMValCore or ESMValTool code into ARE JupyterLab or a PBS script; or, for your own tools and workflows, copy the file paths into scripts, PBS jobs or ARE on Gadi. If no, or you work on another platform, find data with either the Interactive Data Catalogue, which searches NCI and ESGF holdings and is easiest when searching for ACCESS models, or ESGF MetaGrid, which covers any model. Then download in MetaGrid for browsing and small downloads, or use the ESGF Python tools for large or scripted downloads. For ACCESS model data only, NCI THREDDS suits small amounts and NCI Globus suits larger transfers.</desc>
 <style>
   .lane-nci { fill: #00529B; fill-opacity: .055; }
   .lane-esgf { fill: #F28C00; fill-opacity: .07; }
+  .lane-access { fill: #A5CD3A; fill-opacity: .12; }
   .card { fill: #FFFFFF; stroke: #D3DAE3; stroke-width: 1; }
   .ask { fill: #FFFFFF; stroke: #00529B; stroke-width: 1.5; }
   .main { fill: #17212B; }
   .sub { fill: #4B5563; }
   .if-nci { fill: #00529B; }
   .if-esgf { fill: #A85F00; }
+  .if-access { fill: #4D6B12; }
   .wire { stroke: #9AA5B1; stroke-width: 2; fill: none; }
   .arrow { fill: #9AA5B1; }
   .branch { fill: #4B5563; font-size: 13px; font-weight: 500; }
-  a .card, a .start { transition: stroke .15s; }
+  .chip-nci { fill: #E6F1FA; stroke: #007ACC; }
+  .chip-esgf { fill: #FEF1E0; stroke: #F28C00; }
+  .chip-t { fill: #17212B; }
   a:hover .card { stroke: #007ACC; stroke-width: 2; }
   a:focus { outline: none; }
   a:focus .card, a:focus .start { stroke: #007ACC; stroke-width: 3; }
   @media (prefers-color-scheme: dark) {
     .lane-nci { fill: #8ED7F8; fill-opacity: .07; }
     .lane-esgf { fill: #F28C00; fill-opacity: .09; }
+    .lane-access { fill: #A5CD3A; fill-opacity: .10; }
     .card { fill: #2C2D31; stroke: #4A4C53; }
     .ask { fill: #2C2D31; stroke: #8ED7F8; }
     .main { fill: #EBEBEB; }
     .sub { fill: #B4B8BF; }
     .if-nci { fill: #8ED7F8; }
     .if-esgf { fill: #F6A63A; }
+    .if-access { fill: #BFE06A; }
     .wire { stroke: #6B7280; }
     .arrow { fill: #6B7280; }
     .branch { fill: #B4B8BF; }
+    .chip-nci { fill: #1F3647; stroke: #8ED7F8; }
+    .chip-esgf { fill: #3D2B12; stroke: #F6A63A; }
+    .chip-t { fill: #EBEBEB; }
   }
 </style>
 <defs>
@@ -37,94 +46,96 @@
 <rect class="ask" x="270" y="20" width="420" height="72" rx="36" style="stroke-width:2"/>
 <text class="main" x="480" y="50" text-anchor="middle" font-size="17" font-weight="700">Do you have an NCI account</text>
 <text class="main" x="480" y="73" text-anchor="middle" font-size="17" font-weight="700">and want to work on Gadi?</text>
-<rect class="lane-nci" x="24" y="140" width="432" height="570" rx="18"/>
-<path class="wire" d="M480,92 V112 H80 Q68,112 68,124 V188" marker-end="url(#ah)"/>
-<text class="branch" x="198" y="106" text-anchor="middle">Yes</text>
-<text class="if-nci" x="84" y="176" font-size="14" font-weight="700">1  Find the data</text>
+<path class="wire" d="M480,92 V110 H216 Q204,110 204,122 V180" marker-end="url(#ah)"/>
+<path class="wire" d="M480,110 H731 Q743,110 743,122 V180" marker-end="url(#ah)"/>
+<text class="branch" x="216" y="130">Yes</text>
+<text class="branch" x="755" y="130">No, or another platform</text>
+<rect class="lane-nci" x="24" y="140" width="360" height="478" rx="18"/>
+<text class="if-nci" x="44" y="168" font-size="14" font-weight="700">1  Find the data</text>
 <a href="../../find-cmip7-data/find-and-access-data/#access-nri-interactive-data-catalogue" target="_top"><title>Interactive Data Catalogue: read more</title>
-<rect class="start" x="44" y="190" width="392" height="72" rx="12" fill="#00529B" stroke="#00529B"/>
-<text x="64" y="221" font-size="18" font-weight="700" fill="#FFFFFF">Interactive Data Catalogue</text>
-<text x="64" y="244" font-size="13.5" fill="#CFE6F7">Search what's on NCI, then copy code or paths</text>
-<rect x="332" y="178" width="84" height="24" rx="12" fill="#A5CD3A" stroke="#00529B" stroke-width="2"/>
-<text x="374" y="194.5" text-anchor="middle" font-size="12" font-weight="700" fill="#1E1200">Start here</text>
+<rect class="start" x="40" y="182" width="328" height="94" rx="12" fill="#00529B" stroke="#00529B"/>
+<text x="60" y="213" font-size="18" font-weight="700" fill="#FFFFFF">Interactive Data Catalogue</text>
+<text x="60" y="236" font-size="13.5" fill="#CFE6F7">Searches NCI and ESGF holdings</text>
+<text x="60" y="255" font-size="13.5" fill="#CFE6F7">then copy code or file paths</text>
 </a>
-<text class="if-nci" x="84" y="294" font-size="14" font-weight="700">2  Access the data</text>
-<path class="wire" d="M68,262 V537.0 Q68,549.0 80,549.0 H94" marker-end="url(#ah)"/>
-<path class="wire" d="M68,341.0 Q68,353.0 80,353.0 H94" marker-end="url(#ah)"/>
-<path class="wire" d="M68,439.0 Q68,451.0 80,451.0 H94" marker-end="url(#ah)"/>
-<a href="../../find-cmip7-data/find-and-access-data/#access-the-data-you-find" target="_top"><title>Xarray in ARE JupyterLab: read more</title>
-<rect class="card" x="96" y="310" width="340" height="86" rx="10"/>
-<path d="M106,310 H101 Q96,310 96,315 V391 Q96,396 101,396 H106 V310 Z" fill="#007ACC"/>
-<rect x="96" y="310" width="5" height="86" fill="#007ACC"/>
-<text class="if-nci" x="118" y="334" font-size="12.5" font-weight="500">Copy the Python code</text>
-<text class="main" x="118" y="359" font-size="16" font-weight="700">Xarray in ARE JupyterLab</text>
-<text class="sub" x="118" y="380" font-size="13">uses the ACCESS-NRI Intake catalogue</text>
+<text class="if-nci" x="44" y="306" font-size="14" font-weight="700">2  Access it on Gadi</text>
+<a href="../../find-cmip7-data/find-and-access-data/#access-the-data-you-find" target="_top"><title>Intake + Xarray: read more</title>
+<rect class="card" x="40" y="320" width="328" height="86" rx="10"/>
+<path d="M50,320 H45 Q40,320 40,325 V401 Q40,406 45,406 H50 V320 Z" fill="#007ACC"/>
+<rect x="40" y="320" width="5" height="86" fill="#007ACC"/>
+<text class="if-nci" x="60" y="344" font-size="12.5" font-weight="500">For exploring and analysing data</text>
+<text class="main" x="60" y="369" font-size="16" font-weight="700">Intake + Xarray</text>
+<text class="sub" x="60" y="390" font-size="13">Copy and run in ARE JupyterLab on Gadi</text>
 </a>
-<a href="../../work-with-cmip7-data/analysis-tools/" target="_top"><title>Run ESMValCore or ESMValTool: read more</title>
-<rect class="card" x="96" y="408" width="340" height="86" rx="10"/>
-<path d="M106,408 H101 Q96,408 96,413 V489 Q96,494 101,494 H106 V408 Z" fill="#007ACC"/>
-<rect x="96" y="408" width="5" height="86" fill="#007ACC"/>
-<text class="if-nci" x="118" y="432" font-size="12.5" font-weight="500">Copy the ESMValCore code</text>
-<text class="main" x="118" y="457" font-size="16" font-weight="700">Run ESMValCore or ESMValTool</text>
-<text class="sub" x="118" y="478" font-size="13">generated for the datasets you selected</text>
+<a href="../../find-cmip7-data/find-and-access-data/#access-the-data-you-find" target="_top"><title>ESMValCore or ESMValTool: read more</title>
+<rect class="card" x="40" y="418" width="328" height="86" rx="10"/>
+<path d="M50,418 H45 Q40,418 40,423 V499 Q40,504 45,504 H50 V418 Z" fill="#007ACC"/>
+<rect x="40" y="418" width="5" height="86" fill="#007ACC"/>
+<text class="if-nci" x="60" y="442" font-size="12.5" font-weight="500">For model evaluation and diagnostics</text>
+<text class="main" x="60" y="467" font-size="16" font-weight="700">ESMValCore or ESMValTool</text>
+<text class="sub" x="60" y="488" font-size="13">Copy into ARE JupyterLab or a PBS script</text>
 </a>
-<a href="../../find-cmip7-data/find-and-access-data/#nci-file-paths" target="_top"><title>Use the paths however you work: read more</title>
-<rect class="card" x="96" y="506" width="340" height="86" rx="10"/>
-<path d="M106,506 H101 Q96,506 96,511 V587 Q96,592 101,592 H106 V506 Z" fill="#007ACC"/>
-<rect x="96" y="506" width="5" height="86" fill="#007ACC"/>
-<text class="if-nci" x="118" y="530" font-size="12.5" font-weight="500">Copy the file paths</text>
-<text class="main" x="118" y="555" font-size="16" font-weight="700">Use the paths however you work</text>
-<text class="sub" x="118" y="576" font-size="13">batch jobs and scripts, or Xarray in ARE</text>
+<a href="../../find-cmip7-data/find-and-access-data/#nci-file-paths" target="_top"><title>File paths: read more</title>
+<rect class="card" x="40" y="516" width="328" height="86" rx="10"/>
+<path d="M50,516 H45 Q40,516 40,521 V597 Q40,602 45,602 H50 V516 Z" fill="#007ACC"/>
+<rect x="40" y="516" width="5" height="86" fill="#007ACC"/>
+<text class="if-nci" x="60" y="540" font-size="12.5" font-weight="500">For your own tools and workflows</text>
+<text class="main" x="60" y="565" font-size="16" font-weight="700">File paths</text>
+<text class="sub" x="60" y="586" font-size="13">Copy into scripts, PBS jobs or ARE</text>
 </a>
-<rect class="lane-esgf" x="504" y="140" width="432" height="570" rx="18"/>
-<path class="wire" d="M480,92 V112 H536 Q548,112 548,124 V188" marker-end="url(#ah)"/>
-<text class="branch" x="700" y="106" text-anchor="middle">No, or another platform</text>
-<text class="if-esgf" x="564" y="176" font-size="14" font-weight="700">1  Find the data</text>
+<rect class="lane-esgf" x="408" y="140" width="528" height="426" rx="18"/>
+<text class="if-esgf" x="428" y="168" font-size="14" font-weight="700">1  Find the data</text>
+<a href="../../find-cmip7-data/find-and-access-data/#access-nri-interactive-data-catalogue" target="_top"><title>Interactive Data Catalogue: read more</title>
+<rect class="start" x="424" y="182" width="304" height="94" rx="12" fill="#00529B" stroke="#00529B"/>
+<text x="440" y="211" font-size="16" font-weight="700" fill="#FFFFFF">Interactive Data Catalogue</text>
+<text x="440" y="235" font-size="12.5" fill="#CFE6F7">Searches NCI and ESGF holdings</text>
+<text x="440" y="254" font-size="12.5" fill="#CFE6F7">Easiest when searching for ACCESS models</text>
+</a>
 <a href="../../find-cmip7-data/find-and-access-data/#esgf-metagrid" target="_top"><title>ESGF MetaGrid: read more</title>
-<rect class="start" x="524" y="190" width="392" height="72" rx="12" fill="#F28C00" stroke="#F28C00"/>
-<text x="544" y="221" font-size="18" font-weight="700" fill="#1E1200">ESGF MetaGrid</text>
-<text x="544" y="244" font-size="13.5" fill="#3D2600">Search the global CMIP7 archive</text>
-<rect x="812" y="178" width="84" height="24" rx="12" fill="#FFFFFF" stroke="#F28C00" stroke-width="2"/>
-<text x="854" y="194.5" text-anchor="middle" font-size="12" font-weight="700" fill="#1E1200">Start here</text>
+<rect class="start" x="758" y="182" width="162" height="94" rx="12" fill="#F28C00" stroke="#F28C00"/>
+<text x="774" y="211" font-size="16" font-weight="700" fill="#1E1200">ESGF MetaGrid</text>
+<text x="774" y="235" font-size="12.5" fill="#3D2600">Any model,</text>
+<text x="774" y="254" font-size="12.5" fill="#3D2600">whole archive</text>
 </a>
-<text class="if-esgf" x="564" y="294" font-size="14" font-weight="700">2  Access the data</text>
-<path class="wire" d="M548,262 V635.0 Q548,647.0 560,647.0 H574" marker-end="url(#ah)"/>
-<path class="wire" d="M548,341.0 Q548,353.0 560,353.0 H574" marker-end="url(#ah)"/>
-<path class="wire" d="M548,439.0 Q548,451.0 560,451.0 H574" marker-end="url(#ah)"/>
-<path class="wire" d="M548,537.0 Q548,549.0 560,549.0 H574" marker-end="url(#ah)"/>
+<text class="sub" x="743" y="234" font-size="13" font-weight="700" text-anchor="middle">or</text>
+<path class="wire" d="M576,276 V284 Q576,292 588,292 H660 Q672,292 672,300"/>
+<path class="wire" d="M839,276 V284 Q839,292 827,292 H684 Q672,292 672,300 V318" marker-end="url(#ah)"/>
+<text class="if-esgf" x="428" y="312" font-size="14" font-weight="700">2  Download it</text>
 <a href="../../find-cmip7-data/find-and-access-data/#esgf-metagrid" target="_top"><title>Download in MetaGrid: read more</title>
-<rect class="card" x="576" y="310" width="340" height="86" rx="10"/>
-<path d="M586,310 H581 Q576,310 576,315 V391 Q576,396 581,396 H586 V310 Z" fill="#F28C00"/>
-<rect x="576" y="310" width="5" height="86" fill="#F28C00"/>
-<text class="if-esgf" x="598" y="334" font-size="12.5" font-weight="500">Browsing and small downloads</text>
-<text class="main" x="598" y="359" font-size="16" font-weight="700">Download in MetaGrid</text>
-<text class="sub" x="598" y="380" font-size="13">straight from your browser</text>
+<rect class="card" x="424" y="320" width="240" height="86" rx="10"/>
+<path d="M434,320 H429 Q424,320 424,325 V401 Q424,406 429,406 H434 V320 Z" fill="#F28C00"/>
+<rect x="424" y="320" width="5" height="86" fill="#F28C00"/>
+<text class="if-esgf" x="444" y="344" font-size="12.5" font-weight="500">Browsing and small downloads</text>
+<text class="main" x="444" y="369" font-size="16" font-weight="700">Download in MetaGrid</text>
+<text class="sub" x="444" y="390" font-size="13">straight from your browser</text>
 </a>
 <a href="../../find-cmip7-data/find-and-access-data/#esgf-python-tools-and-other-ways-to-access-data-via-esgf" target="_top"><title>ESGF Python tools: read more</title>
-<rect class="card" x="576" y="408" width="340" height="86" rx="10"/>
-<path d="M586,408 H581 Q576,408 576,413 V489 Q576,494 581,494 H586 V408 Z" fill="#F28C00"/>
-<rect x="576" y="408" width="5" height="86" fill="#F28C00"/>
-<text class="if-esgf" x="598" y="432" font-size="12.5" font-weight="500">Large or scripted downloads</text>
-<text class="main" x="598" y="457" font-size="16" font-weight="700">ESGF Python tools</text>
-<text class="sub" x="598" y="478" font-size="13">listed in the CMIP7 Guidance for Data Users</text>
+<rect class="card" x="680" y="320" width="240" height="86" rx="10"/>
+<path d="M690,320 H685 Q680,320 680,325 V401 Q680,406 685,406 H690 V320 Z" fill="#F28C00"/>
+<rect x="680" y="320" width="5" height="86" fill="#F28C00"/>
+<text class="if-esgf" x="700" y="344" font-size="12.5" font-weight="500">Large or scripted downloads</text>
+<text class="main" x="700" y="369" font-size="16" font-weight="700">ESGF Python tools</text>
+<text class="sub" x="700" y="390" font-size="13">see the CMIP7 user guidance</text>
 </a>
+<rect class="lane-access" x="416" y="422" width="512" height="128" rx="12" stroke="#8DB32E" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text class="if-access" x="428" y="443" font-size="13" font-weight="700">ACCESS model data only, served by NCI</text>
 <a href="../../find-cmip7-data/find-and-access-data/#nci-thredds" target="_top"><title>NCI THREDDS: read more</title>
-<rect class="card" x="576" y="506" width="340" height="86" rx="10"/>
-<path d="M586,506 H581 Q576,506 576,511 V587 Q576,592 581,592 H586 V506 Z" fill="#007ACC"/>
-<rect x="576" y="506" width="5" height="86" fill="#007ACC"/>
-<text class="if-esgf" x="598" y="530" font-size="12.5" font-weight="500">Small amounts of ACCESS model data</text>
-<text class="main" x="598" y="555" font-size="16" font-weight="700">NCI THREDDS</text>
-<text class="sub" x="598" y="576" font-size="13">files or OPeNDAP subsets, no account needed</text>
+<rect class="card" x="424" y="452" width="240" height="86" rx="10"/>
+<path d="M434,452 H429 Q424,452 424,457 V533 Q424,538 429,538 H434 V452 Z" fill="#007ACC"/>
+<rect x="424" y="452" width="5" height="86" fill="#007ACC"/>
+<text class="if-access" x="444" y="476" font-size="12.5" font-weight="500">Small amounts</text>
+<text class="main" x="444" y="501" font-size="16" font-weight="700">NCI THREDDS</text>
+<text class="sub" x="444" y="522" font-size="13">files or OPeNDAP subsets</text>
 </a>
 <a href="../../find-cmip7-data/find-and-access-data/#nci-globus" target="_top"><title>NCI Globus: read more</title>
-<rect class="card" x="576" y="604" width="340" height="86" rx="10"/>
-<path d="M586,604 H581 Q576,604 576,609 V685 Q576,690 581,690 H586 V604 Z" fill="#007ACC"/>
-<rect x="576" y="604" width="5" height="86" fill="#007ACC"/>
-<text class="if-esgf" x="598" y="628" font-size="12.5" font-weight="500">Larger transfers of ACCESS model data</text>
-<text class="main" x="598" y="653" font-size="16" font-weight="700">NCI Globus</text>
-<text class="sub" x="598" y="674" font-size="13">whole directories; needs a free Globus account</text>
+<rect class="card" x="680" y="452" width="240" height="86" rx="10"/>
+<path d="M690,452 H685 Q680,452 680,457 V533 Q680,538 685,538 H690 V452 Z" fill="#007ACC"/>
+<rect x="680" y="452" width="5" height="86" fill="#007ACC"/>
+<text class="if-access" x="700" y="476" font-size="12.5" font-weight="500">Larger transfers</text>
+<text class="main" x="700" y="501" font-size="16" font-weight="700">NCI Globus</text>
+<text class="sub" x="700" y="522" font-size="13">needs a free Globus account</text>
 </a>
-<rect x="24" y="732" width="5" height="16" fill="#007ACC"/><text class="sub" x="38" y="745" font-size="13">Data served from NCI</text>
-<rect x="200" y="732" width="5" height="16" fill="#F28C00"/><text class="sub" x="214" y="745" font-size="13">Data downloaded from ESGF</text>
-<text class="sub" x="936" y="745" font-size="13" text-anchor="end">Select any box to jump to its guide</text>
+<rect x="24" y="634" width="5" height="16" fill="#007ACC"/><text class="sub" x="38" y="647" font-size="13">Data served from NCI</text>
+<rect x="200" y="634" width="5" height="16" fill="#F28C00"/><text class="sub" x="214" y="647" font-size="13">Data downloaded from ESGF</text>
+<text class="sub" x="936" y="647" font-size="13" text-anchor="end">Select any box to jump to its guide</text>
 </svg>
