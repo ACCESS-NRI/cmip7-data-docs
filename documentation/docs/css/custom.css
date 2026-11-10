@@ -972,7 +972,7 @@ details.code {
   padding: 0.6rem 1rem;
 }
 
-/* Order in the row: logos groups, then privacy notice */
+/* Order in the row: privacy notice, then logos groups */
 .md-footer .md-footer-meta         { order: 2; }
 .md-footer .footer-left-components { order: 1; }
 
@@ -1060,7 +1060,6 @@ details.code {
   justify-content: center;
   align-items: center;
 }
-
 
 .md-footer-meta__inner > * {
   display: flex;
