@@ -1656,3 +1656,13 @@ img.intro-img {
   aspect-ratio: 960 / 764;
   margin: 0 auto 1em;
 }
+
+/* Shorter flowchart on the Find and access page */
+.md-typeset object.flow-diagram--access {
+  aspect-ratio: 960 / 660;
+}
+
+/* Taller flowchart on the Analyse and evaluate page */
+.md-typeset object.flow-diagram--work {
+  aspect-ratio: 960 / 934;
+}

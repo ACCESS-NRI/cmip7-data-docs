@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 934" width="960" height="934" role="img" aria-labelledby="t d" font-family="Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title id="t">Which tool to use to work with CMIP7 data</title>
+<desc id="d">Step 1, start with your data. From the Interactive Data Catalogue, copy one of: Intake + Xarray code, file paths, ESMValCore code, or an ESMValTool recipe. If you just want to browse existing plots, open the REF (Rapid Evaluation Framework) dashboard, an international CMIP website that anyone can browse, separate from NCI and Gadi. Step 2, choose a tool on Gadi. Quick starts from the catalogue: to explore and plot interactively, copy the Intake + Xarray code or the file paths and use Xarray in ARE JupyterLab. To use any other tool, copy the file paths and work in ARE JupyterLab or a PBS job. For standardised, repeatable workflows, copy the ESMValCore code to prepare data in a notebook in ARE JupyterLab, or copy the ESMValTool recipe and run it across many datasets as a PBS job. Separately, to benchmark land processes against observations, run ILAMB as a PBS job; it reads data its own way and has no code to copy from the catalogue, so follow the ILAMB workflow guide. Step 3, more resources: the CMIP7 user guidance on grids and more, CMIP7 experiments and data standards, and where to ask a question.</desc>
+<style>
+  .lane-nci { fill: #00529B; fill-opacity: .055; }
+  .lane-group { fill: #00529B; fill-opacity: .06; }
+  .lane-sep { fill: #4B5563; fill-opacity: .045; stroke: #9AA5B1; }
+  .card { fill: #FFFFFF; stroke: #D3DAE3; stroke-width: 1; }
+  .ask { fill: #FFFFFF; stroke: #00529B; stroke-width: 1.5; }
+  .main { fill: #17212B; }
+  .sub { fill: #4B5563; }
+  .if-nci { fill: #00529B; }
+  .if-more { fill: #4B5563; }
+  .wire { stroke: #9AA5B1; stroke-width: 2; fill: none; }
+  .wire-dash { stroke: #9AA5B1; stroke-width: 2; fill: none; stroke-dasharray: 6 5; }
+  .arrow { fill: #9AA5B1; }
+  .branch { fill: #4B5563; font-size: 13px; font-weight: 500; }
+  .chip-copy { fill: #E6F1FA; stroke: #007ACC; }
+  .chip-run { fill: #F3F4F6; stroke: #9AA5B1; }
+  .chip-t { fill: #17212B; }
+  .group-line { stroke: #007ACC; }
+  a:hover .card { stroke: #007ACC; stroke-width: 2; }
+  a:hover .btn { fill: #FFF3E0; stroke-width: 2.5; }
+  a:focus { outline: none; }
+  a:focus .btn { stroke: #00529B; stroke-width: 3; }
+  a:focus .card, a:focus .start { stroke: #007ACC; stroke-width: 3; }
+  @media (prefers-color-scheme: dark) {
+    .lane-nci { fill: #8ED7F8; fill-opacity: .07; }
+    .lane-group { fill: #8ED7F8; fill-opacity: .06; }
+    .lane-sep { fill: #9AA5B1; fill-opacity: .06; stroke: #6B7280; }
+    .card { fill: #2C2D31; stroke: #4A4C53; }
+    .ask { fill: #2C2D31; stroke: #8ED7F8; }
+    .main { fill: #EBEBEB; }
+    .sub { fill: #B4B8BF; }
+    .if-nci { fill: #8ED7F8; }
+    .if-more { fill: #B4B8BF; }
+    .wire, .wire-dash { stroke: #6B7280; }
+    .arrow { fill: #6B7280; }
+    .branch { fill: #B4B8BF; }
+    .chip-copy { fill: #1F3647; stroke: #8ED7F8; }
+    .chip-run { fill: #36383E; stroke: #6B7280; }
+    .chip-t { fill: #EBEBEB; }
+    .group-line { stroke: #8ED7F8; }
+  }
+</style>
+<defs>
+  <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="arrow" d="M0,0 L10,5 L0,10 z"/></marker>
+</defs>
+<text class="main" x="24" y="34" font-size="15" font-weight="700">1  Start with your data</text>
+<a href="../../find-cmip7-data/find-and-access-data/#access-nri-interactive-data-catalogue" target="_top"><title>Interactive Data Catalogue: read more</title>
+<rect class="start" x="24" y="48" width="600" height="132" rx="12" fill="#00529B" stroke="#00529B"/>
+<text x="44" y="80" font-size="13" font-weight="500" fill="#CFE6F7">Search for your data in the</text>
+<text x="44" y="106" font-size="21" font-weight="700" fill="#FFFFFF">Interactive Data Catalogue</text>
+<text x="44" y="130" font-size="13.5" fill="#CFE6F7">then copy one of:</text>
+<rect x="44" y="141" width="110.5" height="20" rx="10" fill="#E6F1FA" stroke="#8ED7F8" stroke-width="1.2"/>
+<text x="99.2" y="155" font-size="11.5" font-weight="500" text-anchor="middle" fill="#17212B">Intake + Xarray</text>
+<rect x="162.5" y="141" width="79.0" height="20" rx="10" fill="#E6F1FA" stroke="#8ED7F8" stroke-width="1.2"/>
+<text x="202.0" y="155" font-size="11.5" font-weight="500" text-anchor="middle" fill="#17212B">File paths</text>
+<rect x="249.5" y="141" width="110.5" height="20" rx="10" fill="#E6F1FA" stroke="#8ED7F8" stroke-width="1.2"/>
+<text x="304.8" y="155" font-size="11.5" font-weight="500" text-anchor="middle" fill="#17212B">ESMValCore code</text>
+<rect x="368.0" y="141" width="123.1" height="20" rx="10" fill="#E6F1FA" stroke="#8ED7F8" stroke-width="1.2"/>
+<text x="429.6" y="155" font-size="11.5" font-weight="500" text-anchor="middle" fill="#17212B">ESMValTool recipe</text>
+</a>
+<rect x="648" y="48" width="288" height="132" rx="12" fill="#F28C00" stroke="#F28C00"/>
+<text x="668" y="72" font-size="13" font-weight="500" fill="#3D2600">Just want to browse existing plots?</text>
+<a href="https://dashboard.climate-ref.org/diagnostics?mip_era=CMIP7&amp;view=cards" target="_blank" rel="noopener"><title>Open the REF dashboard website (external)</title>
+<rect class="btn" x="668" y="82" width="188" height="36" rx="18" fill="#FFFFFF" stroke="#A85F00" stroke-width="1.5"/>
+<text x="688" y="106" font-size="17" font-weight="700" fill="#1E1200">REF dashboard</text>
+<path d="M821,94 h10 v10 M831,94 l-11,11" fill="none" stroke="#1E1200" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</a>
+<text x="668" y="144" font-size="13.5" fill="#3D2600">Rapid Evaluation Framework</text>
+<text x="668" y="164" font-size="12.5" font-weight="500" fill="#3D2600">International CMIP website, open to anyone</text>
+<path class="wire" d="M324,180 V288" marker-end="url(#ah)"/>
+<text class="main" x="24" y="228" font-size="15" font-weight="700">2  Choose a tool on Gadi</text>
+<rect class="lane-nci" x="24" y="246" width="600" height="516" rx="18"/>
+<text class="if-nci" x="40" y="274" font-size="14.5" font-weight="700">Quick start from the catalogue</text>
+<rect class="ask" x="194" y="290" width="260" height="34" rx="17"/>
+<text class="main" x="324" y="312" text-anchor="middle" font-size="13.5" font-weight="700">What do you want to do?</text>
+<path class="wire" d="M324,324 V332 Q324,342 314,342 H192 Q180,342 180,354 V398" marker-end="url(#ah)"/>
+<path class="wire" d="M324,324 V332 Q324,342 334,342 H457 Q469,342 469,354 V368" marker-end="url(#ah)"/>
+<text class="branch" x="190" y="372">Explore interactively</text>
+<text class="branch" x="479" y="364">Repeat across models</text>
+<a href="../../work-with-cmip7-data/analyse-evaluate/#work-in-a-jupyter-notebook-with-xarray" target="_top"><title>Xarray: read more</title>
+<rect class="card" x="40" y="400" width="280" height="124" rx="10"/>
+<path d="M50,400 H45 Q40,400 40,405 V519 Q40,524 45,524 H50 V400 Z" fill="#007ACC"/>
+<rect x="40" y="400" width="5" height="124" fill="#007ACC"/>
+<text class="if-nci" x="60" y="424" font-size="12.5" font-weight="500">Explore and plot in a notebook</text>
+<text class="main" x="60" y="449" font-size="16" font-weight="700">Xarray</text>
+<text class="sub" x="60" y="480" font-size="11.5">Copy</text>
+<rect class="chip-copy" x="100" y="466" width="110.5" height="20" rx="10" stroke-width="1.2"/>
+<text class="chip-t" x="155.2" y="480" font-size="11.5" font-weight="500" text-anchor="middle">Intake + Xarray</text>
+<text class="sub" x="215.5" y="480" font-size="11.5">or</text>
+<rect class="chip-copy" x="232.5" y="466" width="79.0" height="20" rx="10" stroke-width="1.2"/>
+<text class="chip-t" x="272.0" y="480" font-size="11.5" font-weight="500" text-anchor="middle">File paths</text>
+<text class="sub" x="60" y="508" font-size="11.5">Run in</text>
+<rect class="chip-run" x="100" y="494" width="104.2" height="20" rx="10" stroke-width="1.2"/>
+<text class="chip-t" x="152.1" y="508" font-size="11.5" font-weight="500" text-anchor="middle">ARE JupyterLab</text>
+</a>
+<a href="https://tutorial.xarray.dev/" target="_blank" rel="noopener"><title>Xarray tutorials (external)</title><text class="if-nci" x="40" y="546" font-size="12.5" font-weight="500">Xarray tutorials  →</text></a>
+<text class="if-nci" x="40" y="584" font-size="12.5" font-weight="700">Or bring your own tool</text>
+<a href="../../work-with-cmip7-data/analyse-evaluate/#use-any-other-tool-with-file-paths" target="_top"><title>Use file paths with any tool: read more</title>
+<rect class="card" x="40" y="594" width="280" height="146" rx="10"/>
+<path d="M50,594 H45 Q40,594 40,599 V735 Q40,740 45,740 H50 V594 Z" fill="#007ACC"/>
+<rect x="40" y="594" width="5" height="146" fill="#007ACC"/>
+<text class="if-nci" x="60" y="618" font-size="12.5" font-weight="500">Work your own way</text>
+<text class="main" x="60" y="643" font-size="16" font-weight="700">Any other tool</text>
+<text class="sub" x="60" y="664" font-size="13">e.g. Iris, CDO, NCO or R</text>
+<text class="sub" x="60" y="696" font-size="11.5">Copy</text>
+<rect class="chip-copy" x="100" y="682" width="79.0" height="20" rx="10" stroke-width="1.2"/>
+<text class="chip-t" x="139.5" y="696" font-size="11.5" font-weight="500" text-anchor="middle">File paths</text>
+<text class="sub" x="60" y="724" font-size="11.5">Run in</text>
+<rect class="chip-run" x="100" y="710" width="104.2" height="20" rx="10" stroke-width="1.2"/>
+<text class="chip-t" x="152.1" y="724" font-size="11.5" font-weight="500" text-anchor="middle">ARE JupyterLab</text>
+<text class="sub" x="209.2" y="724" font-size="11.5">or</text>
+<rect class="chip-run" x="226.2" y="710" width="60.1" height="20" rx="10" stroke-width="1.2"/>
+<text class="chip-t" x="256.2" y="724" font-size="11.5" font-weight="500" text-anchor="middle">PBS job</text>
+</a>
+<rect class="lane-group group-line" x="330" y="370" width="278" height="346" rx="12" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text class="if-nci" x="338" y="391" font-size="12.5" font-weight="700">Standardised and repeatable</text>
+<a href="../../work-with-cmip7-data/analyse-evaluate/#esmvalcore-in-a-notebook" target="_top"><title>ESMValCore: read more</title>
+<rect class="card" x="338" y="400" width="262" height="146" rx="10"/>
+<path d="M348,400 H343 Q338,400 338,405 V541 Q338,546 343,546 H348 V400 Z" fill="#007ACC"/>
+<rect x="338" y="400" width="5" height="146" fill="#007ACC"/>
+<text class="if-nci" x="358" y="424" font-size="12.5" font-weight="500">Prepare data in a notebook</text>
+<text class="main" x="358" y="449" font-size="16" font-weight="700">ESMValCore</text>
+<text class="sub" x="358" y="470" font-size="13">same preprocessing as ESMValTool</text>
+<text class="sub" x="358" y="502" font-size="11.5">Copy</text>
+<rect class="chip-copy" x="398" y="488" width="110.5" height="20" rx="10" stroke-width="1.2"/>
+<text class="chip-t" x="453.2" y="502" font-size="11.5" font-weight="500" text-anchor="middle">ESMValCore code</text>
+<text class="sub" x="358" y="530" font-size="11.5">Run in</text>
+<rect class="chip-run" x="398" y="516" width="104.2" height="20" rx="10" stroke-width="1.2"/>
+<text class="chip-t" x="450.1" y="530" font-size="11.5" font-weight="500" text-anchor="middle">ARE JupyterLab</text>
+</a>
+<a href="../../work-with-cmip7-data/analyse-evaluate/#esmvaltool-recipes" target="_top"><title>ESMValTool recipes: read more</title>
+<rect class="card" x="338" y="558" width="262" height="146" rx="10"/>
+<path d="M348,558 H343 Q338,558 338,563 V699 Q338,704 343,704 H348 V558 Z" fill="#007ACC"/>
+<rect x="338" y="558" width="5" height="146" fill="#007ACC"/>
+<text class="if-nci" x="358" y="582" font-size="12.5" font-weight="500">Run a recipe across many datasets</text>
+<text class="main" x="358" y="607" font-size="16" font-weight="700">ESMValTool</text>
+<text class="sub" x="358" y="628" font-size="13">preprocess data and run diagnostics</text>
+<text class="sub" x="358" y="660" font-size="11.5">Copy</text>
+<rect class="chip-copy" x="398" y="646" width="123.1" height="20" rx="10" stroke-width="1.2"/>
+<text class="chip-t" x="459.6" y="660" font-size="11.5" font-weight="500" text-anchor="middle">ESMValTool recipe</text>
+<text class="sub" x="358" y="688" font-size="11.5">Run as</text>
+<rect class="chip-run" x="398" y="674" width="60.1" height="20" rx="10" stroke-width="1.2"/>
+<text class="chip-t" x="428.1" y="688" font-size="11.5" font-weight="500" text-anchor="middle">PBS job</text>
+</a>
+<rect class="lane-sep" x="648" y="246" width="288" height="516" rx="18" stroke-width="1.5" stroke-dasharray="6 5"/>
+<text class="if-more" x="664" y="274" font-size="14.5" font-weight="700">Separate workflow</text>
+<text class="sub" x="664" y="293" font-size="12.5">Reads data its own way</text>
+<path class="wire-dash" d="M454,307 H868 Q880,307 880,319 V398" marker-end="url(#ah)"/>
+<text class="branch" x="466" y="299">Benchmark land</text>
+<a href="../../work-with-cmip7-data/analyse-evaluate/#benchmark-land-processes-with-ilamb" target="_top"><title>ILAMB: read more</title>
+<rect class="card" x="664" y="400" width="256" height="146" rx="10"/>
+<path d="M674,400 H669 Q664,400 664,405 V541 Q664,546 669,546 H674 V400 Z" fill="#007ACC"/>
+<rect x="664" y="400" width="5" height="146" fill="#007ACC"/>
+<text class="if-nci" x="684" y="424" font-size="12.5" font-weight="500">Benchmark land processes</text>
+<text class="main" x="684" y="449" font-size="16" font-weight="700">ILAMB</text>
+<text class="sub" x="684" y="470" font-size="13">compares models with observations</text>
+<text class="sub" x="684" y="502" font-size="11.5" font-style="italic">No code to copy from the catalogue</text>
+<text class="sub" x="684" y="530" font-size="11.5">Run as</text>
+<rect class="chip-run" x="724" y="516" width="60.1" height="20" rx="10" stroke-width="1.2"/>
+<text class="chip-t" x="754.0" y="530" font-size="11.5" font-weight="500" text-anchor="middle">PBS job</text>
+</a>
+<a href="https://docs.access-hive.org.au/model_evaluation/evaluation_on_gadi/ilamb_workflow/" target="_blank" rel="noopener"><title>ACCESS-NRI ILAMB workflow (external)</title><text class="if-nci" x="664" y="574" font-size="12.5" font-weight="500">Set up with the ILAMB workflow  →</text></a>
+<a href="https://www.ilamb.org/" target="_blank" rel="noopener"><title>ILAMB website (external)</title><text class="if-nci" x="664" y="596" font-size="12.5" font-weight="500">About ILAMB  →</text></a>
+<text class="main" x="24" y="804" font-size="15" font-weight="700">3  More resources</text>
+<a href="https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_users/#35-grids" target="_blank" rel="noopener"><title>CMIP7 user guidance on grids (external)</title>
+<rect class="card" x="24" y="818" width="288" height="64" rx="10"/>
+<path d="M34,818 H29 Q24,818 24,823 V877 Q24,882 29,882 H34 V818 Z" fill="#9AA5B1"/>
+<rect x="24" y="818" width="5" height="64" fill="#9AA5B1"/>
+<text class="if-more" x="44" y="842" font-size="12.5" font-weight="500">Working with grids, and more</text>
+<text class="main" x="44" y="867" font-size="15" font-weight="700">CMIP7 user guidance</text>
+</a>
+<a href="../../about-cmip7/experiments-data-standards/" target="_top"><title>CMIP7 experiments and data standards: read more</title>
+<rect class="card" x="336" y="818" width="288" height="64" rx="10"/>
+<path d="M346,818 H341 Q336,818 336,823 V877 Q336,882 341,882 H346 V818 Z" fill="#9AA5B1"/>
+<rect x="336" y="818" width="5" height="64" fill="#9AA5B1"/>
+<text class="if-more" x="356" y="842" font-size="12.5" font-weight="500">Understand dataset names</text>
+<text class="main" x="356" y="867" font-size="15" font-weight="700">Experiments and data standards</text>
+</a>
+<a href="../../help/" target="_top"><title>Get help: read more</title>
+<rect class="card" x="648" y="818" width="288" height="64" rx="10"/>
+<path d="M658,818 H653 Q648,818 648,823 V877 Q648,882 653,882 H658 V818 Z" fill="#9AA5B1"/>
+<rect x="648" y="818" width="5" height="64" fill="#9AA5B1"/>
+<text class="if-more" x="668" y="842" font-size="12.5" font-weight="500">Stuck, or spotted an issue?</text>
+<text class="main" x="668" y="867" font-size="15" font-weight="700">Ask a question</text>
+</a>
+<rect x="24" y="904" width="5" height="16" fill="#007ACC"/><text class="sub" x="38" y="917" font-size="13">Runs on Gadi</text>
+<rect x="140" y="904" width="5" height="16" fill="#F28C00"/><text class="sub" x="154" y="917" font-size="13">Separate website, open to anyone</text>
+<rect x="376" y="904" width="5" height="16" fill="#9AA5B1"/><text class="sub" x="390" y="917" font-size="13">Further reading</text>
+<path class="wire-dash" d="M504,912 H534"/><text class="sub" x="542" y="917" font-size="13">No catalogue quick start</text>
+<text class="sub" x="936" y="917" font-size="13" text-anchor="end">Select any box to jump to its guide</text>
+</svg>
