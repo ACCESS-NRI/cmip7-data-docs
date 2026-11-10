@@ -4,7 +4,7 @@ page_nav: true
 
 # CMIP7 experiments and data standards
 
-This page covers two things you'll need to understand CMIP7 data: the experiments that models run, with a focus on Australia's ACCESS-ESM1.6 contribution, and the shared data standards that make output from different modelling centres consistent and comparable. To find where the files are stored on Gadi, see [Find and access CMIP7 data](../find-cmip7-data/find-and-access-data.md).
+This page covers two things you'll need to understand CMIP7 data: the experiments that models run, with a focus on Australia's ACCESS-ESM1.6 contribution (more details in [Australia's role in CMIP7](australia-in-cmip7.md)), and the shared data standards that make output from different modelling centres consistent and comparable. To find where the files are stored on Gadi, see [Find and access CMIP7 data](../find-cmip7-data/find-and-access-data.md).
 
 When you search for and work with CMIP7 data, you'll come across a common set of labels that describe each dataset, such as model, experiment, ensemble member, variable and frequency. Most CMIP7 search tools use these labels as filters, including the [ACCESS-NRI Interactive Data Catalogue](../find-cmip7-data/find-and-access-data.md#access-nri-interactive-data-catalogue), the [ACCESS-NRI Intake catalogue](../find-cmip7-data/find-and-access-data.md#access-nri-intake-catalogue) and [ESGF MetaGrid](../find-cmip7-data/find-and-access-data.md#esgf-metagrid). The same labels also make up every CMIP7 filename and folder path.
 
