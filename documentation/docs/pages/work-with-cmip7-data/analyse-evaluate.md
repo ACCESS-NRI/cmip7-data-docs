@@ -289,7 +289,7 @@ Use ESMValCore in a Jupyter notebook in ARE to load and preprocess data interact
 
 ??? info "Learn more about ESMValCore"
     - [ESMValCore documentation](https://docs.esmvaltool.org/projects/ESMValCore/en/latest/): including the full list of preprocessor functions
-    - [ACCESS-ENSO recipes](https://github.com/ACCESS-NRI/ACCESS-ENSO-recipes): Jupyter notebooks that use ESMValCore to explore El Niño–Southern Oscillation (ENSO) metrics, with a [guide to running them in ARE](https://docs.access-hive.org.au/model_evaluation/evaluation_on_gadi/recipes/)
+    - [ACCESS Evaluation recipes](https://github.com/ACCESS-NRI/ACCESS-ENSO-recipes): Jupyter notebooks that use ESMValCore to explore El Niño–Southern Oscillation (ENSO) metrics, Indian Ocean Dipole (IOD), intraseasonal variablity and other ocean diagonstics with a [guide to running them in ARE](https://docs.access-hive.org.au/model_evaluation/evaluation_on_gadi/recipes/)
     - [Composing recipes](https://docs.esmvaltool.org/projects/ESMValCore/en/latest/notebooks/composing-recipes.html): how to turn datasets you've selected in a notebook into an ESMValTool recipe
 
 ### ESMValTool recipes
@@ -330,7 +330,7 @@ You can start a recipe in two ways:
         esmvaltool run recipe_ref_ecs.yml
         ```
 
-        Run this command inside a PBS job script that loads `conda/analysis3`, as shown in [Before you start](#before-you-start). You can then look at the output plots in ARE.
+        Run this command inside a PBS job script that loads `conda/analysis3`, as shown in [Before you start](#before-you-start). You can then look at the output plots in ARE or download the output directory to your own computer.
 
 ??? info "Learn more about ESMValTool"
     - [ACCESS-NRI guide to using ESMValTool on Gadi](https://docs.access-hive.org.au/model_evaluation/evaluation_on_gadi/esmvaltool_workflow/): includes a complete PBS job example
