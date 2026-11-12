@@ -10,7 +10,7 @@ An Earth System Model (ESM) simulates the carbon and other bio-chemical cycles a
 
 <figure class="video-figure">
   <iframe class="video-embed" title="Wind and temperature simulated by ACCESS-ESM" src="https://player.vimeo.com/video/1197609556?h=2215425035" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
-  <figcaption>Wind and temperature simulated by ACCESS-ESM</figcaption>
+  <figcaption>Wind tracers simulated by ACCESS-ESM1.6 over one year</figcaption>
 </figure>
 
 Read more about ACCESS-ESM on the [ACCESS-NRI website](https://www.access-nri.org.au/models/earth-system-model-esm/).
@@ -20,7 +20,7 @@ Read more about ACCESS-ESM on the [ACCESS-NRI website](https://www.access-nri.or
 The ACCESS Consortium brings together Australian institutions contributing to the Australian Community Climate and Earth System Simulator (ACCESS) and its submissions to the Coupled Model Intercomparison Project (CMIP). Participating organisations contribute to different ACCESS models and scientific activities, supported through a combination of institutional investment and Australian Government research infrastructure and research programs, together with international collaborations.
 
 ??? info "Participating organisations"
-    - Australian Antarctic Division (AAD)
+    - Australian Antarctic Division (AAD), of the Department of Climate Change, Energy, the Environment and Water
     - Australian Community Climate and Earth System Simulator - National Research Infrastructure (ACCESS-NRI)
     - Australian National University (ANU)
     - Bureau of Meteorology
