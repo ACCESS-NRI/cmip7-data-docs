@@ -50,6 +50,7 @@ To enable modelling groups and others who support CMIP7 to demonstrate its impac
 ??? info "3. Adhere to the license"
     Adhere to the license conditions listed in the global attribute of each dataset.
 
+<!-- ADD THIS BACK IN ONCE LINK WORKS AND IS READY FOR CMIP7
 ### Recommended steps for citing CMIP7-related work
 
 ??? info "Register your work on the CMIP Publications Hub"
@@ -57,6 +58,8 @@ To enable modelling groups and others who support CMIP7 to demonstrate its impac
     Please register your work on the [CMIP Publications Hub](https://cmip-publications.llnl.gov/).
     
     *Note that there are other recommended steps related to citation on the [CMIP7 Guidance for users](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_users/#2-terms-of-use-and-citations-requirements) page.*
+-->
+
 
 ## Errata
 
